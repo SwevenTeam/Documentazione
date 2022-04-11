@@ -1,0 +1,43 @@
+\newcommand{\docNome}{ Verbale Interno del  2022-03-21}   % INSERIRE LA DATA IN FORMATO aaaa-mm-gg
+\newcommand{\docVersione}{1.0.0}                     % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docStatus}{Approvato}         % AGGIORNARE SOLO QUANDO CONFERMATO
+\newcommand{\docUso}{Interno}                          % INTERNO O ESTERNO
+\newcommand{\docNomeProgetto}{}
+\newcommand{\docDestinatari}{Gruppo Sweven Team}
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{Matteo Pillon}                    % REDATTORE
+\newcommand{\docVerificatori}{Qi Fan Andrea Pan}                 % VERIFICATORE
+\newcommand{\docApprovazione}{Samuele Rizzato}                 % APPROVATORE
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome} \\ \textsc{\docNomeProgetto}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage } }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\input{section/01_frontespizio.tex}
+\input{section/02_diario_modifiche.tex}
+\tableofcontents
+\newpage
+\input{section/03_informazioni.tex}
+\input{section/04_svolgimento.tex}
+\input{section/05_conclusioni-decisioni.tex}
+\end{document}

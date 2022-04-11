@@ -1,0 +1,62 @@
+\section{Svolgimento}
+\subsection{L'applicazione in generale}
+Il gruppo inizia chiedendo se l'azienda si attende un'applicazione principalmente 
+per pc o per dispositivi mobili, e se per il lato client si desidera un app nativa 
+o se è possibile interfacciarsi con le comuni app di messaggistica. \newline
+L'azienda spiega che la richiesta è di una Web App e poi consiglia l'aggiunta di una 
+web view per adattarla facilmente anche ai dispositivi mobili. Il lavoro è principalmente 
+nel lato server dell'applicazione; il lato client non è espressamente richiesto e si è 
+completamente liberi di creare una propria interfaccia o di intefacciarsi con un app di 
+messaggistica. Ad esempio interagire tramite le API con Telegram, che offre già tutte 
+le varie versioni desktop e mobile.\newline
+Viene posta la domanda riguardante l'input; l'azienda comunica che l'input vocale 
+è facoltativo, mentre per l'input testuale si immagina perlopiù un botta e risposta; 
+da considerare anche il caso di un unico messaggio completo di tutte le informazioni necessarie.\newline
+Il gruppo si informa se ci sono preferenze riguardo le richieste opzionali, e l'azienda invita 
+prima a partire dalle richieste obbligatorie, in particolare la parte di consuntivazione, 
+e poi con le richieste opzionali, per le quali non hanno preferenze.
+L'azienda invita a realizzare un'applicazione in cui la struttura e l'interazione siano
+separate e si interagisca con dei sistemi esterni.
+
+\subsection{Scelte tecnologiche per sviluppare l'applicazione}
+L'azienda lascia completamente libero il gruppo di scegliere le tecnologie; tuttavia 
+consiglia Phyton lato server per le numerose librerie che offre a riguardo, 
+ad esempio \href{https://chatterbot.readthedocs.io/en/stable/}{ChatterBot}
+
+\subsection{Sistema di login aziendale LDPA}
+I referenti di Imola spiegano al gruppo che il sistema di login aziendale è strutturato ad albero 
+per unità organizzative: all'interno ci sono i gruppi e poi gli utenti a cui sono stati assegnati degli attributi. 
+Per la sicurezza non si fa mai un collegamento diretto e non si richiedono mai direttamente le credenziali,
+ma vengono esposte una serie di APIRest e verranno autenticate tramite un token. 
+Cioè si richiedono tramite API delle credenziali da usare per il ChatBot e come risposta si avrà 
+una stringa contenente tutte le informazioni. Suggeriscono il sito 
+\href{https://www.redhat.com/it/topics/api/what-is-a-rest-api}{https://www.redhat.com/it/topics/api/what-is-a-rest-api},
+comunque maggiori informazioni verranno fornite dopo l'assegnazione dell'appalto.
+
+\subsection{Informazioni sull'applicazione web aziendale EMT}
+L'azienda mostra a schermo l'applicativo EMT attualmente in uso, facendo vedere l'esempio di form 
+da compilare per poter consuntivare le ore di lavoro. Quindi lo scopo è riuscire 
+ad ottenere le informazioni necessarie tramite il ChatBot, validando i vari messaggi e, in caso di ambiguità, chiedendo
+chiarezza all'utente.
+
+\subsection{Supporto e disponibilità dell'azienda}
+Per eseguire i test l'azienda invita ad usare le varie convenzioni disponibili per studenti 
+(ad esempio il pacchetto studenti di GitHub); comunuque, in caso di difficoltà o necessità, 
+l'azienda è disposta a collaborare per trovare una soluzione.
+I tre referenti presenti si mostrano fin da subito molto disponibili e forniscono
+anche i loro contatti Telegram. \newline
+Suggeriscono durante la fase di progettazione e sviluppo di mantenere il più possibile 
+la semplicità; inoltre sottolineano che per il gruppo è in primis un'esperienza formativa, 
+quindi invitano a non esitare a contattarli in caso di dubbi e difficoltà. 
+Infine consigliano al gruppo di partire da una PoC basata su tecnologie classiche.
+
+\subsection{Confronto all'interno del gruppo}
+Alle 11.35 termina la riunione con l'azienda Imola e il gruppo Sweven rimane in chiamata Zoom
+per confrontarsi sulle informazioni appena ricevute. \newline
+Tutti i membri del gruppo si reputano soddisfatti del colloquio per le delucidazioni ricevute 
+che hanno sciolto le domande sorte durante la lettura del pdf di presentazione del capitolato:
+in particolare non si era colto che la richiesta principale è il lato server dell'applicazione.
+L'azienda lascia molta libertà, che può essere un'arma a doppio taglio, ma ha comunque 
+fornito suggerimenti, come l'utilizzo del linguaggio Phyton e l'uso delle APIRest per l'interazione.
+Inoltre il gruppo è rimasto colpito positivamente dall'azienda, avendone un'ottima impressione, e,
+in particolare, dalla disponibilità mostrata.

@@ -1,0 +1,46 @@
+\newcommand{\docNome}{ Verbale Esterno del 18-03-2022 }
+\newcommand{\docVersione}{1.0.0}
+\newcommand{\docUso}{Esterno}
+\newcommand{\docDestinatari}{
+      Gruppo Sweven Team\\
+      & Prof. Tullio Vardanega\\
+	& Prof. Riccardo Cardin\\
+	& Azienda Imola Informatica\\
+}
+\newcommand{\docStatus}{Approvato}
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{Irene Benetazzo}
+\newcommand{\docVerificatori}{Mattia Episcopo} %Diario delle modifiche va cambiato manualmente
+\newcommand{\docApprovazione}{Pietro Macrì}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{pdfborder = {0 0 0}}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage  \hspace{1pt} di \pageref*{LastPage}} }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\input{section/01_frontespizio.tex}
+\input{section/02_diario_modifiche.tex}
+\tableofcontents
+\newpage
+\input{section/03_informazioni.tex}
+\input{section/04_svolgimento.tex}
+\input{section/05_conclusioni-decisioni.tex}
+\end{document}
