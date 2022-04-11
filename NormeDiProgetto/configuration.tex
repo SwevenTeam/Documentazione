@@ -1,0 +1,62 @@
+\newcommand{\docNome}{ Norme di Progetto  }
+\newcommand{\docVersione}{0.0.5}                 % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docStatus}{in lavorazione}          % AGGIORNARE SOLO QUANDO APPROVATO
+\newcommand{\docUso}{Interno}
+\newcommand{\docDestinatari}{
+      Gruppo Sweven Team\\
+    & Prof. Tullio Vardanega\\
+	& Prof. Riccardo Cardin\\
+	& Azienda Imola Informatica\\
+} 
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{
+    Irene Benetazzo\\
+    & Samuele Rizzato
+}
+\newcommand{\docVerificatori}{}
+\newcommand{\docApprovazione}{}
+\newcommand{\glossario}[1]{\textit{#1}\textsubscript{\textit{G}}}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage  \hspace{1pt} di \pageref*{LastPage}} }
+\renewcommand*\contentsname{Indice}
+\setcounter{tocdepth}{5}	%aggiunge paragrafi e sottoparagrafi all'indice
+\setcounter{secnumdepth}{5}	%aggiunge numero indicizazzione a paragrafi e sottoparagrafi
+
+
+\begin{document}
+\input{section/01_frontespizio.tex}
+\input{section/02_diario_modifiche.tex}
+\tableofcontents
+\newpage
+\section{Introduzione}
+    \input{section/03_introduzione.tex}
+\newpage
+\section{Processi Primari} %file da creare
+\newpage
+\section{Processi di Supporto}
+    \input{section/documentazione.tex}
+\newpage
+\section{Processi Organizzativi}
+    \input{section/gestione_organizzativa.tex}
+\end{document}
