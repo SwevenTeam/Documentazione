@@ -1,0 +1,46 @@
+\newcommand{\docNome}{Verbale   del 2022-04-22}     % NOME DEL DOCUMENTO, specificare se verbale interno o esterno
+\newcommand{\docVersione}{0.0.1}                 % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docStatus}{in lavorazione}          % AGGIORNARE SOLO QUANDO APPROVATO
+\newcommand{\docUso}{}                           % INTERNO O ESTERNO
+\newcommand{\docDestinatari}{
+      Gruppo Sweven Team\\ %aggiungere altri con & Nome\\
+} 
+\newcommand{\docNomeTeam}{Sweven Team}
+\newcommand{\docRedattori}{Tommaso Berlaffa}
+\newcommand{\docVerificatori}{}
+\newcommand{\docApprovazione}{}
+\newcommand{\glossario}[1]{\textit{#1}\textsubscript{\textit{G}}}
+\documentclass[12pt, a4paper,table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+pdfborder = {0 0 0}
+}
+\geometry{a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm}
+\title{\textsc{\docNome}}
+\author{}
+\date{}
+\definecolor{footer-gray}{HTML}{808080}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textcolor{footer-gray}{\docNome} }
+\lhead{\textcolor{footer-gray}{Sweven Team}}
+\fancyfoot{}
+\cfoot{\textcolor{footer-gray}{Pagina \thepage  \hspace{1pt} di \pageref*{LastPage}} }
+\renewcommand*\contentsname{Indice}
+
+\begin{document}
+\input{section/01_frontespizio.tex}
+\input{section/02_diario_modifiche.tex}
+\tableofcontents
+\newpage
+\input{section/03_informazioni.tex}
+\input{section/04_svolgimento.tex}
+\input{section/05_conclusioni-decisioni.tex}
+\end{document}
