@@ -1,5 +1,5 @@
 \newcommand{\docNome}{}                          % NOME DEL DOCUMENTO
-\newcommand{\docVersione}{0.0.1}                 % INSERIRE VERSIONE IN FORMATO x.y.z
+\newcommand{\docVersione}{0.0.2}                 % INSERIRE VERSIONE IN FORMATO x.y.z
 \newcommand{\docStatus}{in lavorazione}          % AGGIORNARE SOLO QUANDO APPROVATO
 \newcommand{\docUso}{Esterno}                           % INTERNO O ESTERNO
 \newcommand{\docDestinatari}{
@@ -9,7 +9,10 @@
       & Azienda Imola Informatica\\
 } 
 \newcommand{\docNomeTeam}{Sweven Team}
-\newcommand{\docRedattori}{Pietro Macrì}
+\newcommand{\docRedattori}{
+	Pietro Macrì\\
+	& Mattia Episcopo
+}
 \newcommand{\docVerificatori}{}
 \newcommand{\docApprovazione}{}
 \newcommand{\glossario}[1]{\textit{#1}\textsubscript{\textit{G}}}
@@ -39,7 +42,6 @@ pdfborder = {0 0 0}
 \setcounter{tocdepth}{5}	%aggiunge paragrafi e sottoparagrafi all'indice
 \setcounter{secnumdepth}{5}	%aggiunge numero indicizazzione a paragrafi e sottoparagrafi
 \renewcommand*\contentsname{Indice}
-
 \begin{document}
 \input{section/01_frontespizio.tex}
 \input{section/02_diario_modifiche.tex}
@@ -47,5 +49,5 @@ pdfborder = {0 0 0}
 \newpage
 \input{section/03_introduzione}
 \newpage
-
+\input{section/qualita_di_prodotto.tex}
 \end{document}
