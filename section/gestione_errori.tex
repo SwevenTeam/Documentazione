@@ -1,0 +1,56 @@
+\subsection{Gestione degli errori}
+Questa sezione ha lo scopo di gestire le modalità di approccio e di soluzione ai problemi 
+che possono verificarsi nell'arco dello svolgimento dell'intero progetto.
+Per evitare perdite di tempo eccessive a causa dei vari ed eventuali errori, serve limitare 
+al massimo due fattori: il ripetersi del medesimo errore e il propagarsi dell'errore su altre 
+entità. \newline
+Il percorso per il controllo e l'eleminazione degli errori è il seguente:
+\begin{enumerate}
+    \item Individuazione
+    \item Analisi possibili conseguenze su entità esterne
+    \item Identificazione
+    \item Crezione possibili soluzioni
+    \item Scelta soluzione
+    \item Verifica soluzione scelta
+    \begin{itemize}
+        \item In caso di verifica con esito positivo, procedere dal punto 7.
+        \item In caso di verifica con esito negativo, riprendere dal punto 5.
+    \end{itemize}
+    \item Modifica del sistema di verifica per evitare che l'errore si presenti nuovamente
+\end{enumerate}
+Seguono approfondimenti su alcune delle parti sovraelencate.
+\subsubsection{Individuazione}
+Non appena individuato un problema si contattano immediatamente le persone coinvolte direttamente o 
+indirettamente con esso. Si trovano quindi le possibili cause.
+\subsubsection{Identificazione}
+Al problema viene assegnato un codice univoco che viene successivamente memorizzato. \newline 
+Il codice ha il seguente formato: \newline
+\begin{center}
+    \textbf{PROB [PRIORITY] - [TYPE] - [NUMBER]}
+\end{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+    \begin{tabular}{ |m{7em}|m{30em}| }
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+            PROB & Indica un problema \\
+        \hline
+            PRIORITY 	& 	Indica il tipo di priorità : \\
+                        &	\textbf{MAX} : Priorità totale, problema urgente \\
+                        &	\textbf{MED} : Priorità media, problema non urgente ma importante \\
+                        &	\textbf{MIN} : Priorità bassa, problema non urgente e poco importante \\
+        \hline
+                    
+            TYPE 	& 	Indica il tipo di problema : \\
+                    & 	\textbf{G} : Problema di grammatica (ortografico, sintattico, etc.) \\
+                    &	\textbf{C} : Problema di contenuto (dati mancanti o errati) \\
+                    &	\textbf{F} : Problema di funzionalità (qualcosa non funziona) \\
+        \hline
+            NUMBER & Codice Numerico Identificativo \\
+        \hline
+    \end{tabular} \newline \newline
+La risoluzione di una serie di problemi va eseguita prima secondo l'ordine di priorità e poi secondo l'ordine degli identificativi. \newline 
+La priorità viene calcolata in base alla gestione dei tempi e in base all'impatto che il problema ha sul resto del progetto, il che comprende l'eventuale propagazione valutata nel punto 2. del processo.
+\subsubsection{Modifica del sistema di verifica}
+Il codice del problema viene aggiunto, insieme ad una breve descrizione e alla soluzione, nel sistema di gestione delle issues offerto da GitHub accennato in precedenza.
+In questo modo si riesce a tenere meglio sotto controllo l'evolversi della situazione.

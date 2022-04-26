@@ -1,0 +1,54 @@
+\subsection{Gestione dello spazio di lavoro}
+Questa sezione serve a dare un modello alle procedure di lavoro e a normalizzare i comportamenti
+necessari per favorire lo svolgersi ordinato del processo nella sua totalità
+\subsubsection{Stato dei documenti}
+In precedenza è stato normalizzato il versionamento dei documenti.
+Un'altra caratteristica altrettanto importante che essi presentano è lo stato.
+Lo stato di un documento è in una e una sola delle seguenti due alternative:
+\begin{itemize}
+    \item In lavorazione
+    \item Approvato
+\end{itemize}
+Ogni documento parte dalla fase ``In lavorazione''; solo l'approvatore può, dopo aver analizzato il 
+documento, decidere se renderlo ``Approvato'' o meno. \newline
+Per scelta del gruppo, ogni documento può essere aggiunto al ramo principale della repository di GitHub 
+in uso solo se presenta lo stato ``Approvato''.
+\subsubsection{Versionamento dei software}
+Similmente ai documenti, anche i software sono versionati. Ciò avviene secondo il formato:
+\begin{center}
+    \textbf{[x].[y].[z]}
+\end{center}
+\begin{description}
+    \item \textbf{x}: Indica la versione del software.
+            Viene aggiornato solo quando si soddisfano tutti i requisiti obbligatori. 
+    \item \textbf{y}: Viene incrementato ad ogni requisito aggiornato.
+    \item \textbf{z}: Viene incrementato quando si modifica il software senza raggiungere requisiti.
+\end{description}
+Come nei documenti, anche per i software la modifica di un qualsiasi campo della versione resetta tutti gli 
+altri campi presenti alla destra di esso. \newline
+In sintesi x indica il raggiungimento dell'obiettivo primario, y gli obiettivi raggiunti dall'ultimo cambiamento di x,
+z il numero di piccole modifiche dall'ultimo cambiamento di x e y. \newline
+Quindi il software alla sua creazione è già alla versione 0.0.1 e a fine progetto è necessario che 
+tutti i software siano alla versione 1.y.z.
+\subsubsection{Organizzazione della repository}
+I partecipanti del gruppo lavorano singolarmente in locale. Al termine della loro task, condividono 
+il lavoro effettuato tramite un commit del file, o dei file, nel ramo adeguato della repository.
+I suffissi dei file ricadono nei seguenti casi:
+\begin{itemize}
+    \item \textbf{.tex}: Il codice \LaTeX.
+    \item \textbf{.jpg}: Immagini necessarie. Sempre contenute nella cartella ``images''. La quasi totalità 
+                            di queste immagini è il logo del gruppo Sweven.
+    \item \textbf{.pdf}: Il formato PDF del documento da visionare.
+\end{itemize}
+\subsubsection{Task}
+Le task da svolgere singolarmente o in sottogruppi vengono assegnate ai membri del gruppo Sweven tramite
+GitHub. La piattaforma infatti mette a disposizione degli utenti uno strumento di creazione e gestione delle 
+issues. Tali issues verranno create con i seguenti requisiti:
+\begin{itemize}
+    \item \textbf{Titolo}: Un titolo semplice, immediato e in grado di riassumere la descrizione.
+    \item \textbf{Descrizione}: La descrizione dell'obiettivo da raggiungere, sia in complessivo sia singolarmente. 
+                                Vengono quindi elencate le task che dovranno seguire i partecipanti.
+    \item \textbf{Label}: Un'etichetta che descrive il tipo di lavoro da effettuare.
+    \item \textbf{Partecipanti}: La lista di tutti i partecipanti alla issue.
+    \item \textbf{Milestone}: Il macrogruppo di obiettivi cui la issue appartiene.
+\end{itemize}
