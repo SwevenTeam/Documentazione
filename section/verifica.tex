@@ -1,0 +1,97 @@
+\subsection{Verifica}
+Il processo di verifica è la fase obbligatorio per il procedimento alla validazione , applicata ogni volta che c’è un rischio di errore.
+\subsubsection{Analisi}
+Ci sono due tipologie di analisi del prodotto software disponibile, vengono effettuate entrambi se il gruppo ritiene necessario:
+\begin{itemize}
+\item Analisi statico: non richiede l’oggetto di verifica, viene studiato la documentazione e il codice non eseguibile, accerta conformità a regola assenza di 			difetti, presenza di proprietà desiderate descritte nel Piano di Qualifica. 
+\item Analisi dinamica: serve l’oggetto testabile, vengono effettuate dei test su di essa.
+\end{itemize}
+
+\subsubsection{Metod di lettura}
+Vengono definite le due modalità di lettura per l’analisi statico:
+\begin{itemize}
+\item Walkthough: la lettura parte da zero, analizza tutto il documento, il verificatore deve presuppore di cercare i difetti del codice o del documento.
+\item Inspection: viene fatto la lettura mirata, con una lista di checklist.
+\end{itemize}
+
+\subsubsection{Test}
+Il test serve per testare che il prodotto software funziona effettivamente come desiderato, serve l’oggetto testabile, viene effettuato qualvolta esiste un minimo componente funzionante testabile.
+Il test deve essere: 
+\begin{itemize}
+\item Ripetibile: il test deve dare lo stesso risultato con lo stesso input. 
+\item Automaticizzabile: il test deve essere eseguibile da un processo automatizzato, minimizzare il costo delle persone e velocizzare il processo.
+\end{itemize}
+Il test è composto da tre elementi:
+\begin{itemize}
+\item Ambiente d’esecuzione: hardware/software in cui è stato eseguito il test e lo stato iniziale del sistema.
+\item Attesa: input richiesti per l’esecuzione del test , e il suo corrispondente output atteso.
+\item Procedura: il procedimento in cui l’oggetto viene analizzato.
+\end{itemize}
+
+\paragraph{Test di unità}
+Un test automatico effettuato sul minimo componente che ha bisogno di un test specifico.\newline
+Per l’identificazione si usa il seguente formato
+\begin{center}
+    \textbf{T\_U [NUMBER]}
+\end{center}
+\renewcommand{\arraystretch}{1.8} 
+ \begin{tabular}{ |m{7em}|m{30em}| }
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+            T\_U & Indica il test di unità \\
+        \hline
+            NUMBER & Codice Numerico Identificativo \\
+        \hline
+ \end{tabular}
+
+\paragraph{Test di integrazione}
+Test da eseguire quando viene effettuato un unione di componenti verificati, assicurare che l’integrazione avviene correttamente.\newline
+Per l’identificazione si usa il seguente formato
+\begin{center}
+    \textbf{T\_I [NUMBER]}
+\end{center}
+\renewcommand{\arraystretch}{1.8} 
+ \begin{tabular}{ |m{7em}|m{30em}| }
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+            T\_I & Indica il test di integrazione \\
+        \hline
+            NUMBER & Codice Numerico Identificativo \\
+        \hline
+ \end{tabular}
+
+\paragraph{Test di sistema}
+Il test da eseguire alla fine del programma, agisce su tutti i requisiti, testare tutti i requisiti sono stati sodisfati.\newline
+Per l’identificazione si usa il seguente formato
+\begin{center}
+    \textbf{T\_S [NUMBER]}
+\end{center}
+\renewcommand{\arraystretch}{1.8} 
+ \begin{tabular}{ |m{7em}|m{30em}| }
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+            T\_I & Indica il test di sistema \\
+        \hline
+            NUMBER & Codice Numerico Identificativo \\
+        \hline
+ \end{tabular}
+
+\paragraph{Test di regressione}
+Test da eseguire dopo ogni aggiustamento di un errore, per evitare che la modifica comporta un errore in un’altra parte, dove già effettuato la verifica.\newline
+Per l’identificazione si usa il seguente formato
+\begin{center}
+    \textbf{T\_R [NUMBER]}
+\end{center}
+\renewcommand{\arraystretch}{1.8} 
+ \begin{tabular}{ |m{7em}|m{30em}| }
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+            T\_I & Indica il test di regressione \\
+        \hline
+            NUMBER & Codice Numerico Identificativo \\
+        \hline
+ \end{tabular}
