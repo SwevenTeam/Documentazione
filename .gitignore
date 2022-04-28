@@ -1,0 +1,9 @@
+
+.DS_Store
+configuration.aux
+configuration.fdb_latexmk
+*.fls
+*.out
+*.log
+*.gz
+*.toc
