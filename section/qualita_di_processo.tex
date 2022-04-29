@@ -1,0 +1,98 @@
+\section{Qualità di processo}
+Al fine di misurare e controllare la qualità dei processi nella realizzazione del progetto si è deciso di 
+adottare lo standard ISO/IEC 12207:1995.
+Gli obiettivi sono:
+\begin{itemize}
+    \item Controllare l'andamento dei processi.
+    \item Migliorare i processi rispettando gli standard adottati.
+\end{itemize}
+Le metriche utilizzate si possono consultare nel documento \emph{NormeDiProgetto} e di
+seguito ne vengono riportati i valori accettabili e ottimali.
+
+\subsection{Processi Primari}
+\subsubsection{Fornitura}
+Il processo ha lo scopo di stabilire le principali attività e tempistiche di lavoro
+al fine di rispettare i requisiti del prodotto.
+
+\paragraph{Obiettivo}
+Controllare i progressi delle attività, le tempistiche e i costi necessari al completamento del progetto.
+
+\paragraph{Metriche}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |c|m{12em}|c|c|}
+        \hline
+        \textbf{Metrica} & \textbf{Nome} & \textbf{Valore accettabile} & \textbf{Valore ottimale} \\
+        \hline
+        QMPRC-1 & Budgeted Cost of \newline Work Scheduled & $ \geq 0 $ & $ \leq BAC $ \\
+        \hline
+        QMPRC-2 & Budgeted Cost of Work \newline Performed & $ > 0 $ & $ \geq BCWS $ \\
+        \hline
+        QMPRC-3 & Actual Cost of Work \newline Performed & $ \geq 0 $ & $ \leq BCWP $ \\
+        \hline
+        QMPRC-4 & Cost Variance & $ \geq -15\% $ & $ \geq 0\% $ \\
+        \hline
+        QMPRC-5 & Estimated At Completion & $ \leq BAC + 5\% $ & $ \leq BAC $ \\
+        \hline
+        QMPRC-6 & Schedule Variance & $ \geq 10\% $ & $ \leq BAC $ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsubsection{Sviluppo}
+Il processo consiste nello sviluppare il prodotto secondo le scelte architetturali individuate.
+
+\paragraph{Obiettivo}
+Controllare come, durante il processo di sviluppo, cambino i requisiti e vedere quanto
+impatta sul lavoro del gruppo.
+
+\paragraph{Metriche}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |c|m{12em}|c|c|}
+        \hline
+        \textbf{Metrica} & \textbf{Nome} & \textbf{Valore accettabile} & \textbf{Valore ottimale} \\
+        \hline
+        QMPRC-7 & Requirement Stability \newline Index & $ \geq 80\% $ & $ \geq 90\% $ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Processi di Supporto}
+\subsubsection{Verifica}
+Il processo ha lo scopo di trovare gli eventuali errori generati durante la realizzazione del prodotto.
+
+\paragraph{Obiettivo}
+Garantire una buona copertura in merito all'attività di verifica del lavoro svolto dal gruppo.
+
+\paragraph{Metriche}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |c|m{12em}|c|c|}
+        \hline
+        \textbf{Metrica} & \textbf{Nome} & \textbf{Valore accettabile} & \textbf{Valore ottimale} \\
+        \hline
+        QMPRC-8 & Test implementati & $ \geq 80\% $ & 100\% \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Processi Organizzativi}
+\subsubsection{Gestione Organizzativa}
+Il processo consiste nella gestione dei membri e dell'infrastruttura tecnologica
+utilizzata dal gruppo.
+
+\paragraph{Obiettivo}
+Garantire la corretta gestione dell'infrastruttura utilizzata dal team.
+
+\paragraph{Metriche}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |c|m{12em}|c|c|}
+        \hline
+        \textbf{Metrica} & \textbf{Nome} & \textbf{Valore accettabile} & \textbf{Valore ottimale} \\
+        \hline
+        QMPRC-9 & Rischi individuati & $ \leq 6 $ & 0 \\
+        \hline
+    \end{tabular}
+\end{center}
