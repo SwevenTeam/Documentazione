@@ -1,0 +1,32 @@
+\subsection{UC15 - Visualizzazione ore da consuntivare rimanenti }
+\begin{itemize}
+	\item \textbf{Identificativo}: UC15
+	\item \textbf{Nome}: Visualizzazione ore da consuntivare rimanenti
+	\item \textbf{Attori}
+	\begin{itemize} 
+		\item \textit{Primari}: Utente autorizzato
+		\item \textit{Secondari}: Nessuno
+	\end{itemize}
+	\item \textbf{Descrizione}: L'utente visualizza le ore rimanenti da consuntivare nella giornata.
+	\item \textbf{Precondizione}: L'utente ha consuntivato un'attività.
+	\item \textbf{Postcondizione}: Il chatbot notifica il numero rimanente di ore da consuntivare nella giornata.
+	\item \textbf{Scenario principale}: \begin{enumerate}
+		\item Chatbot comunica: "Hai ancora X ore da consuntivare".
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC15.1 - Visualizzazione elenco documenti Trovati}
+\begin{itemize}
+	\item \textbf{Identificativo}: UC15.1
+	\item \textbf{Nome}: Visualizzazione elenco documenti Trovati
+	\item \textbf{Attori}
+	\begin{itemize} 
+		\item \textit{Primari}: Utente autorizzato
+		\item \textit{Secondari}: Nessuno
+	\end{itemize}
+	\item \textbf{Descrizione}: L'utente viene informato della ricerca dei documenti trovati.
+	\item \textbf{Precondizione}: L'utente ha effettuato la ricerca con successo.
+	\item \textbf{Postcondizione}: Il chatbot invia all'utente l'elenco dei documenti.
+	\item \textbf{Scenario principale}: \begin{enumerate}
+		\item Chatbot comunica: "Ho trovato questi documenti ..." seguito dall'elenco dei documenti trovati.
+	\end{enumerate}
+\end{itemize}
