@@ -1,0 +1,60 @@
+\subsection{UC5 - Apertura cancello}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC5
+    \item \textbf{Nome}: apertura cancello
+    \item \textbf{Descrione grafica}:
+\end{itemize}
+
+\begin{center}
+    \includegraphics{images/UC5.png} 
+\end{center} 
+
+ \begin{itemize}
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente è autorizzato e si trova nell'interfaccia del chatbot.
+ \item \textbf{Postcondizione}: il chatbot risponde alla richiesta dell'utente e invia la richiesta di apertura del cancello.
+ \item \textbf{Scenario principale}: l'utente autorizzato richiede l'apertura del cancello, specificando la sede (UC5.1).
+ \item \textbf{Estensioni}: 
+ \begin{itemize} 
+    \item il chatbot comunica all'utente che l'azione non è andata a buon fine (UC14).
+    \item il chatbot comunica all'utente che non è stato in grado di interpretare il comando (UC2).
+    \item il chatbot comunica all'utente che la sede specificata non è stata trovata (UC5.2).
+ \end{itemize}
+\end{itemize}
+\newpage
+\subsubsection{UC5.1 - Inserimento sede}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC5.1
+    \item \textbf{Nome}: inserimento sede
+    \item \textbf{Descrione grafica}: (approfondita in UC5)
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato 
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha comunicato al chatbot la richiesta di apertura del cancello di una sede.
+ \item \textbf{Postcondizione}: il chatbot inoltra la richiesta per la sede specificata.
+ \item \textbf{Scenario principale}: il chatbot chiede all'utente di specificare di quale sede vuole aprire il cancello. L'utente comunica al chatbot la sede tramite messaggio testuale (UC5.1.1) o vocale (UC5.1.2).
+\item \textbf{Estensioni}: 
+ \begin{itemize} 
+    \item il chatbot comunica all'utente che la sede specificata non è stata trovata (UC5.2).
+ \end{itemize}
+\end{itemize}
+\subsubsection{UC5.2 - Errore inserimento sede}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC5.5
+    \item \textbf{Nome}: errore inserimento sede
+    \item \textbf{Descrione grafica}: (approfondita in UC5)
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato 
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha comunicato al chatbot una sede non corretta.
+ \item \textbf{Postcondizione}: il chatbot comunica all'utente che la sede inserita non è stata trovata.
+ \item \textbf{Scenario principale}: il chatbot comunica all'utente che la sede inserita non è stata trovata e chiede di reinserirla.
+\end{itemize}
