@@ -1,0 +1,181 @@
+Ogni requisito è identificato da un codice identficativo seguendo le norme descrite dal NdP, una sua descrizione e il fonte di provienenza.
+\subsection{Requisiti Funzionali}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+Codice&Descrizione&Fonte\\
+\hline
+RO-F-1 & Il ChatBot deve poter riconoscere input testuale & Capitolato, UC1.1.1, UC2.1.1, UC3.1.1, UC4.1.1, UC5.1.1, UC6.1.1, UC6.2.1, UC6.3.1, UC6.4.1, UC7.1.1, UC7.2.1, UC8.1.1, UC8.2.1,  UC8.3.1, UC8.4.1\\
+\hline
+RO-F-2&Il ChatBot deve poter riconoscere input vocale&Capitolato, UC1.1.2, UC2.1.2, UC3.1.2, UC4.1.2, UC 5.1.2, UC6.1.2, UC6.2.2, UC6.3.2, UC6.4.2, UC7.1.2, UC7.2.2, UC8.1.2, UC8.2.2,  UC8.3.2, UC8.4.2\\
+\hline
+RO-F-3&L’utente deve poter autenticarsi tramite un token&UC1\\
+\hline
+RO-F-4&Il programma deve poter riconoscere un token non valido&UC1\\
+\hline
+RO-F-5&Il programma deve poter visualizzare un token non valido&UC1.2\\
+\hline
+RO-F-6&L’utente non autenticato deve poter richiedere un token per autenticarsi&UC1.1\\
+\hline
+RO-F-7&Se l’utente ha più token a disposizione, può decidere quale usare.&Verbale Esterno\\
+\hline
+RO-F-8&Il ChatBot deve essere in grado di riconoscere i comandi non validi.&UC2\\
+\hline
+RO-F-9&Il ChatBot deve restituire un messaggio di errore con suggerimenti dopo un messaggio non valido &UC2 \\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+RO-F-10&L’utente deve poter effettuare la registrazione della propria presenza &UC3 \\
+\hline
+RO-F-11&L’utente deve poter inserire la sede per la registrazione della presenza &UC3.1 \\
+\hline
+RO-F-12&Il ChatBot deve notificare l’utente se la sede per la registrazione è non valido &UC3.2, UC19 \\
+\hline
+RO-F-13&L’utente deve poter inserire un attività all’interno del sistema EMT &UC4 \\
+\hline
+RO-F-14&L’utente deve poter inserire il tipo dell’attività &UC4.1 \\
+\hline
+RO-F-15&L’utente deve poter inserire le ore da consuntivare nell’attività &UC4.2 \\
+\hline  
+RO-F-16&L’utente deve poter inserire il progetto da consuntivare nell’attività &UC4.3 \\
+\hline
+RO-F-17&L’utente deve poter inserire il luogo in cui ha svolto l’attività &UC4.4 \\
+\hline
+RO-F-18&Il ChatBot deve notificare al utente del formato nome dell’attività non valido &UC4.5 \\
+\hline
+RO-F-19&Il ChatBot deve notificare al utente del formato ore dell’attività non valido &UC4.6 \\
+\hline
+RO-F-20&Il ChatBot deve notificare al utente del nome del progetto relativo all’attività  nel formato non esistente &UC4.7, UC20 \\
+\hline
+RO-F-21&Il ChatBot deve notificare al utente del luogo relativo all’attività nel formato non valido &UC4.8 \\
+\hline
+RO-F-22&L’utente deve poter aprire il cancello tramite di un sede tramite ChatBot &UC5 \\
+\hline
+RO-F-23&Il ChatBot deve notificare al utente se la sede non è stato trovato &UC5.2 \\
+\hline
+RO-F-24&L’utente deve poter chiedere una riunione con una applicazione esterna &UC6 \\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+RO-F-25&L’utente deve poter inserire il nome della piattaforma &UC6.1 \\
+\hline
+RO-F-26&L’utente deve poter inserire la data per la riunione &UC6.2 \\
+\hline
+RO-F-27&L’utente deve poter inserire l’ora per la riunione &UC6.3 \\
+\hline
+RO-F-28&L’utente deve poter inserire i partecipanti alla riunione &UC6.4 \\
+\hline
+RO-F-29&Il ChatBot deve notificare l’utente se la piattaforma inserita non è valida o non è supportata &UC6.5 \\
+\hline
+RO-F-30&Il ChatBot deve notificare l’utente se la data inserita non è valido o è indisponibile &UC6.6 \\
+\hline
+RO-F-31&Il ChatBot deve notificare l’utente se l’ora inserita non è valido o è indisponibile &UC6.7 \\
+\hline
+RO-F-32&Il ChatBot deve notificare l’utente se i partecipanti inseriti non sono corretti, e di chiedere reinserimento &UC6.8 \\
+\hline
+RO-F-33&L’utente deve poter chiedere un documento &UC7 \\
+\hline
+RO-F-34&L’utente deve poter inserire il nome del progetto per la ricerca del documento &UC7.1 \\
+\hline
+RO-F-35&L’utente deve poter inserire il nome del documento in cui vuole fare la ricerca &UC7.2 \\
+\hline
+RO-F-36&Il ChatBot deve notificare l’utente se l’inserimento del progetto non è corretto, e di chiedere reinserimento &UC7.3\\
+\hline
+RO-F-37&Il ChatBot deve notificare l’utente se il nome del documento inserito non è valido, e di chiedere reinserimento &UC7.4 \\
+\hline
+RO-F-38&L’utente deve poter inserire un ticket &UC8 \\
+\hline
+RO-F-39&L’utente deve poter fornire l’oggetto per la creazione del ticket &UC8.1 \\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+RO-F-40&L’utente deve poter inserire la descrizione per la creazione del ticket dopo aver fornito l’oggetto &UC8.2 \\
+\hline
+RO-F-41&L’utente deve poter comunicare lo status del ticket dopo aver inserito la descrizione &UC8.3 \\
+\hline
+RO-F-42&L’utente deve poter cominciare la proprietà del ticket dopo aver comunicato lo status &UC8.4 \\
+\hline
+RO-F-43&Il ChatBot deve notificare l’utente se l’oggetto non è stato inserito in maniera idonea per la creazione del ticket  &UC8.5 \\
+\hline
+RO-F-44&Il ChatBot deve notificare l’utente se lo status del ticket non è stato inserito correttamente  &UC8.6 \\
+\hline
+RO-F-45&Il ChatBot deve notificare l’utente se la proprità del ticket non è stato inserito in un formato valido &UC8.7 \\
+\hline
+RO-F-46&Ogni qualvolta un operazione è avvenuto con successo, l’utente deve essere sempre notificato &UC9 \\
+\hline
+RO-F-47&Ogni qualvolta una richiesta non è possibile compiere, l’utente deve essere sempre notificato &UC10 \\
+\hline
+RO-F-48&L’utente deve poter annullare un operazione in corso &UC11 \\
+\hline
+RO-F-49&Il ChatBot deve notificare l’utente se l’annullamento è avvenuto con successo &UC11 \\
+\hline
+RO-F-50&Ogni qualvolta l’utente tenta di effettuare un’operazione non consentita, questo deve essere fermato e notificato al utente.&UC12 \\
+\hline
+RO-F-51&L’utente deve poter riconoscere il proprio stato di check-in/Check-out tramite messaggio &UC13 \\
+\hline
+RO-F-52&Il ChatBot deve restituire lo stato di check-in/Check-out dopo la richiesta del utente &UC13\\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+RO-F-53&L’utente deve poter visualizzare le proprie ore consuntive &UC14 \\
+\hline
+RO-F-54&L’utente deve poter visualizzare le proprie ore da consuntivare rimanenti &UC15 \\
+\hline
+RO-F-55&L’utente deve poter visualizzare correttamente i documenti trovati dopo la ricerca &UC15.1 \\
+\hline
+RO-F-56&L’utente deve poter visualizzare correttamente tutte le riunioni del giorno assegnate & UC16\\
+\hline
+RO-F-57&L’utente deve poter visualizzare le proprie impostazioni &UC17 \\
+\hline
+RO-F-58&L’utente deve poter richiedere il link per l’autenticazione alla piattaforma di riunione esterna &UC18 \\
+\hline
+RO-F-59&Dopo aver ricevuto il TOKEN il programma deve essere in grado di inserirlo dentro piattaforma esterna &UC18.1 \\
+\hline
+RO-F-60&Il ChatBot deve visualizzare all’utente l’errore del sede non trovato dopo la registrazione della presenza &UC19 \\
+\hline
+RO-F-61&Il ChatBot deve riconoscere anche i linguaggi naturali dei comandi disponibili &Capitolato \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Requisiti di qualità}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+Codice&Descrizione&Fonte\\
+\hline
+RO-Q-1&Almeno 80\% del funzioni del programma deve essere testato  e correlata d report da test&Capitlato\\
+\hline
+RO-Q-2&Redare documenti sulle scelte implementative e progettuali e relative motivazioni&Capitolato\\
+\hline
+RO-Q-3&Redare documenti su problemi aperti ed soluzioni possibili&Capitolato\\
+\hline
+RO-Q-4&Rispettare il piano di qualifica&Verbale interno\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Requisiti di vincolo}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+Codice&Descrizione&Fonte\\
+\hline
+RO-V-1&Sviluppare un applicazione mobile (IOS o Android) che permette di utilizzate tutte le funzioni descritti dai requisiti funzionali&Capitlato\\
+\hline
+RF-V-2&Cifrare tutte le comunicazione fra App e Server per garantire la validità delle informazioni&Capitolato\\
+\hline
+\end{tabular}
+\end{center}
+
