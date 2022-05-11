@@ -1,16 +1,33 @@
-\subsection{UC19 - Visualizzazione errore sede non trovata}
+\subsection{UC19 - Autenticazione su \glossario{Piattaforma Riunioni} esterna}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC19
-	\item \textbf{Nome}:  Visualizzazione errore sede non trovata
+	\item \textbf{Nome}: Autenticazione su \glossario{Piattaforma Riunioni} esterna
+	\item \textbf{Attori}
+	\begin{itemize} 
+		\item \textit{Primari}: Utente autorizzato e non loggato a \glossario{Piattaforma Riunioni} esterna
+		\item \textit{Secondari}: Non presenti
+	\end{itemize}
+	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
+	\item \textbf{Precondizione}: L'utente non ha un \glossario{ACCESS TOKEN} necessario per inserire riunioni su app esterna.
+	\item \textbf{Postcondizione}: L'utente riceve il link per effettuare il login ed ottenere \glossario{ACCESS TOKEN}.
+	\item \textbf{Scenario principale}: \begin{enumerate}
+		\item Utente deve fare il login ed il bot fornisce il link per effettuare il login su \glossario{Piattaforma Riunioni} esterna; 
+		\item Utente inserisce \glossario{ACCESS TOKEN} ricevuto dopo aver effettuato il login. (UC18.1)
+	\end{enumerate}
+\end{itemize}
+\subsubsection{UC19.1 - Inserimento \glossario{ACCESS TOKEN} per autenticazione }
+\begin{itemize}
+	\item \textbf{Identificativo}: UC19.1
+	\item \textbf{Nome}: Inserimento \glossario{ACCESS TOKEN} per autenticazione
 	\item \textbf{Attori}
 	\begin{itemize} 
 		\item \textit{Primari}: Utente autorizzato
-		\item \textit{Secondari}: Non presenti
+		\item \textit{Secondari}: Nessuno
 	\end{itemize}
-	\item \textbf{Descrizione}: L'utente inserisce i dati per la registrazione della presenza in sede.
-	\item \textbf{Precondizione}: L'utente ha inserito correttamente tutti i dati per effettuare il \glossario{CHECK-IN}.
-	\item \textbf{Postcondizione}: Il chatbot invia un messaggio di errore per sede non trovata. 
+	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
+	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{ACCESS TOKEN} necessario per inserire riunioni su app esterna.
+	\item \textbf{Postcondizione}: L'utente inserisce \glossario{ACCESS TOKEN} appena ricevuto.
 	\item \textbf{Scenario principale}: \begin{enumerate}
-		\item Chatbot comunica l'errore: "Sede non trovata".
+		\item Utente inserisce \glossario{ACCESS TOKEN} ricevuto a seguito del login; 
 	\end{enumerate}
 \end{itemize}

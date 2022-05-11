@@ -1,17 +1,17 @@
-\subsection{UC17 - Visualizzazione Impostazioni}
+\subsection{UC17 - Visualizzazione Riunioni Giornaliere }
 \begin{itemize}
 	\item \textbf{Identificativo}: UC17
-	\item \textbf{Nome}: Visualizzazione Impostazioni
+	\item \textbf{Nome}: Visualizzazione Riunioni Giornaliere
 	\item \textbf{Attori}
 	\begin{itemize} 
-		\item \textit{Primari}: Utente autorizzato
+		\item \textit{Primari}: Utente autorizzato e loggato a \glossario{PIATTAFORMA RIUNIONI}
 		\item \textit{Secondari}: Non presenti
 	\end{itemize}
-	\item \textbf{Descrizione}: L'utente richiede la visualizzazione delle impostazioni.
-	\item \textbf{Precondizione}: L'utente ha effettuato il login e si trova nella chat.
-	\item \textbf{Postcondizione}: L'utente visualizza le impostazioni dell'applicazione.
-	\item \textbf{Scenario principale}: \begin{enumerate}
-		\item Utente interagisce con specifico pulsante per mostrare impostazioni;
-		\item Utente visualizza le impostazioni.
+	\item \textbf{Descrizione}: L'utente richiede di visualizzare le Riunioni del giorno.
+	\item \textbf{Precondizione}: L'utente ha effettuato il login sia su app che sulla piattaforma esterna, e si trova nella chat.
+	\item \textbf{Postcondizione}: Il chatbot restituisce la lista delle riunioni del giorno, con eventuali informazioni.
+	\item \textbf{Scenario principale}:  \begin{enumerate}
+		\item Utente invia un messaggio al chatbot : "Che riunioni ho oggi?";
+		\item Chatbot restituisce la lista delle riunioni, con eventuali informazioni.
 	\end{enumerate}
 \end{itemize}

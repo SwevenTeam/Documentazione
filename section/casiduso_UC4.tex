@@ -25,8 +25,9 @@
  Durante tale processo è possibile che si verifichino degli errori, tra cui: 
     \begin{itemize}
         \item Il chatbot non è stato in grado di interpretare un messaggio fornito dall'utente (UC2)
-        \item Il chatbot comunica che si è verificato un errore che non ha permesso di completare l'operazione richiesta, invitando l'utente a riprovare. (UC14)
-        \item Il chatbot segnala un errore sul progetto indicato dall'utente nel caso in cui non esista. (UC19)
+        \item Il chatbot comunica che si è verificato un errore che non ha permesso di completare l'operazione richiesta, invitando l'utente a riprovare. (UC10)
+        \item Il chatbot segnala un errore sul progetto indicato dall'utente nel caso in cui non esista. (UC20)
+        \item Il chatbot segnala un errore sulla sede indicata dall'utente nel caso in cui non esista. (UC19)
     \end{itemize}
 \end{itemize}
 
@@ -60,7 +61,7 @@
         \end{itemize}
     \item \textbf{Precondizione}: l'utente sta comunicando con il chatbot per inserire un'attività a consultivo. 
     \item \textbf{Postcondizione}: l'utente ha comunicato le ore da consultivare. 
-    \item \textbf{Scenario principale}: all'interno dello scenario di registrazione di un'attività il chatbot chiede all'utente di inserire le ore che hanno coinvolto lo svolgimento. L'utente procede con l'inserimento dell'informazione in maniera testuale o vocale. 
+    \item \textbf{Scenario principale}: all'interno dello scenario di registrazione di un'attività il chatbot chiede all'utente di inserire le ore che hanno coinvolto lo svolgimento. L'utente procede con l'inserimento dell'informazione in maniera testuale o vocale. L'operazione può andare a buon fine o può essere visualizzato un messaggio di errore nel caso in cui le ore inserite non siano valide (UC4.6).
 \end{itemize}
 \newpage
 
@@ -152,5 +153,6 @@
         \end{itemize}
     \item \textbf{Precondizione}: l'utente ha fornito un luogo relativo all'attività in un formato non valido. 
     \item \textbf{Postcondizione}: chatbot comunica all'utente la non del luogo fornito.
-    \item \textbf{Scenario principale}: l'utente fornisce il luogo dove ha svolto 'attività da consultivare, non risultando essere valido. Il chatbot notifica l'errore e chiede all'utente di riprovare l'inserimento. 
+    \item \textbf{Scenario principale}: l'utente fornisce il luogo dove ha svolto un'attività da consultivare, non risultando essere valido. Il chatbot notifica l'errore e chiede all'utente di riprovare l'inserimento. 
 \end{itemize}
+\newpage

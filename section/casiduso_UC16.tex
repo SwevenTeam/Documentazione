@@ -1,17 +1,16 @@
-\subsection{UC16 - Visualizzazione Riunioni Giornaliere }
+\subsection{UC16 - Visualizzazione elenco documenti Trovati}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC16
-	\item \textbf{Nome}: Visualizzazione Riunioni Giornaliere
+	\item \textbf{Nome}: Visualizzazione elenco documenti Trovati
 	\item \textbf{Attori}
 	\begin{itemize} 
-		\item \textit{Primari}: Utente autorizzato e loggato a \glossario{PIATTAFORMA RIUNIONI}
-		\item \textit{Secondari}: Non presenti
+		\item \textit{Primari}: Utente autorizzato
+		\item \textit{Secondari}: Nessuno
 	\end{itemize}
-	\item \textbf{Descrizione}: L'utente richiede di visualizzare le Riunioni del giorno.
-	\item \textbf{Precondizione}: L'utente ha effettuato il login sia su app che sulla piattaforma esterna, e si trova nella chat.
-	\item \textbf{Postcondizione}: Il chatbot restituisce la lista delle riunioni del giorno, con eventuali informazioni.
-	\item \textbf{Scenario principale}:  \begin{enumerate}
-		\item Utente invia un messaggio al chatbot : "Che riunioni ho oggi?";
-		\item Chatbot restituisce la lista delle riunioni, con eventuali informazioni.
+	\item \textbf{Descrizione}: L'utente viene informato della ricerca dei documenti trovati.
+	\item \textbf{Precondizione}: L'utente ha effettuato la ricerca con successo.
+	\item \textbf{Postcondizione}: Il chatbot invia all'utente l'elenco dei documenti.
+	\item \textbf{Scenario principale}: \begin{enumerate}
+		\item Chatbot comunica: "Ho trovato questi documenti ..." seguito dall'elenco dei documenti trovati.
 	\end{enumerate}
 \end{itemize}

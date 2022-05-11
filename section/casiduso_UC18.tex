@@ -1,33 +1,17 @@
-\subsection{UC18 - Autenticazione su \glossario{Piattaforma Riunioni} esterna}
+\subsection{UC18 - Visualizzazione Impostazioni}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC18
-	\item \textbf{Nome}: Autenticazione su \glossario{Piattaforma Riunioni} esterna
-	\item \textbf{Attori}
-	\begin{itemize} 
-		\item \textit{Primari}: Utente autorizzato e non loggato a \glossario{Piattaforma Riunioni} esterna
-		\item \textit{Secondari}: Non presenti
-	\end{itemize}
-	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
-	\item \textbf{Precondizione}: L'utente non ha un \glossario{ACCESS TOKEN} necessario per inserire riunioni su app esterna.
-	\item \textbf{Postcondizione}: L'utente riceve il link per effettuare il login ed ottenere \glossario{ACCESS TOKEN}.
-	\item \textbf{Scenario principale}: \begin{enumerate}
-		\item Utente deve fare il login ed il bot fornisce il link per effettuare il login su \glossario{Piattaforma Riunioni} esterna; 
-		\item Utente inserisce \glossario{ACCESS TOKEN} ricevuto dopo aver effettuato il login. (UC18.1)
-	\end{enumerate}
-\end{itemize}
-\subsubsection{UC18.1 - Inserimento \glossario{ACCESS TOKEN} per autenticazione }
-\begin{itemize}
-	\item \textbf{Identificativo}: UC18.1
-	\item \textbf{Nome}: Inserimento \glossario{ACCESS TOKEN} per autenticazione
+	\item \textbf{Nome}: Visualizzazione Impostazioni
 	\item \textbf{Attori}
 	\begin{itemize} 
 		\item \textit{Primari}: Utente autorizzato
-		\item \textit{Secondari}: Nessuno
+		\item \textit{Secondari}: Non presenti
 	\end{itemize}
-	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
-	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{ACCESS TOKEN} necessario per inserire riunioni su app esterna.
-	\item \textbf{Postcondizione}: L'utente inserisce \glossario{ACCESS TOKEN} appena ricevuto.
+	\item \textbf{Descrizione}: L'utente richiede la visualizzazione delle impostazioni.
+	\item \textbf{Precondizione}: L'utente ha effettuato il login e si trova nella chat.
+	\item \textbf{Postcondizione}: L'utente visualizza le impostazioni dell'applicazione.
 	\item \textbf{Scenario principale}: \begin{enumerate}
-		\item Utente inserisce \glossario{ACCESS TOKEN} ricevuto a seguito del login; 
+		\item Utente interagisce con specifico pulsante per mostrare impostazioni;
+		\item Utente visualizza le impostazioni.
 	\end{enumerate}
 \end{itemize}
