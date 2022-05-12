@@ -146,10 +146,9 @@ L'ordine delle varie parti sarà il seguente:
                 e leggendo il verbale ne troverà la spiegazione.
 \end{enumerate}
 Il verbale è un documento che viene scritto, verificato e approvato una sola volta, 
-non è soggetto al modo incrementale in quanto nel tempo non si aggiorna il verbale 
-di una vecchia riunione e l'eventuale modifica di una decisione presa all'epoca verrà 
-riportata solo nel nuovo verbale. Quindi i codici di versionamento sono sempre 0.0.1,
-0.1.0 e infine 1.0.0 
+in quanto nel tempo non si aggiorna il verbale di una vecchia riunione.
+Inoltre il redattore non verrà affiancato dal verificatore durante la scrittura ma avverrà solo al termine. 
+Quindi all'esito positivo della verifica si userà direttamente il codice 0.1.0 e poi 1.0.0 con l'approvazione.
 
 
 \paragraph{Glossario}  \hfill \linebreak
@@ -241,4 +240,21 @@ Per l'ora si usa il formato a 24 ore hh:mm.
                         \item Pg: Programmatore
                         \item Ve: Verificatore
                 \end{itemize}
+\end{itemize}
+
+\subsubsection{Metriche}
+\textbf{M13IG}:
+    \begin{itemize}
+      \item Nome: Indice di Gulpease;
+      \item Descrizione: numero intero positivo rappresentante la leggibilità di un testo italiano. Il valore è compreso tra 0 e 100:
+           \begin{itemize}
+                \item < 80 il testo è difficile da leggere per chi ha la licenza elementare;
+                \item < 60 il testo è difficile da leggere per chi ha la licenza media;
+                \item < 40 il testo è difficile da leggere per chi ha la licenza superiore.
+           \end{itemize}
+      \item Scopo: assicurarsi che il prodotto soddisfi tutte le richieste obbligatorie del proponente;
+      \item Formula:
+      \begin{center}
+        $ \textit{89+}\frac{\textit{300*(\#frasi) - 10*(\#parole)}}{\textit{\#lettere}}$
+      \end{center}
 \end{itemize}
