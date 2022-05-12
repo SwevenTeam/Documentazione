@@ -15,19 +15,18 @@ incarica nuovamente il redattore di sistemare e poi il verificatore controllerà
 
 \subsubsection{Versionamento dei documenti}
 I documenti sono redatti in maniera incrementale e in più momenti, quindi per una migliore 
-gestione si tengono versionati, ciò aiuta anche a capire quali sezioni sono ancora da verificare.
+gestione si tengono versionati.
 \newline Versione: x.y.z
 \begin{description}
     \item \textbf{x} è il valore più grande e indica quale versione è stata ufficialmente pubblicata.
             Viene aggiornato solo dal responsabile quando l'approvazione del documento ha esito positivo
             e si riportano a zero sia y che z;
-    \item \textbf{y} è il valore che indica lo stato di verifica del documento. Viene aggiornato dal verificatore 
-            quando la verifica del documento ha esito positivo, e si riporta a zero z;
-    \item \textbf{z} è il valore che indica lo stato di stesura del documento. Viene aggiornato dall'amministratore.
-            quando redige una nuova parte del documento o aggiorna una parte già scritta.
+    \item \textbf{y} è il valore che indica lo stato di verifica globale del documento. Viene aggiornato dal verificatore 
+            quando la verifica globale del documento ha esito positivo, e si riporta a zero z;
+    \item \textbf{z} è il valore che indica lo stato di stesura e relativa verifica di singole parti del documento. 
+            Viene aggiornato dal verificatore quando verifica positivamente quella sezione scritta dal redattore.
 \end{description}
-Quindi il documento alla sua creazione è già alla versione 0.0.1 e a fine progetto è necessario che 
-tutti i documenti saranno alla versione x.0.0.
+A fine progetto è necessario che tutti i documenti saranno alla versione x.0.0.
 
 \subsubsection{Suddivisione documenti interni ed esterni}
 I documenti si suddividono in interni ed esterni in base allo scopo del documento e ai destinatari.
@@ -149,10 +148,9 @@ L'ordine delle varie parti sarà il seguente:
 Il verbale è un documento che viene scritto, verificato e approvato una sola volta, 
 non è soggetto al modo incrementale in quanto nel tempo non si aggiorna il verbale 
 di una vecchia riunione e l'eventuale modifica di una decisione presa all'epoca verrà 
-riportata solo nel nuovo verbale. Quindi i codici di versionamento sono sempre 0.0.1 
-per l'amministratore nel ruolo di redattore, 0.1.0 superata la verifica e infine 1.0.0 
-dopo che è stato approvato. Dopo l'approvazione il verbale verrà ufficialmente pubblicato 
-e non si potrà più modificare.
+riportata solo nel nuovo verbale. Quindi i codici di versionamento sono sempre 0.0.1,
+0.1.0 e infine 1.0.0 
+
 
 \paragraph{Glossario}  \hfill \linebreak
 Il glossario è un documento che ha lo scopo di spiegare il significato di alcuni termini usati 
