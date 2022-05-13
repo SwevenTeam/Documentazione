@@ -98,3 +98,38 @@ In tutte le riunioni viene stabilito un Redattore, il quale si occupa di riassum
 viene detto durante il meeting, un Verificatore, il quale si assicura che non vi siano errori, e un Approvatore,
 a cui spetta il compito di confermare o respingere, per ulteriori modifiche, il documento. La struttura del verbale viene 
 largamente approfondita nei processi di supporto al punto \$3.1.5.2.
+
+\subsubsection{Metriche}
+\textbf{M15VC}:
+\begin{itemize}
+    \item Nome: Variazione di Costo;
+    \item Descrizione: numero che indica di quanto si è sopra o sotto al budget preventivato;
+         \begin{itemize}
+            \item se è > 0 indica che si è sotto al budget;
+            \item se è = 0 indica che si sta spendendo esattamente il budget;
+            \item se è < 0 indica che si è sopra al budget;
+        \end{itemize}
+    \item Scopo: controllare quanto si sta spendendo al fine di rispettare il preventivo;
+    \item Formula: $ CP - CE $
+        \begin{itemize}
+            \item CP: indica il Costo Pianificato per svolgere le attività del progetto fino a un determinato momento;
+            \item CE: indica il Costo Effettivo per svolgere le attività del progetto fino a un determinato momento.
+        \end{itemize}
+\end{itemize}
+
+\textbf{M16VP}:
+\begin{itemize}
+    \item Nome: Variazione di Piano;
+    \item Descrizione: numero che indica di quanti giorni il lavoro è avanti o indietro rispetto alla pianificazione;
+         \begin{itemize}
+            \item se è > 0 si è in anticipo rispetto alla schedule;
+            \item se è = 0 si è rispettata la schedule;
+            \item se è < 0 si è in ritardo rispetto alla schedule;
+        \end{itemize}
+    \item Scopo: controllare quanto tempo si sta impiegando al fine di rispettare la pianificazione;
+    \item Formula: $ GP - GC $
+        \begin{itemize}
+            \item GP: indica i Giorni Pianificati per completare il lavoro;
+            \item GC: indica i Giorni Consuntivati per completare il lavoro;
+        \end{itemize}
+\end{itemize}

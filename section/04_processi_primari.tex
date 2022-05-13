@@ -206,6 +206,18 @@
           $ \frac{\textit{requisiti opzionali soddisfatti}}{\textit{requisiti opzionali totali}}\cdot100$
         \end{center}
     \end{itemize}
+    \textbf{M4VR}:
+    \begin{itemize}
+      \item Nome: Variazione dei Requisiti
+      \item Descrizione: numero che indica quanti requisiti sono cambiati nel tempo;
+      \item Scopo: controllare quanti requisiti sono cambiati al fine di supportare le metriche precedentemente descritte;
+      \item Formula: $ RA + RE + RM $
+        \begin{itemize}
+          \item RA: numero di requisiti aggiunti dall'ultimo incremento;
+          \item RE: numero di requisiti eliminati dall'ultimo incremento;
+          \item RM: numero di requisiti modificati dall'ultimo incremento;
+        \end{itemize}
+    \end{itemize}
 
 	\subsubsection{Progettazione} 
     \paragraph{Descrizione} \hfill \break
@@ -254,19 +266,19 @@
     \end{itemize}
 
     \paragraph{Metriche} \hfill \break
-    \textbf{M4ATC}:
+    \textbf{M5ATC}:
     \begin{itemize}
       \item Nome: Accoppiamento tra Classe;
       \item Descrizione: indica il numero di classi da cui una classe dipende;
       \item Scopo: ridurre il numero di dipendenze per rendere il prodotto più semplice e più facilmente modificabile nel tempo;
     \end{itemize}
-    \textbf{M5PDG}:
+    \textbf{M6PDG}:
     \begin{itemize}
       \item Nome: Profondità delle Gerarchie;
       \item Descrizione: numero che indica, data una gerarchia, il massimo numero di classi parenti;
       \item Scopo: limitare la possibilità di avere gerarchie troppo ampie, poiché renderebbe il prodotto troppo complesse e più difficilmente modificabile;
     \end{itemize}
-    \textbf{M6FDU}:
+    \textbf{M7FDU}:
     \begin{itemize}
       \item Nome: Facilità di Utilizzo;
       \item Descrizione: numero di click che un utente deve compiere per ottenere il voluto risultato;
@@ -320,37 +332,37 @@
     \end{itemize}
 
     \paragraph{Metriche}\hfill \break
-    \textbf{M7CC}:
+    \textbf{M8CC}:
     \begin{itemize}
       \item Nome: Code Coverage;
       \item Descrizione: determina il numero di linee di codice che vengono validate correttamente;
       \item Scopo: aiuta ad analizzare quanto codice è verificato correttamente.
     \end{itemize}
-    \textbf{M8NAC}:
+    \textbf{M9NAC}:
     \begin{itemize}
       \item Nome: Numero di Attributi per Classe;
       \item Descrizione: indica il numero di attributi dichiarati all'interno di una classe;
       \item Scopo: limitare il numero di attributi utilizzati, per mantenere il codice il più semplice possibile al fine di renderlo il più facilmente modificabile e manutentibile successivamente.
     \end{itemize} 
-    \textbf{M9PF}:
+    \textbf{M10PF}:
     \begin{itemize}
       \item Nome: Parametri per Funzione;
       \item Descrizione: indica il numero di parametri che vengono forniti ad una funzione;
       \item Scopo: limitare il numero di parametri inviati ad una singola funzione, per mantere il codice il più semplice possibile.
     \end{itemize}
-    \textbf{M10LCF}:
+    \textbf{M11LCF}:
     \begin{itemize}
       \item Nome: Linee di Codice per Funzione;
       \item Descrizione: indica il numero di righe di codice all'interno di una funzione;
       \item Scopo: mantenere le funzione le più semplici possibili, al fine di avere del codice più semplice e più facilmente gestibile.
     \end{itemize}    
-    \textbf{M11PI}:
+    \textbf{M12PI}:
     \begin{itemize}
       \item Nome: Profondità di Innestamento;
       \item Descrizione: numero intero che dato una funzione indica la quantità di blocchi condizionali e di cicli innestati al suo interno;
       \item Scopo: diminuire questo valore al fine di rendere il codice più semplice possibile e gestibile nel corso del tempo.
     \end{itemize}
-    \textbf{M12CPC}:
+    \textbf{M13CPC}:
     \begin{itemize}
       \item Nome: Linee di Commento per Linee di Codice;
       \item Descrizione: indica il numero di linee di commento a confronto con le effettive righe totali di codice;
