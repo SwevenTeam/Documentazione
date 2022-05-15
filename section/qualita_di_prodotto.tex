@@ -1,19 +1,10 @@
 \section{Qualità di Prodotto}
-I prodotti, in questo progetto, vengono intesi quali la documentazione e il software. Per garantire la qualità di questi prodotti, è stato scelto come riferimento lo standard ISO/IEC 9126. In questa sezione troviamo i paramentri scelti dal gruppo, che quantificano il grado di raggiungimento della qualità dei prodotti. La descrizione dettagliata delle metriche viene riportata nel documento NormeDiProgetto.
+I prodotti, in questo progetto, vengono intesi quali la documentazione e il software. Per garantire la qualità di questi prodotti, è stato scelto come riferimento lo standard ISO/IEC 9126. In questa sezione troviamo i parametri scelti dal gruppo, che quantificano il grado di raggiungimento della qualità dei prodotti. La descrizione dettagliata delle metriche viene riportata nel documento NormeDiProgetto.
+
 \subsection{Documenti}
-I documenti sono una parte importante del progetto, devono essere corretti e comprensibili agli utenti.
-\begin{center}
-\renewcommand{\arraystretch}{1.8}
-\begin{tabular}{ |c|c|c|}
-	\hline
-	\textbf{Obiettivo} & \textbf{Descrizione} & \textbf{Metriche} \\
-	\hline
-	Leggibilità & i documenti devono essere comprensibili agli utenti & MD-01 \\
-	\hline
-	Correttezza & i documenti devono essere corretti dal punto di vista ortografico & MD-02 \\
-	\hline
-\end{tabular}
-\end{center}
+I documenti sono una parte importante del progetto, devono essere corretti e leggibili agli utenti.
+\subsubsection{Obiettivo}
+Rendere il contenuto dei documenti comprensibile agli utenti.
 \subsubsection{Metriche}
 \begin{center}
 \renewcommand{\arraystretch}{1.8}
@@ -21,10 +12,58 @@ I documenti sono una parte importante del progetto, devono essere corretti e com
 	\hline
 	\textbf{Codice} & \textbf{Nome} & \textbf{Valore Accettabile} & \textbf{Valore Ottimale} \\
 	\hline
-	MD-01 & Indice di Gulpease &  $\geq 40 \%$ & $\geq 80 \%$ \\
-	\hline
-	MD-02 & Correttezza ortografica & 0 & 0 \\
+	M14IG & Indice di Gulpease &  $\geq 40 \%$ & $\geq 80 \%$ \\
 	\hline
 \end{tabular}
 \end{center}
+
 \subsection{Software}
+Il software costituisce una parte fondamentale del progetto è, quindi, importante controllare la qualità di quest'ultimo.
+
+\subsubsection{Obiettivi}
+\begin{center}
+	\renewcommand{\arraystretch}{1.8}
+	\begin{tabular}{ |c|m{18em}|m{8em}|}
+		\hline
+		\textbf{Obiettivo} & \textbf{Descrizione} & \textbf{Metrica} \\
+		\hline
+		Funzionalità & Soddisfare i requisiti individuati perseguendo accuratezza. & M1PRR, M2PDR, M3POR \\
+		\hline
+		Usabilità & Facilitare l'uso del prodotto sviluppato affinché gli utenti possano usarlo per i propri scopi. & M7FDU \\
+		\hline
+		Manutenibilità & Facilitare le modifiche e aggiornamenti apportati al software. & M5ATC, M6PDG, M9NAC, M10PF, M11LCF, M12PI, M13CPC \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\subsubsection{Metriche}
+\begin{center}
+	\renewcommand{\arraystretch}{1.8}
+	\begin{tabular}{ |c|m{14em}|c|c|}
+		\hline
+		\textbf{Codice} & \textbf{Nome} & \textbf{Valore Accettabile} & \textbf{Valore Ottimale} \\
+		\hline
+		M1PRR & Percentuale di requisiti obbligatori soddisfatti & $ 100\% $ & $ 100\% $ \\
+		\hline
+		M2PDR & Percentuale di requisiti desiderabili soddisfatti & $ \geq 0\% $ & $ 100\% $ \\
+		\hline
+		M3POR & Percentuale di requisiti opzionali soddisfatti & $ \geq 0\% $ & $ 100\% $ \\
+		\hline
+		M5ATC & Accoppiamento tra Classe & $ \leq 5 $ & $ \leq 2 $\\
+		\hline
+		M6PDG & Profondità delle Gerarchie & $ \leq 5 $ & $ \leq 3 $\\
+		\hline
+		M7FDU & Facilità di Utilizzo & $ \leq 7 $ & $ \leq 5 $\\
+		\hline
+		M9NAC & Numero di Attributi per Classe & $ \leq 9 $ & $ \leq 5 $\\
+		\hline
+		M10PF & Parametri per Funzione & $ \leq 6 $ & $ \leq 4 $\\
+		\hline
+		M11LCF & Linee di Codice per Funzione & $ \leq 35 $ & $ \leq 25 $\\
+		\hline
+		M12PI & Profondità di Innestamento & $ \leq 4 $ & $ \leq 3 $\\
+		\hline
+		M13CPC & Linee di Commento per Linee di Codice & $ \geq 0.2 $ & $ \geq 0.3 $\\
+		\hline
+	\end{tabular}
+\end{center}
