@@ -288,19 +288,16 @@
 	\subsubsection{Codifica} 
 		\paragraph{Descrizione e Scopo} \hfill \break
 		La Codifica fornisce una base comune sulla realizzazione del prodotto software, con lo scopo di poter creare codice uniforme e agevolare manutenzione ed eventuali modifiche future. \\
-		I programmatori si dovranno attenere a queste norme durante le fasi di progettazione ed implementazione. 
-			
+		I programmatori si dovranno attenere a queste norme durante le fasi di progettazione ed implementazione. \\
+    Per agevolare la lettura e l'integrazione del codice, verrà utilizzato il sistema di \glossario{Continuos Integration} fornito da Github, ovvero \glossario{Github Action}: grazie a quest'ultimo, verranno
+    eseguiti dei controlli nel codice che viene inviato alla repository e, in caso il codice in questione non soddisfi i requisiti di seguito riportati, verrà chiesto di eseguire un'operazione di merge con una versione corretta del codice. \\
+		Verranno quindi implementate le convenzioni introdotte da PEP 8, che forniscono uno standard per lo stile da seguire nella scrittura del codice Python.
+
 		\paragraph{Convenzioni per i nomi} 
 		\begin{itemize}
 			\item i nomi dovranno essere univoci;
-			\item dovrà essere utilizzato il Pascal Case per le variabili;
-        \begin{itemize}
-          \item esempio: PascalCase
-        \end{itemize}
-			\item dovrà essere lo Snake Case per metodi e classi. 
-        \begin{itemize}
-          \item esempio: snake\_case
-        \end{itemize}
+			\item dovrà essere utilizzato il PascalCase o lo snake\_case per le variabili;
+			\item dovrà essere utilizzato lo Snake Case per metodi e classi. 
 		\end{itemize}
 			
 		\paragraph{Convenzioni sulle pratiche} \hfill \break
@@ -327,8 +324,9 @@
 		
 		\paragraph{Strumenti} \hfill \break
 		\begin{itemize}
-      \item \textbf{\glossario{Visual Studio Code}}: utilizzato per la scrittura di codice in linguaggio \glossario{PYTHON};
-      \item 
+      \item \textbf{\glossario{PyCharm}}: utilizzato per la scrittura di codice in linguaggio \glossario{PYTHON};
+      \item \textbf{\glossario{Visual Studio Code}}: utilizzato per la scrittura di codice in linguaggio \glossario{PYTHON} e di codice \glossario{HTML}/\glossario{CSS};
+      \item \textbf{\glossario{Flask}}: framework python per la visualizzazione e creazione di semplici applicazioni web.
     \end{itemize}
 
     \paragraph{Metriche}\hfill \break
