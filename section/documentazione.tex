@@ -5,8 +5,7 @@ per la stesura di tutti i documenti del gruppo Sweven. \newline
 Tutti i documenti verranno scritti in \LaTeX.
 
 \subsubsection{Ciclo di vita dei documenti}
-Il documento viene innanzitutto pianificato, cioè ci si chiede perchè è necessario il documento
-e si pensa al suo contento. Gli amministratori nel ruolo di redattori, creano e scrivono 
+Il documento viene innanzitutto pianificato, cioè ci si chiede perchè è necessario e si pensa al suo contento. Gli amministratori nel ruolo di redattori, creano e scrivono 
 il documento, poi i verificatori lo controllano e il responsabile approva il documento 
 finito e pronto ad essere ufficialmente pubblicato. \newline
 Se i verificatori trovano errori superficiali e/o di ortografia correggono immediatamente,
@@ -30,8 +29,8 @@ A fine progetto è necessario che tutti i documenti saranno alla versione x.0.0.
 
 \subsubsection{Suddivisione documenti interni ed esterni}
 I documenti si suddividono in interni ed esterni in base allo scopo del documento e ai destinatari.
-Nei documenti interni i destinatari sono i membri del gruppo Sweven, nei documenti esterni anche i 
-professori committenti e l'azienda proponente. \newline
+Nei documenti interni i destinatari sono i membri del gruppo Sweven e i committenti, nei documenti 
+esterni anche l'azienda proponente. \newline
 \textbf{Interni:}
 \begin{itemize}
     \item \textbf{Verbali} di riunioni interne tra i componenti del gruppo Sweven
@@ -47,6 +46,8 @@ professori committenti e l'azienda proponente. \newline
     \item \textbf{Analisi dei Requisiti}
     \item \textbf{Piano di Progetto}
     \item \textbf{Piano di Qualifica}
+    \item \textbf{Specifica Architetturale}
+    \item \textbf{Manuale Utente}
 \end{itemize}
 
 \subsubsection{Documenti e template}
@@ -187,7 +188,15 @@ scrivendo in dettaglio la pianificazione con relativo preventivo e infine viene 
 
 \paragraph{Piano di Qualifica} \hfill \break
 Il piano di qualifica è un documento in cui il gruppo dichiara come analizza e verifica che i documenti e 
-il prodotto siano di qualità ponendosi sia soglie minime che soglie desiderabili.
+il prodotto siano di qualità ponendosi sia soglie minime che soglie desiderabili da soddisfare nelle metriche.
+
+\paragraph{Specifica Architetturale} \hfill \break
+La specifica architetturale è un documento scritto durante le fasi di progettazione per illustrare l'architettura 
+del prodotto \emph{Bot4Me}
+
+\paragraph{Manuale Utente} \hfill \break
+Il manuale utente è un documento redatto per agevolare e fornire tutte le informazioni utili all'utente che utilizzerà 
+il \emph{Bot4Me}
 
 \subsubsection{Convenzioni tipografiche} 
 In questa parte si riportano le varie convenzioni per i documenti decise all'interno del gruppo.
@@ -196,15 +205,17 @@ I documenti pdf vanno nominati con il nome del documento iniziando con la letter
 e ogni nuova parola inizia con la lettera maiuscola (comprese le proposizioni). Per i verbali in 
 aggiunta va scritta anche la data all'americana usando i trattini e un trattino stacca la data 
 dal nome; esempi: NormeDiProgetto, VerbaleInterno-2022-03-31. \newline
-Il gruppo dà importanza ai nomi dei file che vengono ufficialmente pubblicati, mentre per gli altri documenti viene data più libertà al creatore del file, invitando comunque 
-all'utilizzo dell'underscore (trattino basso) o delle maiuscole per separare diverse parole.
+Il gruppo dà importanza ai nomi dei file che vengono ufficialmente pubblicati, mentre per gli 
+altri documenti viene data più libertà al creatore del file, invitando comunque all'utilizzo 
+dell'underscore (trattino basso) o delle maiuscole per separare diverse parole.
 
 \paragraph{Stile del testo}
 \begin{itemize}
-        \item \textbf{Normale 12 pt} in generale tutto il testo dei documenti
-        \item \textbf{Grassetto} tutti i titoli che si differenziano per la grandezza automatica di \LaTeX
-        \item \textbf{Corsivo} i riferimenti ad altri documenti, alle parole del glossario
-        \item \textbf{Elenchi} gli elementi dell'elenco vanno in grassetto solo se è prevista una descrizione. \\
+        \item \textbf{Normale 12 pt} in generale tutto il testo dei documenti;
+        \item \textbf{Grassetto} tutti i titoli che si differenziano per la grandezza automatica di \LaTeX ;
+        \item \textbf{Corsivo} i riferimenti ad altri documenti, alle parole del glossario;
+        \item \textbf{Elenchi} gli elementi dell'elenco vanno in grassetto solo se è prevista una descrizione. 
+                                Si usa un ; al termine di ogni voce dell'elenco, tranne all'ultimo. \\
                                 Nel caso di elenchi annidati, il grassetto si usa solo nell'elenco principale.
 \end{itemize}
 
@@ -216,30 +227,30 @@ Per l'ora si usa il formato a 24 ore hh:mm.
 \begin{itemize}
         \item \textbf{Nomi dei documenti}
                 \begin{itemize}
-                        \item VI: Verbale interno
-                        \item VE: Verbale esterno
-                        \item G: Glossario
-                        \item NdP: Norme di progetto
-                        \item AdR: Analisi dei requisiti
-                        \item PdP: Piano di progetto
-                        \item PdQ: Piano di qualifica
-                        \item SA: Specifica Architetturale
-                        \item MU: Manuale utente
+                        \item VI: Verbale Interno;
+                        \item VE: Verbale Esterno;
+                        \item G: Glossario;
+                        \item NdP: Norme di Progetto;
+                        \item AdR: Analisi dei Requisiti;
+                        \item PdP: Piano di Progetto;
+                        \item PdQ: Piano di Qualifica;
+                        \item SA: Specifica Architetturale;
+                        \item MU: Manuale Utente.
                 \end{itemize}
         \item \textbf{Revisioni di avanzamento}
                 \begin{itemize}
-                        \item RTB: Requirements and Technology Baseline
-                        \item PB: Product Baseline
-                        \item CA: Customer Acceptance
+                        \item RTB: Requirements and Technology Baseline;
+                        \item PB: Product Baseline;
+                        \item CA: Customer Acceptance.
                 \end{itemize}
         \item \textbf{Ruoli}
                 \begin{itemize}
-                        \item Re: Responsabile
-                        \item Am: Amministratore
-                        \item An: Analista
-                        \item Pt: Progettista
-                        \item Pg: Programmatore
-                        \item Ve: Verificatore
+                        \item Re: Responsabile;
+                        \item Am: Amministratore;
+                        \item An: Analista;
+                        \item Pt: Progettista;
+                        \item Pg: Programmatore;
+                        \item Ve: Verificatore;
                 \end{itemize}
 \end{itemize}
 
