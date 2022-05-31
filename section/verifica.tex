@@ -1,30 +1,37 @@
 \subsection{Verifica}
-Il processo di verifica è la fase obbligatoria per il procedimento alla validazione, applicata ogni volta che c’è un rischio di errore.
+Il processo di verifica è la fase obbligatoria per il procedimento alla validazione, applicata ogni volta 
+che c’è un rischio di errore.
 \subsubsection{Analisi}
-Ci sono due tipologie di analisi del prodotto software disponibile, vengono effettuate entrambi se il gruppo lo ritiene necessario:
+Ci sono due tipologie di analisi del prodotto software disponibile; se il gruppo lo ritiene necessario 
+vengono effettuate entrambe; esse sono:
 \begin{itemize}
-\item \textbf{Analisi Statica}: non richiede l’oggetto di verifica, viene studiato la documentazione e il codice non eseguibile, accerta conformità a regola, assenza di difetti, presenza di proprietà desiderate descritte nel Piano di Qualifica;
-\item \textbf{Analisi Dinamica}: serve l’oggetto testabile, vengono effettuate dei test su di esso.
+\item \textbf{Analisi Statica}: non richiede l’oggetto di verifica, viene studiata la documentazione e il 
+codice non eseguibile; accerta conformità alle regole, assenza di difetti e presenza di proprietà desiderate 
+descritte nel Piano di Qualifica;
+\item \textbf{Analisi Dinamica}: richiede l’oggetto testabile, effettua test su di esso.
 \end{itemize}
 
 \subsubsection{Metodi di lettura}
 Vengono definite le due modalità di lettura per l’analisi statica:
 \begin{itemize}
-\item Walkthough: la lettura parte da zero, analizza tutto il documento, il verificatore deve presuppore di cercare i difetti del codice o del documento;
-\item Inspection: viene fatto la lettura mirata, con una lista di checklist.
+\item Walkthough: la lettura parte da zero e analizza tutto il documento; il verificatore deve 
+presuppore di cercare i difetti del codice o del documento;
+\item Inspection: viene fatta la lettura mirata, con una checklist.
 \end{itemize}
 
 \subsubsection{Test}
-Il test serve per confermare che il prodotto software funzioni effettivamente come desiderato, per questo serve l’oggetto testabile; viene effettuato qualvolta esiste un minimo componente funzionante testabile.
-Il test deve essere: 
+Il test serve per confermare che il prodotto software funzioni effettivamente come desiderato; per questo 
+motivo serve l’oggetto testabile; viene effettuato ogniqualvolta esiste un minimo componente funzionante 
+testabile. Il test deve essere: 
 \begin{itemize}
-\item Ripetibile: il test deve dare lo stesso risultato con lo stesso input;
-\item Automatizzabile: il test deve essere eseguibile da un processo automatizzato, minimizzare il costo delle persone e velocizzare il processo.
+\item Ripetibile: il test deve dare lo stesso risultato ad ogni inserimento del medesimo input;
+\item Automatizzabile: il test deve essere eseguibile da un processo automatizzato, deve minimizzare il costo 
+delle persone e deve velocizzare il processo.
 \end{itemize}
-Il test è composto da tre elementi:
+Il test è caratterizzato da tre elementi:
 \begin{itemize}
-\item Ambiente d’esecuzione: hardware/software in cui è stato eseguito il test e lo stato iniziale del sistema;
-\item Attesa: input richiesti per l’esecuzione del test ed il suo corrispondente output atteso;
+\item Ambiente d’esecuzione: hardware/software, in cui viene eseguito il test, e stato iniziale del sistema;
+\item Attesa: input richiesti per l’esecuzione del test e corrispettivo output;
 \item Procedura: il procedimento in cui l’oggetto viene analizzato.
 \end{itemize}
 
@@ -41,12 +48,13 @@ Per l’identificazione si usa il seguente formato:
         \hline
             T\_U & Indica il test di unità \\
         \hline
-            NUMBER & Codice Numerico Identificativo \\
+            NUMBER & Codice numerico identificativo \\
         \hline
  \end{tabular}
 
 \paragraph{Test di integrazione}  \hfill \break
-Test da eseguire quando viene effettuato un'unione di componenti verificati, assicurare che l’integrazione avviene correttamente.
+Test da eseguire quando viene effettuata un'unione di componenti verificati; assicura che l’integrazione 
+avvenga correttamente.
 Per l’identificazione si usa il seguente formato:
 \begin{center}
     \textbf{T\_I [NUMBER]}
@@ -58,12 +66,13 @@ Per l’identificazione si usa il seguente formato:
         \hline
             T\_I & Indica il test di integrazione \\
         \hline
-            NUMBER & Codice Numerico Identificativo \\
+            NUMBER & Codice numerico identificativo \\
         \hline
  \end{tabular}
 
 \paragraph{Test di sistema}  \hfill \break
-Il test da eseguire alla fine del programma, agisce su tutti i requisiti, testare tutti i requisiti sono stati sodisfati.
+Il test da eseguire alla fine del programma, quello che agisce su tutti i requisiti; verifica che tutti i 
+requisiti siano stati sodisfati.
 Per l’identificazione si usa il seguente formato:
 \begin{center}
     \textbf{T\_S [NUMBER]}
@@ -75,12 +84,13 @@ Per l’identificazione si usa il seguente formato:
         \hline
             T\_I & Indica il test di sistema \\
         \hline
-            NUMBER & Codice Numerico Identificativo \\
+            NUMBER & Codice numerico identificativo \\
         \hline
  \end{tabular}
 
 \paragraph{Test di regressione}  \hfill \break
-Test da eseguire dopo ogni aggiustamento di un errore, per evitare che la modifica comporta un errore in un’altra parte, dove già effettuato la verifica.\newline
+Test da eseguire dopo ogni aggiustamento di un errore, per evitare che la modifica comporti un errore in 
+un’altra parte dove sia stata già effettuata la verifica.\newline
 Per l’identificazione si usa il seguente formato:
 \begin{center}
     \textbf{T\_R [NUMBER]}
@@ -92,6 +102,6 @@ Per l’identificazione si usa il seguente formato:
         \hline
             T\_I & Indica il test di regressione \\
         \hline
-            NUMBER & Codice Numerico Identificativo \\
+            NUMBER & Codice numerico identificativo \\
         \hline
  \end{tabular}
