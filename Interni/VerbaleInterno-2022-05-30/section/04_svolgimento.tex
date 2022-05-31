@@ -1,0 +1,18 @@
+\section{Svolgimento}
+\subsection{Confronto soluzioni trovate per il \glossario{PoC}}
+In seguito all'incontro avvenuto con l'azienda Imola, il gruppo si era prefissato di lavorare individualmente ad una soluzione per affrontare un problema emerso durante la fase di sviluppo del \glossario{PoC} ovvero la gestione della conversazione tra bot e utente su più messaggi. Una delle funzionalità che il team voleva presentare all'interno del \glossario{PoC}, era quella di mostrare le presenze registrate, in una determinata sede. 
+Affinché ciò fosse possibile, l'utente doveva richiedere al bot di svolgere questa determinata operazione per poi fornire il nome della sede, da cui recuperare la lista delle presenze. Grazie anche all'incontro con Imola, si erano trovate due possibili strade, per arrivare ad una soluzione:
+    \begin{itemize}
+        \item Spezzare la richiesta in più messaggi: ovvero in una prima fase far capire al bot, di quale operazione l'utente avesse bisogno con un messaggio simile a: "Voglio le presenze di una sede". Per poi avere una seconda fase in cui il bot chiedesse all'utente di fornire in input il nome delle sede a cui fare riferimento. 
+        \item La seconda soluzione invece, prevedeva di processare la richiesta in un singolo messaggio fornito dall'utente, come poteva essere: "Voglio la lista delle presenze nella sede di Bologna"
+    \end{itemize}
+Sebbene la seconda soluzione fosse quella più semplice, il gruppo ha deciso di tenerla come opzione di riserva nel caso in cui non fosse stato possibile fornire una soluzione al primo approccio. Questa scelta è stata motivata dal fatto che in un messaggio singolo è più facile che siano commessi degli errori di battitura da parte dell'utente, o eventuali mancanze che porterebbero ad un non successo dell'operazione; costringendo l'utente a riscrivere ogni volta l'intero comando. 
+\newline
+I membri del team hanno pensato a diverse soluzioni per implementare questo approccio di comunicazione tra utente e bot, si è infine deciso di presentare per il \glossario{PoC} la soluzione proposta da Tommaso Berlaffa. Ovvero avere una variabile che tenga traccia dello stato in cui si trova il bot, in modo da capire che richiesta è stata fatta dall'utente, raccogliendo le informazioni necessarie per processarla. 
+\subsection{Confronto deploy piattaforma \glossario{Heroku}}
+Dall'ultimo incontro ad oggi il team ha effettuato delle prove per un eventuale rilascio del codice prodotto sulla piattaforma \glossario{Heroku}. Nonostante diversi tentativi effettauti da membri differenti del gruppo, l'importazione all'interno della piattaforma non ha dato esito positivo. Il messaggio di errore riscontrato, riguarda l'importazione di una libreria esterna, necessaria per far funzionare il \glossario{ChatBot}. 
+Il gruppo ha preso atto di questo errore, si riserva di effettuare ulteriori tentativi o eventualmente cercare piattaforme differenti con le quali effettuare ulteriori test. 
+
+\newpage
+\subsection{Stato avanzamento dei documenti}
+Irene e Samuele aggiornano il gruppo sullo stato di avanzamento relativo alla revisione dei documenti. Il gruppo ritiene di essere a buon punto rispetto a quanto preventivato. Nei prossimi due giorni saranno effettuate le ultime modifiche e la successiva verifica di ogni documento, secondo quanto stabilito nelle riunioni precedenti. 
