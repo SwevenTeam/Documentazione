@@ -37,6 +37,46 @@
  \item \textbf{Scenario principale}: se il token\textsubscript{G} fornito è valido allora l'utente avrà effettuato il login correttamente e potrà usufruire dei sistemi messi a disposizione. Se il token\textsubscript{G} non risulta valido, verrà mostrato un messaggio di errore ad esso relativo (\textbf{UC1.2})
 \end{itemize}
 
+\paragraph{UC1.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC1.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC1)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha comunicato, in maniera testuale il messaggio di volersi autenticare. 
+       \item \textbf{Postcondizione}: il chatbot risponde all'utente fornendo un link attraverso il quale l'utente potrà effettuare il processo di autenticazione.  
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce un input testuale al chatbot dichiarando di volersi autenticare 
+           \item Il chatbot se è in grado di interpretare la richiesta dell'utente risponderà fornendo il link con il quale fare l'accesso, altrimenti verrà mostrato un errore di interpretazione (approfondito in UC2).
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC1.1.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC1.1.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC1)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha comunicato, in maniera vocale il messaggio di volersi autenticare. 
+       \item \textbf{Postcondizione}: il chatbot risponde all'utente fornendo un link attraverso il quale l'utente potrà effettuare il processo di autenticazione.  
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce un input vocale al chatbot dichiarando di volersi autenticare 
+           \item Il chatbot se è in grado di interpretare la richiesta dell'utente risponderà fornendo il link con il quale fare l'accesso, altrimenti verrà mostrato un errore di interpretazione (approfondito in UC2).
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC1.2 - Token non valido}
 \begin{itemize}
     \item \textbf{Identificativo}: UC1.2
