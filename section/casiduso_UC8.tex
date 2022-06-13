@@ -19,14 +19,11 @@
 		\item Utente inserisce un messaggio del tipo "Voglio creare un nuovo Ticket";
 		\item Chatbot chiede all'utente l'oggeto del \glossario{ticket}; (UC8.1)
     \item Chatbot chiede all'utente la descrizione; (UC8.2)
-		\item Chatbot chiede all'utente lo status; (UC8.3)
-		\item Chatbot chiede all'utente la priorità. (UC8.4)
+		\item Chatbot chiede all'utente la priorità. (UC8.3)
 	\end{enumerate}
-	\item \textbf{Estensioni}: \begin{itemize}
-		\item Chatbot comunica che non è in grado di interpretare il comando; (UC2)
-		\item Chatbot comunica che l'azione non è andata a buon fine. (UC10)
-	\end{itemize}
 \end{itemize}
+
+
 \subsubsection{UC8.1 - Inserimento Oggetto per creazione \glossario{ticket}}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC8.1
@@ -43,9 +40,48 @@
 		\item Chatbot interagisce con l'utente: "Indicare l'oggetto del ticket";
 		\item Utente fornisce l'oggetto per la creazione del ticket tramite testo (UC8.1.1) o input vocale (UC8.1.2). 
 	\end{enumerate}
-	\item \textbf{Estensione}: Utente non ha inserito l'oggetto in maniera idonea per il chatbot. (UC8.5)
-		
+	\item \textbf{Estensione}: Utente non ha inserito l'oggetto in maniera idonea per il chatbot. (UC8.4)		
 \end{itemize}
+
+\paragraph{UC8.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC8.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC8)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: L'utente sta creando un ticket e gli è richiesto l'inserimento di un oggetto.
+       \item \textbf{Postcondizione}: L'utente comunica un oggetto e procede con la creazione del ticket. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item Il chatbot richiede l'inserimento di un oggetto;
+           \item l'utente inserisce testualmente un oggetto.
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC8.1.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC8.1.2
+   \item \textbf{Nome}: Richiesta Vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC8)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: L'utente sta creando un ticket e gli è richiesto l'inserimento di un oggetto.
+       \item \textbf{Postcondizione}: L'utente comunica un oggetto e procede con la creazione del ticket. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}  
+        \item Il chatbot richiede l'inserimento di un oggetto;
+        \item l'utente inserisce vocalmente un oggetto.
+       \end{itemize}
+\end{itemize}
+
+
 \subsubsection{UC8.2 - Inserimento descrizione per creazione \glossario{ticket}}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC8.2
@@ -63,27 +99,49 @@
 		\item Utente fornisce la descrizione per la creazione del ticket tramite testo (UC8.2.1) o input vocale (UC8.2.2).
 	\end{enumerate}
 	\end{itemize}
-\subsubsection{UC8.3 - Inserimento Status per creazione \glossario{ticket}}
+
+  \paragraph{UC8.2.1 - Richiesta Testuale}
+  \begin{itemize}
+     \item \textbf{Identificativo}: UC8.2.1
+     \item \textbf{Nome}: Richiesta testuale
+     \item \textbf{Descrizione grafica}: (approfondita in UC8)
+     \item \textbf{Attori}:
+     \begin{itemize} 
+         \item \textit{Primari}: utente autorizzato
+         \item \textit{Secondari}: non presenti
+     \end{itemize}
+         \item \textbf{Precondizione}: L'utente sta creando un ticket, ha inserito un oggetto e gli è richiesto l'inserimento di una descrizione.
+         \item \textbf{Postcondizione}: L'utente comunica una descrizione e procede con la creazione del ticket. 
+      \item \textbf{Scenario principale}: 
+         \begin{itemize}
+             \item Il chatbot richiede l'inserimento di una descrizione;
+             \item l'utente inserisce testualmente una descrizione.
+         \end{itemize}
+  \end{itemize}
+  
+  \paragraph{UC8.2.2 - Richiesta Vocale}
+  \begin{itemize}
+     \item \textbf{Identificativo}: UC8.2.2
+     \item \textbf{Nome}: Richiesta testuale
+     \item \textbf{Descrizione grafica}: (approfondita in UC8)
+     \item \textbf{Attori}:
+     \begin{itemize} 
+         \item \textit{Primari}: utente autorizzato
+         \item \textit{Secondari}: non presenti
+     \end{itemize}
+         \item \textbf{Precondizione}: L'utente sta creando un ticket, ha inserito un oggetto e gli è richiesto l'inserimento di una descrizione.
+         \item \textbf{Postcondizione}: L'utente comunica una descrizione e procede con la creazione del ticket. 
+      \item \textbf{Scenario principale}: 
+         \begin{itemize}  
+          \item Il chatbot richiede l'inserimento di una descrizione;
+          \item l'utente inserisce vocalmente una descrizione.
+         \end{itemize}
+  \end{itemize}
+
+
+  \subsubsection{UC8.3 - Inserimento priorità per creazione \glossario{ticket}}
 \begin{itemize}
 	\item \textbf{Identificativo}: UC8.3
-	\item \textbf{Nome}: Inserimento Status per creazione \glossario{ticket} 
-	\item \textbf{Attori}
-	\begin{itemize} 
-		\item \textit{Primari}: Utente autorizzato
-		\item \textit{Secondari}: Non presenti
-	\end{itemize}
-	\item \textbf{Descrizione}: L'utente sta eseguendo il procedimento di creazione di un nuovo \glossario{ticket}. Il chatbot richiede all'utente di inserire uno status.
-	\item \textbf{Precondizione}: l'utente ha comunicato al chatbot la descrizione del nuovo ticket.
-	\item \textbf{Postcondizione}: l'utente ha comunicato al chatbot lo status del nuovo ticket.
-	\item \textbf{Scenario principale}: \begin{enumerate}
-		\item Chatbot interagisce con l'utente: "Indicare lo status del ticket";
-		\item Utente fornisce lo status per la creazione del ticket tramite testo (UC8.3.1) o input vocale (UC8.3.2).
-	\end{enumerate}
-	\item \textbf{Estensione}: L'utente non ha inserito lo status in maniera idonea per il chatbot.  (UC8.6)
-\end{itemize}
-\subsubsection{UC8.4 - Inserimento priorità per creazione \glossario{ticket}}
-\begin{itemize}
-	\item \textbf{Identificativo}: UC8.4
 	\item \textbf{Nome}: Inserimento priorità per creazione \glossario{ticket}
 	\item \textbf{Attori}
 	\begin{itemize} 
@@ -91,17 +149,56 @@
 		\item \textit{Secondari}: Non presenti
 	\end{itemize}
 	\item \textbf{Descrizione}: L'utente sta eseguendo il procedimento di creazione di un nuovo \glossario{ticket}. Il chatbot richiede all'utente di assegnare una priorità.
-	\item \textbf{Precondizione}: l'utente ha comunicato al chatbot lo status del nuovo ticket.
+	\item \textbf{Precondizione}: l'utente ha comunicato al chatbot la priorità del nuovo ticket.
 	\item \textbf{Postcondizione}: l'utente ha comunicato al chatbot la priorità del nuovo ticket.
 	\item \textbf{Scenario principale}: \begin{enumerate}
 		\item Chatbot interagisce con l'utente: "Assegnare una priorità al ticket";
 		\item Utente assegna una priorità al ticket tramite testo (UC8.4.1) o input vocale (UC8.4.2).
 	\end{enumerate}
-	\item \textbf{Estensione}: L'utente non ha inserito la priorità in maniera idonea per il chatbot. (UC8.7)
+	\item \textbf{Estensione}: L'utente non ha inserito la priorità in maniera idonea per il chatbot. (UC8.5)
 \end{itemize}
-\subsubsection{UC8.5 - Visualizzazione errore inserimento oggetto}
+
+\paragraph{UC8.3.1 - Richiesta Testuale}
 \begin{itemize}
-	\item \textbf{Identificativo}: UC8.5
+   \item \textbf{Identificativo}: UC8.3.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC8)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: L'utente sta creando un ticket e gli è richiesto l'inserimento di una priorità.
+       \item \textbf{Postcondizione}: L'utente comunica una priorità e viene creato il ticket. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item Il chatbot richiede l'inserimento di una priorità;
+           \item l'utente inserisce testualmente una priorità.
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC8.3.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC8.3.2
+   \item \textbf{Nome}: Richiesta Vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC8)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+   \item \textbf{Precondizione}: L'utente sta creando un ticket e gli è richiesto l'inserimento di una priorità.
+   \item \textbf{Postcondizione}: L'utente comunica una priorità e viene creato il ticket. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}  
+        \item Il chatbot richiede l'inserimento di una priorità;
+        \item l'utente inserisce vocalmente una priorità.
+       \end{itemize}
+\end{itemize}
+
+\subsubsection{UC8.4 - Visualizzazione errore inserimento oggetto}
+\begin{itemize}
+	\item \textbf{Identificativo}: UC8.4
 	\item \textbf{Nome}: Visualizzazione errore inserimento oggetto 
 	\item \textbf{Attori}
 	\begin{itemize} 
@@ -115,26 +212,11 @@
 		\item Chatbot mostra all'utente che è avvenuto un errore tramite chat: "Oggetto inserito in maniera non idonea".
 		\end{enumerate}
 \end{itemize}
-\subsubsection{UC8.6 - Visualizzazione errore inserimento status}
+
+
+\subsubsection{UC8.5 - Visualizzazione errore inserimento priorità}
 \begin{itemize}
-	\item \textbf{Identificativo}: UC8.6
-	\item \textbf{Nome}: Visualizzazione errore inserimento status 
-	\item \textbf{Attori}
-	\begin{itemize} 
-		\item \textit{Primari}: Utente autorizzato
-		\item \textit{Secondari}: Non presenti
-	\end{itemize}
-	\item \textbf{Descrizione}: È avvenuto un errore nell'inserimento dello status. Il chatbot mostra l'errore all'utente.
-	\item \textbf{Precondizione}: L'utente sta eseguendo l'operazione di inserimento di un nuovo ticket. Lo status risulta essere inserito in un formato non valido. 
-	\item \textbf{Postcondizione}: Il chatbot mostra all'utente che lo status non è stato inserito in maniera idonea per il chatbot.
-	\item \textbf{Scenario principale}: 
-	\begin{enumerate}
-		\item Chatbot mostra all'utente che è avvenuto un errore tramite chat: "Status inserito in maniera non idonea". 
-	\end{enumerate}
-\end{itemize}
-\subsubsection{UC8.7 - Visualizzazione errore inserimento priorità}
-\begin{itemize}
-	\item \textbf{Identificativo}: UC8.7
+	\item \textbf{Identificativo}: UC8.5
 	\item \textbf{Nome}:  Visualizzazione errore inserimento priorità
 	\item \textbf{Attori}
 	\begin{itemize} 
@@ -148,4 +230,3 @@
 		\item Chatbot mostra all'utente che è avvenuto un errore tramite chat: "Priorità inserita in maniera non idonea".
 	\end{enumerate}
 \end{itemize}
-\newpage
