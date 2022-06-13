@@ -22,16 +22,13 @@
         \item Il progetto a cui l'attività fa riferimento. (UC4.3)
         \item Il luogo dove è stata svolta l'attività. (UC4.4)
     \end{itemize}
+\newpage
  Durante tale processo è possibile che si verifichino degli errori, tra cui: 
     \begin{itemize}
-        \item Il chatbot non è stato in grado di interpretare un messaggio fornito dall'utente (UC2)
-        \item Il chatbot comunica che si è verificato un errore che non ha permesso di completare l'operazione richiesta, invitando l'utente a riprovare. (UC10)
-        \item Il chatbot segnala un errore sul progetto indicato dall'utente nel caso in cui non esista. (UC21)
-        \item Il chatbot segnala un errore sulla sede indicata dall'utente nel caso in cui non esista. (UC20)
+        \item Il chatbot segnala un errore sul progetto indicato dall'utente nel caso in cui non esista. (UC4.3)
+        \item Il chatbot segnala un errore sulla sede indicata dall'utente nel caso in cui non esista. (UC4.4)
     \end{itemize}
 \end{itemize}
-
-\newpage
 
 \subsubsection{UC4.1 - Inserimento tipo di \glossario{attività}}
 
@@ -47,6 +44,44 @@
     \item \textbf{Precondizione}: l'utente ha espresso la volontà di registrare un'attività. 
     \item \textbf{Postcondizione}: l'utente ha comunicato al chatbot il tipo di attività che vuole registrare. 
     \item \textbf{Scenario principale}: L'utente comunica al chatbot il tipo di attività da consuntivare in maniera testuale (UC4.1.1) oppure vocale (UC4.1.2). L'operazione può andare a buon fine o può essere visualizzato un messaggio di errore nel caso in cui il tipo di attività non sia valido (UC4.5).
+\end{itemize}
+
+\paragraph{UC4.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il tipo di attività in formato testuale. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il tipo di attività da  registrare
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC4.1.2 - Richiesta vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.1.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il tipo di attività in formato vocale. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il tipo di attività da  registrare
+       \end{itemize}
 \end{itemize}
 
 \subsubsection{UC4.2 - Inserimento ore da consuntivare}
@@ -65,6 +100,44 @@
 \end{itemize}
 \newpage
 
+\paragraph{UC4.2.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.2.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il numero di ore che lo hanno coinvolto per svolgere l'attività in formato testuale. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il numero di ore trascorse per svolgere l'attività
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC4.2.2 - Richiesta vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.2.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il numero di ore che lo hanno coinvolto per svolgere l'attività in formato vocale.
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il numero di ore trascorse per svolgere l'attività
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC4.3 - Inserimento progetto da consuntivare}
 \begin{itemize}
     \item \textbf{Identificativo}: UC4.3 
@@ -80,6 +153,44 @@
     \item \textbf{Scenario principale}: l'utente tramite un messagio testuale o vocale, comunica al chatbot il nome del progetto per l'attività che sta inserendo. Tale progetto, se valido, porterà alla continuazione dell'inserimento, altrimenti il chatbot visualizzerà un messaggio di errore (UC4.7). 
 \end{itemize}
 
+\paragraph{UC4.3.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.3.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto sul quale ha lavorato in maniera testuale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il nome del progetto sul quale ha lavorato
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC4.3.2 - Richiesta vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.3.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto sul quale ha lavorato in maniera vocale.
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il nome del progetto sul quale ha lavorato
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC4.4 - Inserimento luogo \glossario{attività}}
 \begin{itemize}
     \item \textbf{Identificativo}: UC4.4
@@ -93,6 +204,44 @@
     \item \textbf{Precondizione}: l'utente sta comunicando con il chatbot per inserire un'attività a consuntivo. 
     \item \textbf{Postcondizione}: l'utente ha fornito al chatbot il luogo in cui ha svolto tale attività. 
     \item \textbf{Scenario principale}: l'utente tramite un messagio testuale o vocale, comunica al chatbot il luogo dove è stata svolta l'attività che sta inserendo. Tale luogo, se valido, porterà alla continuazione dell'inserimento, altrimenti il chatbot visualizzerà un messaggio di errore (UC4.8). 
+\end{itemize}
+
+\paragraph{UC4.4.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.4.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il luogo dove ha svolto l'attività in formato testuale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il luogo dove ha svolto l'attività
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC4.4.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC4.4.2
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC4)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire un'attività nella piattaforma EMT\textsubscript{G}. 
+       \item \textbf{Postcondizione}: l'utente fornisce il luogo dove ha svolto l'attività in formato vocale.
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il luogo dove ha svolto l'attività
+       \end{itemize}
 \end{itemize}
 
 \subsubsection{UC4.5 - Errore inserimento \glossario{attività}}
