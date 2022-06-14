@@ -13,7 +13,7 @@
 		\item \textit{Secondari}: Piattaforma Riunioni esterna
 	\end{itemize}
 	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
-	\item \textbf{Precondizione}: L'utente non ha un \glossario{access token} necessario per inserire riunioni sull'app esterna.
+	\item \textbf{Precondizione}: L'utente non ha un \glossario{access token} della piattaforma Riunioni necessario per inserire riunioni sull'app esterna.
 	\item \textbf{Postcondizione}: L'utente riceve il link per effettuare il login ed ottenere l'\glossario{access token}.
 	\item \textbf{Scenario principale}: \begin{enumerate}
 		\item Utente deve fare il login (UC19.1) ed il bot fornisce il link per effettuare il login su \glossario{Piattaforma Riunioni} esterna; 
@@ -65,7 +65,7 @@
 		\item \textit{Secondari}: Nessuno
 	\end{itemize}
 	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna.
-	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{access token} necessario per inserire riunioni su app esterna.
+	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{access token} della piattaforma Riunioni necessario per inserire riunioni su app esterna.
 	\item \textbf{Postcondizione}: L'utente inserisce l'\glossario{access token} appena ricevuto.
 	\item \textbf{Scenario principale}: \begin{enumerate}
 		\item Utente inserisce l'\glossario{access token} ricevuto a seguito del login; 
@@ -82,8 +82,8 @@
 		\item \textit{Secondari}: Nessuno
 	\end{itemize}
 	\item \textbf{Descrizione}: L'utente vuole eseguire il login su \glossario{Piattaforma Riunioni} esterna ma incontra un errore nell'inserimento dell'access token.
-	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{access token} necessario per inserire riunioni su app esterna.
-	\item \textbf{Postcondizione}: L'utente inserisce l'\glossario{access token} appena ricevuto ma viene notificato con un errore.
+	\item \textbf{Precondizione}: L'utente ha ottenuto un \glossario{access token} della piattaforma Riunioni necessario per inserire riunioni su app esterna.
+	\item \textbf{Postcondizione}: L'utente inserisce l'\glossario{access token} della piattaforma Riunioni appena ricevuto ma viene notificato con un errore.
 	\item \textbf{Scenario principale}: \begin{enumerate}
 		\item Utente inserisce l'\glossario{access token} ricevuto a seguito del login; 
 		\item Chatbot notifica Utente dell'impossibilità di compiere quest'azione.
