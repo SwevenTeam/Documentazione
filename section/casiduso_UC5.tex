@@ -20,8 +20,6 @@
  \item \textbf{Scenario principale}: l'utente autorizzato richiede l'apertura del cancello, specificando la sede (UC5.1).
  \item \textbf{Estensioni}: 
  \begin{itemize} 
-    \item il chatbot comunica all'utente che l'azione non è andata a buon fine (UC10).
-    \item il chatbot comunica all'utente che non è stato in grado di interpretare il comando (UC2).
     \item il chatbot comunica all'utente che la sede specificata non è stata trovata (UC5.2).
  \end{itemize}
 \end{itemize}
@@ -44,6 +42,45 @@
     \item il chatbot comunica all'utente che la sede specificata non è stata trovata (UC5.2).
  \end{itemize}
 \end{itemize}
+
+\paragraph{UC5.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC5.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC5)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler aprire il cancello di una sede. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome della sede della quale voler aprire il cancello.
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il nome della sede, di cui vuole aprire il cancelllo
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC5.1.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC5.1.1
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC5)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler aprire il cancello di una sede. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome della sede della quale voler aprire il cancello.
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il nome della sede, di cui vuole aprire il cancelllo
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC5.2 - Errore inserimento sede}
 \begin{itemize}
     \item \textbf{Identificativo}: UC5.5

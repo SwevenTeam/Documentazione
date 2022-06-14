@@ -18,8 +18,6 @@
  \item \textbf{Scenario principale}: l'utente autorizzato chiede al chatbot la ricerca di documenti, specificando il progetto al quale è associato (UC7.1) e il nome del documento (UC7.2).
  \item \textbf{Estensioni}: 
  \begin{itemize} 
-    \item il chatbot comunica all'utente che l'azione non è andata a buon fine (UC10).
-    \item il chatbot comunica all'utente che non è stato in grado di interpretare il comando (UC2).
     \item il chatbot comunica all'utente che l'inserimento del nome del progetto (UC7.3) o del nome del documento (UC7.4) non sono corretti.
  \end{itemize}
 \end{itemize}
@@ -42,6 +40,45 @@
     \item il chatbot comunica all'utente che il nome del progetto inserito non è corretto (UC7.3).
  \end{itemize}
 \end{itemize}
+
+\paragraph{UC7.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC7.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC7)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto in maniera testuale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il nome del progetto su cui fare la ricerca del documento
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC7.1.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC7.1.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC7)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto in maniera vocale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il nome del progetto su cui fare la ricerca del documento
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC7.2 - Inserimento nome documento}
 \begin{itemize}
     \item \textbf{Identificativo}: UC7.2
@@ -60,6 +97,45 @@
     \item il chatbot comunica all'utente che il nome del documento inserito non è corretto (UC7.4).
  \end{itemize}
 \end{itemize}
+
+\paragraph{UC7.2.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC7.2.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC7)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del documento in maniera testuale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il nome del documento da ricercare
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC7.2.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC7.2.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC7)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del documento in maniera vocale
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il nome del documento da ricercare
+       \end{itemize}
+\end{itemize}
+
 \subsubsection{UC7.3 - Errore inserimento nome progetto}
 \begin{itemize}
     \item \textbf{Identificativo}: UC7.3
