@@ -1,1 +1,95 @@
-\subsection{UC2 - Visualizzazione Errore Interpretazione}
+\subsection{UC3 - Tracciamento \glossario{presenze} in sede}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC3
+    \item \textbf{Nome}: Tracciamento \glossario{presenze} in sede
+    \item \textbf{Descrizione grafica}:
+\end{itemize}
+\begin{center}
+    \includegraphics[scale=0.50]{images/UC2.png} 
+\end{center}
+\begin{itemize}
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha superato con successo la fase di autenticazione e vuole registrare la sua presenza in sede. 
+ \item \textbf{Postcondizione}: l'utente è riuscito a registrare con successo la sua presenza in sede. 
+ \item \textbf{Scenario principale}: L'utente comunica al chatbot la richiesta di voler registrare la sua presenza presso la sede \textit{XYZ} specificato in UC3.1. Si possono verificare degli scenari secondari che non portano al compimento di tale operazione, tra cui:
+    \begin{itemize}
+        \item Il chatbot non è in grado di interpetare la richiesta fatta dall'utente. (UC2.2)
+        \item Durante l'esecuzione dell'azione richiesta si è verificato un errore. (UC2.2)
+        \item La sede indicata dall'utente non esiste. (UC2.2)
+    \end{itemize}
+\end{itemize}
+\newpage
+
+\subsubsection{UC2.1 - Inserimento nome sede}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC2.1
+    \item \textbf{Nome}: Inserimento nome sede
+    \item \textbf{Descrizione grafica}: (approfondita in UC2)
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha fornito la sua volontà al chatbot di procedere con l'operazione di registrazione della presenza in una sede.
+ \item \textbf{Postcondizione}: l'utente comunica al chatbot la sede presso la quale effettuare la registrazione.
+ \item \textbf{Scenario principale}: l'utente inserisce l'indirizzo identificato della sede presso la quale si vuole registrare in maniera testuale (UC2.1.1) oppure vocale (UC2.1.2). La presenza viene successivamente registrata con successo. 
+ \item \textbf{Scenario secondario}: l'utente ha inserito un indirizzo non valido provocando un messaggio di errore (UC2.2). 
+\end{itemize}
+
+\paragraph{UC2.1.1 - Richiesta Testuale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC2.1.1
+   \item \textbf{Nome}: Richiesta testuale
+   \item \textbf{Descrizione grafica}: (approfondita in UC2)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire la propria presenza in sede. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome della sede in formato testuale. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input testuale il nome della sede presso la quale registrare la propria presenza
+       \end{itemize}
+\end{itemize}
+
+\paragraph{UC2.1.2 - Richiesta Vocale}
+\begin{itemize}
+   \item \textbf{Identificativo}: UC2.1.2
+   \item \textbf{Nome}: Richiesta vocale
+   \item \textbf{Descrizione grafica}: (approfondita in UC2)
+   \item \textbf{Attori}:
+   \begin{itemize} 
+       \item \textit{Primari}: utente autorizzato
+       \item \textit{Secondari}: non presenti
+   \end{itemize}
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler inserire la propria presenza in sede. 
+       \item \textbf{Postcondizione}: l'utente fornisce il nome della sede in formato vocale. 
+    \item \textbf{Scenario principale}: 
+       \begin{itemize}
+           \item L'utente ha effettuato l'accesso al sistema 
+           \item L'utente fornisce tramite input vocale il nome della sede presso la quale registrare la propria presenza
+       \end{itemize}
+\end{itemize}
+
+\subsubsection{UC2.2 - Visualizzazione errore sede}
+\begin{itemize}
+    \item \textbf{Identificativo}: UC2.2
+    \item \textbf{Nome}: Visualizzazione errore sede
+    \item \textbf{Descrizione grafica}: (approfondita in UC2)
+    \item \textbf{Attori}
+ \begin{itemize} 
+    \item \textit{Primari}: utente autorizzato
+    \item \textit{Secondari}: non presenti
+ \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha fornito al chatbot un indirizzo di una sede non valido.
+ \item \textbf{Postcondizione}: il chatbot mostra all'utente un messaggio di errore relativo alla non validità dell'indirizzo fornito, consigliando di ripetere la procedura. 
+ \item \textbf{Scenario principale}: l'utente inserisce in maniera testuale (UC2.1.1) oppure vocale (UC2.1.2) un indirizzo di una sede non valido, non riconosciuto o inesistente, di conseguenza il chatbot comunica un messaggio di errore e invita l'utente a riprovare. 
+\end{itemize}
+\newpage

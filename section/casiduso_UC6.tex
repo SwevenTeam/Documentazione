@@ -1,7 +1,7 @@
-\subsection{UC6 - Creazione riunione su piattaforma esterna}
+\subsection{UC6 - Ricerca documentale}
 \begin{itemize}
     \item \textbf{Identificativo}: UC6
-    \item \textbf{Nome}: Creazione riunione su piattaforma esterna
+    \item \textbf{Nome}: ricerca documentale
     \item \textbf{Descrizione grafica}:
 \end{itemize}
 \begin{center}
@@ -10,35 +10,34 @@
  \begin{itemize}
     \item \textbf{Attori}
  \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
+    \item \textit{Primari}: utente autorizzato
     \item \textit{Secondari}: non presenti
  \end{itemize}
- \item \textbf{Precondizione}: l'utente è autorizzato e loggato sulla piattaforma esterna per videoconferenze desiderata, e si trova nell'interfaccia del chatbot.
- \item \textbf{Postcondizione}: il chatbot risponde alla richiesta dell'utente e invia la richiesta per la creazione della riunione.
- \item \textbf{Scenario principale}: l'utente autorizzato e loggato sulla piattaforma per videoconferenze richiede la creazione di una riunione, specificando la piattaforma (UC6.1), la data (UC6.2) e l'ora (UC6.3) desiderati e la lista dei partecipanti (UC6.4).
+ \item \textbf{Precondizione}: l'utente è autorizzato e si trova nell'interfaccia del chatbot.
+ \item \textbf{Postcondizione}: il chatbot risponde alla richiesta dell'utente mostrando i documenti trovati.
+ \item \textbf{Scenario principale}: l'utente autorizzato chiede al chatbot la ricerca di documenti, specificando il progetto al quale è associato (UC6.1) e il nome del documento (UC6.2).
  \item \textbf{Estensioni}: 
  \begin{itemize} 
-    \item il chatbot comunica all'utente che uno o più parametri specificati non sono corretti (UC6.5 UC6.6 UC6.7 UC6.8).
+    \item il chatbot comunica all'utente che l'inserimento del nome del progetto (UC6.3) o del nome del documento (UC6.4) non sono corretti.
  \end{itemize}
 \end{itemize}
 \newpage
-
-\subsubsection{UC6.1 - Inserimento piattaforma per videoconferenze}
+\subsubsection{UC6.1 - Inserimento progetto}
 \begin{itemize}
     \item \textbf{Identificativo}: UC6.1
-    \item \textbf{Nome}: inserimento piattaforma per videoconferenze
+    \item \textbf{Nome}: inserimento progetto
     \item \textbf{Descrizione grafica}: (approfondita in UC6)
     \item \textbf{Attori}
  \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
+    \item \textit{Primari}: utente autorizzato
     \item \textit{Secondari}: non presenti
  \end{itemize}
- \item \textbf{Precondizione}: l'utente comunica al chatbot la richiesta di creazione di una riunione.
- \item \textbf{Postcondizione}: l'utente ha comunicato al chatbot la piattaforma sulla quale verrà creata la riunione.
- \item \textbf{Scenario principale}: il chatbot chiede all'utente su quale applicazione desidera creare la riunione. L'utente comunica al chatbot la piattaforma tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
+ \item \textbf{Precondizione}: l'utente ha richiesto al chatbot la ricerca di un documento.
+ \item \textbf{Postcondizione}:  l'utente ha comunicato al chatbot il progetto nel quale ricercare i documenti.
+ \item \textbf{Scenario principale}: il chatbot chiede all'utente di specificare il progetto nel quale ricercare i documenti. L'utente comunica al chatbot il progetto tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
  \item \textbf{Estensioni}: 
  \begin{itemize} 
-    \item il chatbot comunica all'utente che la piattaforma per videoconferenze inserita non è corretta (UC6.5).
+    \item il chatbot comunica all'utente che il nome del progetto inserito non è corretto (UC6.3).
  \end{itemize}
 \end{itemize}
 
@@ -52,12 +51,12 @@
        \item \textit{Primari}: utente autorizzato
        \item \textit{Secondari}: non presenti
    \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce il nome della piattaforma di videoconferenze, su cui voler creare la riunione.
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto in maniera testuale
     \item \textbf{Scenario principale}: 
        \begin{itemize}
            \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input testuale il nome della piattaforma, su cui vuole creare la riunione
+           \item L'utente fornisce tramite input testuale il nome del progetto su cui fare la ricerca del documento
        \end{itemize}
 \end{itemize}
 
@@ -71,31 +70,31 @@
        \item \textit{Primari}: utente autorizzato
        \item \textit{Secondari}: non presenti
    \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce il nome della piattaforma di videoconferenze, su cui voler creare la riunione.
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del progetto in maniera vocale
     \item \textbf{Scenario principale}: 
        \begin{itemize}
            \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input vocale il nome della piattaforma, su cui vuole creare la riunione
+           \item L'utente fornisce tramite input vocale il nome del progetto su cui fare la ricerca del documento
        \end{itemize}
 \end{itemize}
 
-\subsubsection{UC6.2 - Inserimento data per la riunione}
+\subsubsection{UC6.2 - Inserimento nome documento}
 \begin{itemize}
     \item \textbf{Identificativo}: UC6.2
-    \item \textbf{Nome}: inserimento data per la riunione
+    \item \textbf{Nome}: inserimento nome documento
     \item \textbf{Descrizione grafica}: (approfondita in UC6)
     \item \textbf{Attori}
  \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
+    \item \textit{Primari}: utente autorizzato
     \item \textit{Secondari}: non presenti
  \end{itemize}
- \item \textbf{Precondizione}: l'utente comunica al chatbot la richiesta di creazione di una riunione.
- \item \textbf{Postcondizione}: l'utente ha comunicato al chatbot la data alla quale verrà creata la riunione.
- \item \textbf{Scenario principale}: il chatbot chiede all'utente in che data desidera creare la riunione. L'utente comunica al chatbot la data tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
+ \item \textbf{Precondizione}: l'utente ha richiesto al chatbot la ricerca di un documento.
+ \item \textbf{Postcondizione}:  l'utente ha comunicato al chatbot il nome del documento da ricercare.
+ \item \textbf{Scenario principale}: il chatbot chiede all'utente di specificare il nome del documento da ricercare. L'utente comunica al chatbot il nome del documento tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
  \item \textbf{Estensioni}: 
- \begin{itemize} 
-    \item il chatbot comunica all'utente che la data inserita non è corretta, oppure risulta indisponibile (UC6.6).
+\begin{itemize} 
+    \item il chatbot comunica all'utente che il nome del documento inserito non è corretto (UC6.4).
  \end{itemize}
 \end{itemize}
 
@@ -109,16 +108,16 @@
        \item \textit{Primari}: utente autorizzato
        \item \textit{Secondari}: non presenti
    \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce la data per quando voler creare la riunione.
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del documento in maniera testuale
     \item \textbf{Scenario principale}: 
        \begin{itemize}
            \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input testuale la data in cui avverrà la riunione
+           \item L'utente fornisce tramite input testuale il nome del documento da ricercare
        \end{itemize}
 \end{itemize}
 
-\paragraph{UC6.2.2- Richiesta Vocale}
+\paragraph{UC6.2.2 - Richiesta Vocale}
 \begin{itemize}
    \item \textbf{Identificativo}: UC6.2.2
    \item \textbf{Nome}: Richiesta vocale
@@ -128,184 +127,41 @@
        \item \textit{Primari}: utente autorizzato
        \item \textit{Secondari}: non presenti
    \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce la data per quando voler creare la riunione.
+       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler cercare un documento all'interno di un progetto.
+       \item \textbf{Postcondizione}: l'utente fornisce il nome del documento in maniera vocale
     \item \textbf{Scenario principale}: 
        \begin{itemize}
            \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input vocale la data in cui avverrà la riunione
+           \item L'utente fornisce tramite input vocale il nome del documento da ricercare
        \end{itemize}
 \end{itemize}
 
-\subsubsection{UC6.3 - Inserimento ora per la riunione}
+\subsubsection{UC6.3 - Errore inserimento nome progetto}
 \begin{itemize}
     \item \textbf{Identificativo}: UC6.3
-    \item \textbf{Nome}: inserimento ora per la riunione
+    \item \textbf{Nome}: errore inserimento nome progetto
     \item \textbf{Descrizione grafica}: (approfondita in UC6)
     \item \textbf{Attori}
  \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
+    \item \textit{Primari}: utente autorizzato
     \item \textit{Secondari}: non presenti
  \end{itemize}
- \item \textbf{Precondizione}: l'utente comunica al chatbot la richiesta di creazione di una riunione.
- \item \textbf{Postcondizione}: l'utente ha comunicato al chatbot l'ora alla quale verrà creata la riunione.
- \item \textbf{Scenario principale}: il chatbot chiede all'utente a che ora desidera creare la riunione. L'utente comunica al chatbot l'ora tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
- \item \textbf{Estensioni}: 
- \begin{itemize} 
-    \item il chatbot comunica all'utente che l'ora inserita non è corretta, oppure risulta indisponibile (UC6.7).
- \end{itemize}
+ \item \textbf{Precondizione}: l'utente ha inserito un nome di progetto non valido.
+ \item \textbf{Postcondizione}:  il chatbot comunica all'utente che il nome di progetto specificato non è corretto.
+ \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento del nome di progetto e chiede di reinserirlo.
 \end{itemize}
-
-\paragraph{UC6.3.1 - Richiesta Testuale}
-\begin{itemize}
-   \item \textbf{Identificativo}: UC6.3.1
-   \item \textbf{Nome}: Richiesta testuale
-   \item \textbf{Descrizione grafica}: (approfondita in UC6)
-   \item \textbf{Attori}:
-   \begin{itemize} 
-       \item \textit{Primari}: utente autorizzato
-       \item \textit{Secondari}: non presenti
-   \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce l'ora alla quale avverrà la riunione.
-    \item \textbf{Scenario principale}: 
-       \begin{itemize}
-           \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input testuale l'ora in cui avverrà la riunione
-       \end{itemize}
-\end{itemize}
-
-\paragraph{UC6.3.2 - Richiesta Vocale}
-\begin{itemize}
-   \item \textbf{Identificativo}: UC6.3.2
-   \item \textbf{Nome}: Richiesta vocale
-   \item \textbf{Descrizione grafica}: (approfondita in UC6)
-   \item \textbf{Attori}:
-   \begin{itemize} 
-       \item \textit{Primari}: utente autorizzato
-       \item \textit{Secondari}: non presenti
-   \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce l'ora alla quale avverrà la riunione.
-    \item \textbf{Scenario principale}: 
-       \begin{itemize}
-           \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input vocale l'ora in cui avverrà la riunione
-       \end{itemize}
-\end{itemize}
-
-
-\subsubsection{UC6.4 - Inserimento partecipanti}
+\subsubsection{UC6.4 - Errore inserimento nome documento}
 \begin{itemize}
     \item \textbf{Identificativo}: UC6.4
-    \item \textbf{Nome}: inserimento partecipanti
+    \item \textbf{Nome}: errore inserimento nome documento
     \item \textbf{Descrizione grafica}: (approfondita in UC6)
     \item \textbf{Attori}
  \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
+    \item \textit{Primari}: utente autorizzato
     \item \textit{Secondari}: non presenti
  \end{itemize}
- \item \textbf{Precondizione}: l'utente comunica al chatbot la richiesta di creazione di una riunione.
- \item \textbf{Postcondizione}: l'utente ha comunicato al chatbot i partecipanti alla riunione che verrà creata.
- \item \textbf{Scenario principale}: il chatbot chiede all'utente quali sono i partecipanti alla riunione. L'utente comunica al chatbot i partecipanti tramite messaggio testuale (UC6.1.1) o vocale (UC6.1.2).
- \item \textbf{Estensioni}: 
- \begin{itemize} 
-    \item il chatbot comunica all'utente che uno o più partecipanti non sono stati inseriti in modo corretto (UC6.8).
- \end{itemize}
-\end{itemize}
-
-\paragraph{UC6.4.1 - Richiesta Testuale}
-\begin{itemize}
-   \item \textbf{Identificativo}: UC6.4.1
-   \item \textbf{Nome}: Richiesta testuale
-   \item \textbf{Descrizione grafica}: (approfondita in UC6)
-   \item \textbf{Attori}:
-   \begin{itemize} 
-       \item \textit{Primari}: utente autorizzato
-       \item \textit{Secondari}: non presenti
-   \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce il nome dei partecipanti in maniera testuale
-    \item \textbf{Scenario principale}: 
-       \begin{itemize}
-           \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input testuale il nome dei partecipanti alla riunione
-       \end{itemize}
-\end{itemize}
-
-\paragraph{UC6.4.2 - Richiesta Vocale}
-\begin{itemize}
-   \item \textbf{Identificativo}: UC6.4.2
-   \item \textbf{Nome}: Richiesta vocale
-   \item \textbf{Descrizione grafica}: (approfondita in UC6)
-   \item \textbf{Attori}:
-   \begin{itemize} 
-       \item \textit{Primari}: utente autorizzato
-       \item \textit{Secondari}: non presenti
-   \end{itemize}
-       \item \textbf{Precondizione}: l'utente si è autenticato al sistema e ha richiesto di voler creare una riunione su una piattaforma esterna.
-       \item \textbf{Postcondizione}: l'utente fornisce il nome dei partecipanti in maniera vocale
-    \item \textbf{Scenario principale}: 
-       \begin{itemize}
-           \item L'utente ha effettuato l'accesso al sistema 
-           \item L'utente fornisce tramite input vocale il nome dei partecipanti alla riunione
-       \end{itemize}
-\end{itemize}
-
-\subsubsection{UC6.5 - Errore inserimento piattaforma per videoconferenze}
-\begin{itemize}
-    \item \textbf{Identificativo}: UC6.5
-    \item \textbf{Nome}: errore inserimento piattaforma per videoconferenze
-    \item \textbf{Descrizione grafica}: (approfondita in UC6)
-    \item \textbf{Attori}
- \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
-    \item \textit{Secondari}: non presenti
- \end{itemize}
- \item \textbf{Precondizione}: l'utente ha inserito una piattaforma per videoconferenze non valida o non supportata.
- \item \textbf{Postcondizione}: il chatbot comunica all'utente che la piattaforma inserita non è valida.
- \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento della piattaforma esterna per videoconferenze e chiede di reinserirla.
-\end{itemize}
-\subsubsection{UC6.6 - Errore inserimento data per la riunione}
-\begin{itemize}
-    \item \textbf{Identificativo}: UC6.6
-    \item \textbf{Nome}: errore inserimento data per la riunione
-    \item \textbf{Descrizione grafica}: (approfondita in UC6)
-    \item \textbf{Attori}
- \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
-    \item \textit{Secondari}: non presenti
- \end{itemize}
- \item \textbf{Precondizione}: l'utente ha inserito una data non valida o indisponibile.
- \item \textbf{Postcondizione}: il chatbot comunica all'utente che la data inserita non è valida o è indisponibile.
- \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento della data e chiede di reinserirla.
-\end{itemize}
-\subsubsection{UC6.7 - Errore inserimento ora per la riunione}
-\begin{itemize}
-    \item \textbf{Identificativo}: UC6.7
-    \item \textbf{Nome}: errore inserimento ora per la riunione
-    \item \textbf{Descrizione grafica}: (approfondita in UC6)
-    \item \textbf{Attori}
- \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
-    \item \textit{Secondari}: non presenti
- \end{itemize}
- \item \textbf{Precondizione}: l'utente ha inserito un'ora non valida o indisponibile.
- \item \textbf{Postcondizione}: il chatbot comunica all'utente che l'ora inserita non è valida o è indisponibile.
- \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento dell'ora e chiede di reinserirla.
-\end{itemize}
-\subsubsection{UC6.8 - Errore inserimento partecipanti}
-\begin{itemize}
-    \item \textbf{Identificativo}: UC6.8
-    \item \textbf{Nome}: errore inserimento partecipanti
-    \item \textbf{Descrizione grafica}: (approfondita in UC6)
-    \item \textbf{Attori}
- \begin{itemize} 
-    \item \textit{Primari}: utente autorizzato e loggato sulla piattaforma per videoconferenze
-    \item \textit{Secondari}: non presenti
- \end{itemize}
- \item \textbf{Precondizione}: l'utente ha inserito uno o più partecipanti in modo non corretto.
- \item \textbf{Postcondizione}: il chatbot comunica all'utente che uno o più partecipanti sono stati inseriti in modo non corretto.
- \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento dei partecipanti e chiede di reinserirli.
+ \item \textbf{Precondizione}: l'utente ha inserito un nome documento non valido.
+ \item \textbf{Postcondizione}:  il chatbot comunica all'utente che il nome del documento specificato non è corretto.
+ \item \textbf{Scenario principale}: il chatbot comunica all'utente l'errore nell'inserimento del nome del documento e chiede di reinserirlo.
 \end{itemize}
 \newpage
