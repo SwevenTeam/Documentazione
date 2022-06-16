@@ -20,136 +20,140 @@ RO-F-6&L’utente non autenticato deve poter richiedere un \glossario{token} per
 \hline
 RD-F-7&Se l’utente ha più \glossario{token} a disposizione, può decidere quale usare.&Verbale Esterno\\
 \hline
-RO-F-8&Il \glossario{ChatBot} deve essere in grado di riconoscere i comandi non validi.&UC2\\
-\hline
-RO-F-9&Il \glossario{ChatBot} deve restituire un messaggio di errore con suggerimenti dopo un messaggio non valido &UC2 \\
+RO-F-8&L’utente deve poter effettuare la registrazione della propria presenza &UC2 \\
 \hline
 \end{tabular}
-\newpage
+\end{center}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
 \begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
 \hline
-RO-F-10&L’utente deve poter effettuare la registrazione della propria presenza &UC3 \\
+RO-F-9&L’utente deve poter inserire la sede per la registrazione della presenza &UC2.1 \\
 \hline
-RO-F-11&L’utente deve poter inserire la sede per la registrazione della presenza &UC3.1 \\
+RO-F-10&Il \glossario{ChatBot} deve notificare l’utente se la sede per la registrazione non è valida &UC2.2 \\
 \hline
-RO-F-12&Il \glossario{ChatBot} deve notificare l’utente se la sede per la registrazione non è valida &UC3.2 \\
+RO-F-11&L’utente deve poter inserire un'\glossario{attività} all’interno del \glossario{sistema EMT} &UC3 \\
 \hline
-RO-F-13&L’utente deve poter inserire un'\glossario{attività} all’interno del \glossario{sistema EMT} &UC4 \\
+RO-F-12&L’utente deve poter inserire il tipo dell’\glossario{attività} &UC3.1 \\
 \hline
-RO-F-14&L’utente deve poter inserire il tipo dell’\glossario{attività} &UC4.1 \\
-\hline
-RO-F-15&L’utente deve poter inserire le ore da consuntivare nell’\glossario{attività} &UC4.2 \\
+RO-F-13&L’utente deve poter inserire le ore da consuntivare nell’\glossario{attività} &UC3.2 \\
 \hline  
-RO-F-16&L’utente deve poter inserire il progetto da consuntivare nell’\glossario{attività} &UC4.3 \\
+RO-F-14&L’utente deve poter inserire il progetto da consuntivare nell’\glossario{attività} &UC3.3 \\
 \hline
-RO-F-17&L’utente deve poter inserire il luogo in cui ha svolto l’\glossario{attività} &UC4.4 \\
+RO-F-15&L’utente deve poter inserire il luogo in cui ha svolto l’\glossario{attività} &UC3.4 \\
 \hline
-RO-F-18&Il \glossario{ChatBot} deve notificare l'utente se l'\glossario{attività} è in un formato non valido &UC4.5 \\
+RO-F-16&Il \glossario{ChatBot} deve notificare l'utente se l'\glossario{attività} è in un formato non valido &UC3.5 \\
 \hline
-RO-F-19&Il \glossario{ChatBot} deve notificare l'utente se le ore sono in un formato non valido &UC4.6 \\
+RO-F-17&Il \glossario{ChatBot} deve notificare l'utente se le ore sono in un formato non valido &UC3.6 \\
 \hline
-RO-F-20&Il \glossario{ChatBot} deve notificare l'utente se il nome del progetto di un'\glossario{attività} è in un formato non valido &UC4.7 \\
+RO-F-18&Il \glossario{ChatBot} deve notificare l'utente se il nome del progetto di un'\glossario{attività} è in un formato non valido &UC3.7 \\
 \hline
-RO-F-21&Il \glossario{ChatBot} deve notificare l'utente se il luogo relativo all’\glossario{attività} è in un formato non valido &UC4.8 \\
+RO-F-19&Il \glossario{ChatBot} deve notificare l'utente se il luogo relativo all’\glossario{attività} è in un formato non valido &UC3.8 \\
 \hline
-RD-F-22&L’utente deve poter aprire il cancello di un sede tramite \glossario{ChatBot} &UC5 \\
+RD-F-20&L’utente deve poter aprire il cancello di un sede tramite \glossario{ChatBot} &UC4 \\
 \hline
-RD-F-23&Il \glossario{ChatBot} deve notificare l'utente se la sede indicata non è valida &UC5.2 \\
+RO-F-21&L’utente deve poter inserire la sede in cui vuole aprire il candello &UC4.1 \\
 \hline
-RD-F-24&L’utente deve poter creare, tramite il \glossario{ChatBot}, una riunione su un'applicazione esterna &UC6 \\
+RD-F-22&Il \glossario{ChatBot} deve notificare l'utente se la sede indicata non è valida &UC4.2 \\
 \hline
-\end{tabular}
-\newpage
-\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
-\hline
-RD-F-25&L’utente deve poter inserire il nome della piattaforma esterna per la videoconferenza &UC6.1 \\
-\hline
-RD-F-26&L’utente deve poter inserire la data per la riunione &UC6.2 \\
-\hline
-RD-F-27&L’utente deve poter inserire l’ora per la riunione &UC6.3 \\
-\hline
-RD-F-28&L’utente deve poter inserire i partecipanti alla riunione &UC6.4 \\
-\hline
-RD-F-29&Il \glossario{ChatBot} deve notificare l’utente se la piattaforma inserita non è valida o non è supportata &UC6.5 \\
-\hline
-RD-F-30&Il \glossario{ChatBot} deve notificare l’utente se la data inserita non è valida o è indisponibile &UC6.6 \\
-\hline
-RD-F-31&Il \glossario{ChatBot} deve notificare l’utente se l’ora inserita non è valida o è indisponibile &UC6.7 \\
-\hline
-RD-F-32&Il \glossario{ChatBot} deve notificare l’utente se i partecipanti inseriti non sono corretti, chiedendo il reinserimento &UC6.8 \\
-\hline
-RD-F-33&L’utente deve poter chiedere di cercare un documento &UC7 \\
-\hline
-RD-F-34&L’utente deve poter inserire il nome del progetto per la ricerca del documento &UC7.1 \\
-\hline
-RD-F-35&L’utente deve poter inserire il nome del documento in cui vuole fare la ricerca &UC7.2 \\
-\hline
-RD-F-36&Il \glossario{ChatBot} deve notificare l’utente se l’inserimento del progetto non è corretto, chiedendo il reinserimento &UC7.3\\
-\hline
-RD-F-37&Il \glossario{ChatBot} deve notificare l’utente se il nome del documento inserito non è valido, chiedendo il reinserimento &UC7.4 \\
-\hline
-RD-F-38&L’utente deve poter inserire un \glossario{ticket} &UC8 \\
+RD-F-23&L’utente deve poter creare, tramite il \glossario{ChatBot}, una riunione su un'applicazione esterna &UC5 \\
 \hline
 \end{tabular}
-\newpage
+\end{center}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
 \begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
 \hline
-RD-F-39&L’utente deve poter fornire l’oggetto per la creazione del \glossario{ticket} &UC8.1 \\
+RD-F-24&L’utente deve poter inserire il nome della piattaforma esterna per la videoconferenza &UC5.1 \\
 \hline
-RD-F-40&L’utente deve poter inserire la descrizione per la creazione del \glossario{ticket} dopo aver fornito l’oggetto &UC8.2 \\
+RD-F-25&L’utente deve poter inserire la data per la riunione &UC5.2 \\
 \hline
-RD-F-41&L’utente deve poter comunicare lo status del \glossario{ticket} dopo aver inserito la descrizione &UC8.3 \\
+RD-F-26&L’utente deve poter inserire l’ora per la riunione &UC5.3 \\
 \hline
-RD-F-42&L’utente deve poter inserire la priorità del \glossario{ticket} dopo aver comunicato lo status &UC8.4 \\
+RD-F-27&L’utente deve poter inserire i partecipanti alla riunione &UC5.4 \\
 \hline
-RD-F-43&Il \glossario{ChatBot} deve notificare l’utente se l’oggetto non è stato inserito in maniera idonea per la creazione del \glossario{ticket}  &UC8.5 \\
+RD-F-28&Il \glossario{ChatBot} deve notificare l’utente se la piattaforma inserita non è valida o non è supportata &UC5.5 \\
 \hline
-RD-F-44&Il \glossario{ChatBot} deve notificare l’utente se lo status del \glossario{ticket} non è stato inserito correttamente  &UC8.6 \\
+RD-F-29&Il \glossario{ChatBot} deve notificare l’utente se la data inserita non è valida o è indisponibile &UC5.6 \\
 \hline
-RD-F-45&Il \glossario{ChatBot} deve notificare l’utente se la priorità del \glossario{ticket} non è stato inserita in un formato valido &UC8.7 \\
+RD-F-30&Il \glossario{ChatBot} deve notificare l’utente se l’ora inserita non è valida o è indisponibile &UC5.7 \\
 \hline
-RO-F-46&Ogni qualvolta un operazione è avvenuta con successo, l’utente deve essere sempre notificato &UC9 \\
+RD-F-31&Il \glossario{ChatBot} deve notificare l’utente se i partecipanti inseriti non sono corretti, chiedendo il reinserimento &UC5.8 \\
 \hline
-RO-F-47&Ogni qualvolta che non è possibile eseguire una richiesta, l’utente deve essere notificato &UC10 \\
+RD-F-32&L’utente deve poter chiedere di cercare un documento &UC6 \\
 \hline
-RO-F-48&L’utente deve poter annullare un operazione in corso &UC11 \\
+RD-F-33&L’utente deve poter inserire il nome del progetto per la ricerca del documento &UC6.1 \\
 \hline
-RO-F-49&Il \glossario{ChatBot} deve notificare l’utente se l’annullamento è avvenuto con successo &UC11 \\
+RD-F-34&L’utente deve poter inserire il nome del documento in cui vuole fare la ricerca &UC6.2 \\
 \hline
-RO-F-50&Ogni qualvolta l’utente tenta di effettuare un’operazione non consentita, il \glossario{ChatBot} deve fermare e notificare l'utente.&UC12 \\
+RD-F-35&Il \glossario{ChatBot} deve notificare l’utente se l’inserimento del progetto non è corretto, chiedendo il reinserimento &UC6.3\\
 \hline
-RO-F-51&L’utente deve poter riconoscere il proprio stato di \glossario{check-in}/Check-out tramite messaggio &UC13 \\
+RD-F-36&Il \glossario{ChatBot} deve notificare l’utente se il nome del documento inserito non è valido, chiedendo il reinserimento &UC6.4 \\
+\hline
+RD-F-37&L’utente deve poter inserire un \glossario{ticket} &UC7 \\
 \hline
 \end{tabular}
-\newpage
-
+\end{center}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
 \begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
 \hline
-RO-F-52&Il \glossario{ChatBot} deve restituire lo stato di \glossario{check-in}/Check-out dopo la richiesta del utente &UC13\\
+RD-F-38&L’utente deve poter fornire l’oggetto per la creazione del \glossario{ticket} &UC7.1 \\
 \hline
-RO-F-53&L’utente deve poter visualizzare le proprie ore consuntivate &UC14 \\
+RD-F-39&L’utente deve poter inserire la descrizione per la creazione del \glossario{ticket} dopo aver fornito l’oggetto &UC7.2 \\
 \hline
-RO-F-54&L’utente deve poter visualizzare le proprie ore da consuntivare rimanenti &UC15 \\
+RD-F-40&L’utente deve poter inserire la priorità del \glossario{ticket} dopo aver comunicato lo status &UC7.3 \\
 \hline
-RD-F-55&L’utente deve poter visualizzare correttamente i documenti trovati dopo la ricerca &UC16 \\
+RD-F-41&Il \glossario{ChatBot} deve notificare l’utente se l’oggetto non è stato inserito in maniera idonea per la creazione del \glossario{ticket}  &UC7.4 \\
 \hline
-RD-F-56&L’utente deve poter visualizzare correttamente tutte le sue riunioni del giorno & UC17\\
+RD-F-42&Il \glossario{ChatBot} deve notificare l’utente se la priorità del \glossario{ticket} non è stato inserita in un formato valido &UC7.5 \\
 \hline
-RO-F-57&L’utente deve poter visualizzare le proprie impostazioni &UC18 \\
+RD-F-43&L’utente deve poter annullare un operazione precedentemente richiesto&UC8 \\
 \hline
-RD-F-58&L’utente deve poter richiedere il link per l’autenticazione alla piattaforma di riunione esterna &UC19\\
+RD-F-44&Il \glossario{ChatBot} deve notificare l’utente se annullamento di un'operazione è con successo oppure impossibile&UC.2 \\
 \hline
-RD-F-59&Dopo aver ricevuto il token il programma deve essere in grado di inserirlo dentro piattaforma esterna &UC19.1 \\
+RD-F-45&L’utente deve poter richiedere lo stato di \glossario{Check-in}/Check-out&UC9.1 \\
 \hline
-RO-F-60&Il \glossario{ChatBot} deve notificare l'utente se la sede fornita è valida ma non è stata trovata nel sistema.&UC20 \\
+RD-F-46&Il \glossario{ChatBot} deve notificare l’utente se la richiesta dello stato di \glossario{Check-in}/Check-out è impossibile&UC9.2 \\
 \hline
-RO-F-61&Il \glossario{ChatBot} deve riconoscere anche i linguaggi naturali dei comandi disponibili &Capitolato \\
+RD-F-47&L’utente deve poter richiedere Ore Consuntivate&UC10 \\
 \hline
-RO-F-62&Il \glossario{ChatBot} deve notificare l'utente se il nome di un progetto è valido ma non è stato trovato nel sistema. &UC21 \\
+RD-F-48&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione ore consuntivate è impossibile &UC10.2 \\
+\hline
+RD-F-49&L’utente deve poter richiedere Ore Consuntivate&UC10 \\
+\hline
+RD-F-50&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione di ore consuntivate è impossibile &UC10.2 \\
+\hline
+RD-F-51&L’utente deve poter richiedere Ore da Consuntivare rimanenti&UC11 \\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}
+\renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
+\begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
+\hline
+RD-F-52&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione di ore da consuntivare rimanenti è impossibile &UC11.2 \\
+\hline
+RD-F-53&L’utente deve poter visualizzare riunioni giornaliere&UC12 \\
+\hline
+RD-F-54&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione riunioni giornaliere è impossibile &UC12.2 \\
+\hline
+RD-F-55&L’utente deve poter visualizzare le impostazioni&UC13\\
+\hline
+RD-F-56&L’utente deve poter autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14 \\
+\hline
+RD-F-57&Il \glossario{ChatBot} deve notificare l’utente l'autenticazione su \glossario{Piattaforma Riunioni esterna} è fallita &UC14.2 \\
+\hline
+RD-F-58&L’utente deve poter inserire il \glossario{access token} per autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14.3 \\
+\hline
+RD-F-59&Il \glossario{ChatBot} deve notificare l’utentese l'inserimento del \glossario{access roken} è fallita &UC14.4 \\
+\hline
+RD-F-60&Cifrare con il metodo \glossario{CBC-MAC} tutte le comunicazioni fra App e Server per garantire la validità delle informazioni&Capitolato\\
 \hline
 \end{tabular}
 \end{center}
 \newpage
+
 
 \subsection{Requisiti di qualità}
 \begin{center}
@@ -176,9 +180,7 @@ RO-Q-4&Rispettare il piano di qualifica&Verbale interno\\
 \hline
 Codice&Descrizione&Fonte\\
 \hline
-RO-V-1&Sviluppare un applicazione mobile (IOS o Android) che permette di utilizzare tutte le funzioni descritte dai requisiti funzionali&Capitolato\\
-\hline
-RF-V-2&Cifrare tutte le comunicazioni fra App e Server per garantire la validità delle informazioni&Capitolato\\
+RO-V-1&Utilizzare un applicazione mobile (per IOS 12 in poi o Android 4.1 in pois) che permette di utilizzare tutte le funzioni descritte dai requisiti funzionali&Capitolato\\
 \hline
 \end{tabular}
 \end{center}
