@@ -6,9 +6,9 @@ Seguendo le Norme di Progetto ogni requisito è identificato da il suo codice, l
 \hline
 Codice&Descrizione&Fonte\\
 \hline
-RO-F-1 & Il \glossario{ChatBot} deve poter riconoscere input testuale & Capitolato, UC1.1.1, UC2.1.1, UC3.1.1, UC4.1.1, UC5.1.1, UC5.2.1, UC5.3.1, UC5.4.1, UC6.1.1, UC6.2.1, UC7.1.1, UC7.2.1,  UC7.3.1, UC7.4.1, UC8.1.1, UC9.1.1, UC10.1.1, UC11.1.1 UC13.1.1\\
+RO-F-1 & Il \glossario{ChatBot} deve poter riconoscere input testuale & Capitolato, UC1.1.1, UC2.1.1, UC3.1.1, UC3.2.1, UC3.3.1, UC3.4.1, UC4.1.1, UC5.1.1, UC5.2.1, UC5.3.1, UC5.4.1, UC6.1.1, UC6.2.1, UC7.1.1, UC7.2.1, UC7.3.1, UC8.1.1, UC9.1.1, UC10.1.1, UC11.1.1, UC12.1.1\\
 \hline
-RO-F-2&Il \glossario{ChatBot} deve poter riconoscere input vocale&Capitolato, UC1.1.2, UC2.1.2, UC3.1.2, UC4.1.2, UC5.1.2, UC5.2.2, UC5.3.2, UC5.4.2, UC6.1.2, UC6.2.2, UC7.1.2, UC7.2.2,  UC7.3.2, UC7.4.2, UC8.1.2, UC9.1.2, UC10.1.2, UC11.1.2 UC13.1.2\\
+RO-F-2 & Il \glossario{ChatBot} deve poter riconoscere input vocale & Capitolato, UC2.1.2, UC3.1.2, UC3.2.2, UC3.3.2, UC3.4.2, UC4.1.2, UC5.1.2, UC5.2.2, UC5.3.2, UC5.4.2, UC6.1.2, UC6.2.2, UC7.1.2, UC7.2.2, UC7.3.2, UC8.1.2, UC9.1.2, UC10.1.2, UC11.1.2, UC12.1.2\\
 \hline
 RO-F-3&L’utente deve poter autenticarsi tramite un \glossario{token}&UC1\\
 \hline
@@ -108,23 +108,19 @@ RD-F-41&Il \glossario{ChatBot} deve notificare l’utente se l’oggetto non è 
 \hline
 RD-F-42&Il \glossario{ChatBot} deve notificare l’utente se la priorità del \glossario{ticket} non è stato inserita in un formato valido &UC7.5 \\
 \hline
-RD-F-43&L’utente deve poter annullare un operazione precedentemente richiesto&UC8 \\
+RD-F-43&L’utente deve poter annullare un'operazione precedentemente richiesta&UC8, UC8.1 \\
 \hline
 RD-F-44&Il \glossario{ChatBot} deve notificare l’utente se annullamento di un'operazione è con successo oppure impossibile&UC.2 \\
 \hline
-RD-F-45&L’utente deve poter richiedere lo stato di \glossario{Check-in}/Check-out&UC9.1 \\
+RD-F-45&L’utente deve poter richiedere lo stato di \glossario{Check-in}/Check-out&UC9, UC9.1 \\
 \hline
 RD-F-46&Il \glossario{ChatBot} deve notificare l’utente se la richiesta dello stato di \glossario{Check-in}/Check-out è impossibile&UC9.2 \\
 \hline
-RD-F-47&L’utente deve poter richiedere Ore Consuntivate&UC10 \\
+RD-F-47&L’utente deve poter richiedere Ore Consuntivate&UC10, UC10.1 \\
 \hline
 RD-F-48&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione ore consuntivate è impossibile &UC10.2 \\
 \hline
-RD-F-49&L’utente deve poter richiedere Ore Consuntivate&UC10 \\
-\hline
-RD-F-50&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione di ore consuntivate è impossibile &UC10.2 \\
-\hline
-RD-F-51&L’utente deve poter richiedere Ore da Consuntivare rimanenti&UC11 \\
+RD-F-49&L’utente deve poter richiedere Ore da Consuntivare rimanenti&UC11, UC11.1 \\
 \hline
 \end{tabular}
 \end{center}
@@ -132,23 +128,23 @@ RD-F-51&L’utente deve poter richiedere Ore da Consuntivare rimanenti&UC11 \\
 \renewcommand{\arraystretch}{1.8} %aumento ampiezza righe
 \begin{tabular}{ | m{8em} | m{18em} | m{12em} | }
 \hline
-RD-F-52&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione di ore da consuntivare rimanenti è impossibile &UC11.2 \\
+RD-F-50&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione di ore da consuntivare rimanenti è impossibile &UC11.2 \\
 \hline
-RD-F-53&L’utente deve poter visualizzare riunioni giornaliere&UC12 \\
+RD-F-51&L’utente deve poter visualizzare riunioni giornaliere&UC12, UC12.1 \\
 \hline
-RD-F-54&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione riunioni giornaliere è impossibile &UC12.2 \\
+RD-F-52&Il \glossario{ChatBot} deve notificare l’utente se la richiesta di visualizzazione riunioni giornaliere è impossibile &UC12.2 \\
 \hline
-RD-F-55&L’utente deve poter visualizzare le impostazioni&UC13\\
+RD-F-53&L’utente deve poter visualizzare le impostazioni&UC13\\
 \hline
-RD-F-56&L’utente deve poter autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14 \\
+RD-F-54&L’utente deve poter autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14, UC14.1 \\
 \hline
-RD-F-57&Il \glossario{ChatBot} deve notificare l’utente l'autenticazione su \glossario{Piattaforma Riunioni esterna} è fallita &UC14.2 \\
+RD-F-55&Il \glossario{ChatBot} deve notificare l’utente l'autenticazione su \glossario{Piattaforma Riunioni esterna} è fallita &UC14.2 \\
 \hline
-RD-F-58&L’utente deve poter inserire il \glossario{access token} per autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14.3 \\
+RD-F-56&L’utente deve poter inserire il \glossario{access token} per autenticarsi su \glossario{Piattaforma Riunioni} esterna&UC14.3 \\
 \hline
-RD-F-59&Il \glossario{ChatBot} deve notificare l’utentese l'inserimento del \glossario{access roken} è fallita &UC14.4 \\
+RD-F-57&Il \glossario{ChatBot} deve notificare l’utentese l'inserimento del \glossario{access roken} è fallita &UC14.4 \\
 \hline
-RD-F-60&Cifrare con il metodo \glossario{CBC-MAC} tutte le comunicazioni fra App e Server per garantire la validità delle informazioni&Capitolato\\
+RD-F-58&Cifrare con il metodo \glossario{CBC-MAC} tutte le comunicazioni fra App e Server per garantire la validità delle informazioni&Capitolato\\
 \hline
 \end{tabular}
 \end{center}
