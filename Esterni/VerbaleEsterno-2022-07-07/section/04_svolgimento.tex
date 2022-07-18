@@ -1,18 +1,19 @@
 \section{Svolgimento}
 
 \subsection{Confronto con Imola Informatica sulla Specifica Architetturale} 
-In seguito al collegamento di tutti i membri del team e dei rappresentati dell'azienda Imola Informatica, \textit{Qi Fan Andrea Pan} inizia l'esposizione relativa agli esempi di Specifica Architetturale a cui ha lavorato nei giorni precedenti all'incontro. In particolare le due soluzioni si differenziano nel fatto che una segue un approccio di tipo \glossario{Stateless} mentre l'altra segue un approccio di tipo \glossario{Stateful}. \newline
-I rappresentanti di Imola Informatica riferiscono al team che entrambe le soluzioni proposte risultano corrette da un punto di vista logico. Successivamente fanno notare al gruppo i limiti e le criticità nell'utilizzo di un approccio di tipo \glossario{Stateful}, ovvero: 
+In seguito al collegamento di tutti i membri del team e dei rappresentati dell'azienda Imola Informatica, \textit{Qi Fan Andrea Pan} inizia l'esposizione relativa agli esempi di Specifica Architetturale a cui ha lavorato nei giorni precedenti all'incontro. \\
+In particolare, le due soluzioni presentate si differenziano nel fatto che una segue un approccio di tipo \glossario{Stateless} mentre l'altra segue un approccio di tipo \glossario{Stateful}. \newline
+I rappresentanti di Imola Informatica riferiscono al team che entrambe le soluzioni proposte risultano essere corrette da un punto di vista logico. Successivamente fanno notare al gruppo i limiti e le criticità nell'utilizzo di un approccio di tipo \glossario{Stateful}, ovvero: 
 \begin{itemize}
-    \item Problema relativo alla scalabilità: essendo tutti i dati gestiti dal server con un aumento di utenti sarebbe necessario comprare nuovi server (\textit{scalabilità orizzontale}) oppure potenziare quelli già in possesso (\textit{scalabilità verticale});
+    \item Problema relativo alla scalabilità: essendo tutti i dati gestiti dal server, nel caso di aumento di utenti sarebbe necessario comprare nuovi server (\textit{scalabilità orizzontale}) oppure potenziare quelli già in possesso (\textit{scalabilità verticale});
     \item Gestione della sessione: l'apertura di una sessione risulta essere esclusiva di un determinato server. Per fare in modo che l'utente possa ritrovare la sua sessione, il team dovrebbe implementare tecniche di gestione della condivisione delle risorse tra istanze di server diverse oppure un approccio che utilizzi le \glossario{Sticky Session}.
 \end{itemize}
 Considerate tali criticità relative ad un approccio di tipo \glossario{Stateful}, il team e i rappresentanti di Imola Informatica concordano che la Specifica Architetturale basata sul principio \glossario{Stateless} sia la più adatta per il corretto proseguimento del progetto e per un'eventuale scalabilità futura. 
 
 \subsection{Confronto con Imola Informatica sul Client}
 Terminata la discussione in merito alla Specifica Architetturale, il team espone all'azienda le proprie riflessioni in merito all'utilizzo di \glossario{Telegram} come unico Client con il quale gli utenti potranno utilizzare l'applicazione. \newline
-Il gruppo, in seguito al colloquio avvenuto con il Prof. Riccardo Cardin, durante la presentazione \glossario{Technology Baseline}, ha effettuato uno studio, dopo il quale è arrivato alla conclusione che, per quanto \glossario{Telegram} offra molti vantaggi - come il supporto nativo multidispositivo - sia più opportuno, per uno sviluppo corretto del progetto, avere un controllo completo anche del Client dell'applicazione, cosa che non sarebbe possibile appoggiandosi ad un servizio di messaggistica già esistente. \newline
-Data questa premessa il team comunica all'azienda Imola Informatica, la volontà di realizzare una WebApp per la gestione del lato Client, il cui sviluppo, a differenza di quanto mostrato durante il \glossario{Proof of Concept}, sarà sopportato da un framework. 
+Il gruppo, in seguito al colloquio avvenuto durante la presentazione \glossario{Technology Baseline} con il Prof. Riccardo Cardin, ha effettuato uno studio, a seguito del quale è arrivato alla conclusione che, per quanto \glossario{Telegram} offra molti vantaggi - come il supporto nativo multidispositivo - sia più opportuno, per uno sviluppo corretto del progetto, avere un controllo completo anche del Client dell'applicazione, attributo che non sarebbe possibile ottenere appoggiandosi ad un servizio di messaggistica già esistente. \newline
+Data questa premessa il team, comunica all'azienda Imola Informatica la volontà di realizzare una WebApp per la gestione del lato Client, il cui sviluppo, a differenza di quanto mostrato durante il \glossario{Proof of Concept}, sarà supportato da un framework. 
 L'azienda apprezza la scelta supportata da una fase di studio e approva questo tipo di soluzione, suggerendo \glossario{React JS} come possibile framework da utilizzare per lo sviluppo del lato Client. 
 
 \newpage
