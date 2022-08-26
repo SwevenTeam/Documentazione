@@ -3,8 +3,20 @@ I prodotti, in questo progetto, vengono intesi quali la documentazione e il soft
 
 \subsection{Documenti}
 I documenti sono una parte importante del progetto, devono essere corretti e leggibili agli utenti.
-\subsubsection{Obiettivo}
-Rendere il contenuto dei documenti comprensibile agli utenti.
+\subsubsection{Obiettivi}
+\begin{center}
+	\renewcommand{\arraystretch}{1.8}
+	\begin{tabular}{ |c|m{18em}|m{8em}|}
+		\hline
+		\textbf{Obiettivo} & \textbf{Descrizione} & \textbf{Metrica} \\
+		\hline
+		Comprensibilità & Rendere il contenuto dei documenti comprensibile agli utenti. & M14IG  \\
+		\hline
+		Correttezza Ortografica & Assicurarsi che i documenti redatti siano ortograficamente corretti. &  M15CO\\
+		\hline
+	\end{tabular}
+\end{center}
+
 \subsubsection{Metriche}
 \begin{center}
 \renewcommand{\arraystretch}{1.8}
@@ -14,6 +26,8 @@ Rendere il contenuto dei documenti comprensibile agli utenti.
 	\hline
 	M14IG & Indice di Gulpease &  $\geq 40 $ & $\geq 80 $ \\
 	\hline
+  M15CO & Correttezza Ortografica & $\geq 95\% $ & $\geq 100\% $\\
+  \hline
 \end{tabular}
 \end{center}
 
@@ -29,7 +43,9 @@ Il software costituisce una parte fondamentale del progetto è, quindi, importan
 		\hline
 		Funzionalità & Soddisfare i requisiti individuati perseguendo accuratezza. & M1PRR, M2PDR, M3POR \\
 		\hline
-		Usabilità & Facilitare l'uso del prodotto sviluppato affinché gli utenti possano usarlo per i propri scopi. & M7FDU \\
+		Usabilità & Facilitare l'uso del prodotto sviluppato affinché gli utenti possano usarlo per i propri scopi. & M7FDU, M16FA \\
+    \hline
+		Affidabillità & Fare in modo che il software risulti essere solido e gestisca in modo corretto eventuali errori. & M17EG, M18PM \\
 		\hline
 		Manutenibilità & Facilitare le modifiche e aggiornamenti apportati al software. & M5ATC, M6PDG, M9NAC, M10PF, M11LCF, M12PI, M13CPC \\
 		\hline
@@ -48,7 +64,7 @@ Il software costituisce una parte fondamentale del progetto è, quindi, importan
 		M2PDR & Percentuale di requisiti desiderabili soddisfatti & $ \geq 0\% $ & $ 100\% $ \\
 		\hline
 		M3POR & Percentuale di requisiti opzionali soddisfatti & $ \geq 0\% $ & $ 100\% $ \\
-		\hline
+	  \hline
 		M5ATC & Accoppiamento tra Classe & $ \leq 5 $ & $ \leq 2 $\\
 		\hline
 		M6PDG & Profondità delle Gerarchie & $ \leq 5 $ & $ \leq 3 $\\
@@ -64,6 +80,12 @@ Il software costituisce una parte fondamentale del progetto è, quindi, importan
 		M12PI & Profondità di Innestamento & $ \leq 4 $ & $ \leq 3 $\\
 		\hline
 		M13CPC & Linee di Commento per Linee di Codice & $ \geq 0.2 $ & $ \geq 0.3 $\\
+		\hline
+		M16FA & Facilità di Apprendimento & $ \leq 15 $ minuti & $ \leq 10 $ minuti\\
+		\hline
+		M17EG & Errori Gestiti & $ \geq 95\% $ & $  100\% $\\
+		\hline
+		M18PM & Percentuale Malfunzionamenti & $  100\% $ & $ 100\% $\\
 		\hline
 	\end{tabular}
 \end{center}
