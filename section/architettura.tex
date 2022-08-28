@@ -1,30 +1,37 @@
 \section{Architettura}
 L'architettura del prodotto è suddivisa tra Client e Server, inoltre si utilizzano le \glossario{API Rest} messe a disposizione dall'azienda Imola Informatica.
----IMG unica, mentre se è separata Client e Server vanno messe dentro relativa sezione ---
+\subsection{Diagramma delle classi}
+	\begin{figure}[H]
+	\centering\includegraphics[scale=0.80]{images/diagramma_classi.jpg}
+    \caption{Diagramma UML delle classi}
+	\end{figure}
+\subsection{App} Classe in cui vengono gestiti gli utenti e si interfaccia direttamente con l'utente.
 \subsection{Client}
 \subsection{Server}
-\subsubsection{Chatterbot} classe della libreria esterna scritta in \glossario{Python}
-\subsubsection{State} classe che è la generalizzazione di tutti i vari stati e 
-come dato privato si salva l'attuale stato corrente e pubblicamente dispone anche di un metodo per aggiungere 
-informazioni necessarie per completare la richiesta in corso.
-\paragraph*{State\_Null} sottoclasse aggiuntiva di \textit{State} che comprende il caso di uno stato vuoto, una possibile causa può essere quando l'utente non è autenticato.
-\subsubsection{Statement\_State} classe che fa da intermediario tra lo State e lo Statement. Come unico campo privato ha l'\glossario{Api-Key} che certifica se l'utente è autenticato e la rende visibile pubblicamente tramite una funzione get.
-\subsubsection{Statement} classe che viene fornita come dipendenza della libreria \glossario{Chatterbot} e ha il compito di memorizzare i dati e viaggia tra il Client, \textit{LogicAdapter} e Server.
-\subsubsection{LogicAdapter} classe astratta base per tutte le classi adapter derivate, una per ogni funzionalità, dispone dei due metodi base di cui verrà fatto l'\glossario{overriding}:
+\subsubsection{Chatterbot} Classe della libreria esterna scritta in \glossario{Python}. La classe \textit{Chatterbot} e le seguenti \textit{Statement}, \textit{Adapter} fanno parte della libreria.
+\subsubsection{Statement} Classe fornita dalla libreria \glossario{Chatterbot} che rappresenta una singola entità, parola o frase che qualcuno può dire.
+\subsubsection{LogicAdapter} Classe astratta fornita dalla libreria \glossario{Chatterbot} che permette al programmatore esterno di scrivere nuovi adapter. Dispone dei due metodi base di cui verrà fatto l'\glossario{overriding}:
     \begin{itemize}
         \item can\_process: metodo booleano che controlla tutte le varie condizioni e se tutto okay fa procedere il metodo \textit{process}.
         \item process: controlla ed elabora tutti i dati forniti così da produrre una risposta.
     \end{itemize}
-\subsubsection{Request} generalizzazione di tutte le varie \textit{request} distinte per funzionalità. Interfaccia che riceve i dati pronti verificandone la completezza e in base all'\textit{adapter} invia la richiesta \glossario{HTTP} alle \glossario{API Rest} di Imola per interagire con i loro servizi e soddisfare la richiesta dell'utente.
-\subsubsection{Login}
-\subsubsection{Logout}
-\subsubsection{Activity} classi \textit{Adapter\_Activity}, \textit{State\_Activity} e \textit{Request\_Activity} per la funzionalità di consuntivare le ore dedicate ad un progetto compreso le eventuali ore di viaggio.
-\subsubsection{Gate} classi \textit{Adapter\_Gate}, \textit{State\_Gate} e \textit{Request\_Gate} per la funzionalità di apertura cancello
-\subsubsection{Project\_Creation} classi \textit{Adapter\_Project\_Creation}, \textit{State\_Project\_Creation} e \textit{Request\_Project\_Creation}
-\subsubsection{Presence} classi \textit{Adapter\_Presence}, \textit{State\_Presence} e \textit{Request\_Presence} per la funzionalità di registrazione della presenza
-
-\subsection{API Rest}
-Un'API REST è un'interfaccia di programmazione delle applicazioni conforme ai vincoli dello stile architetturale REST, che consente l'interazione con servizi web RESTful.\newline 
-Il termine REST è l'acronimo di REpresentational State Transfer. REST è un insieme di vincoli architetturali, non un protocollo né uno standard.
-Quando una richiesta client viene inviata tramite un'API RESTful, questa trasferisce al richiedente o all'endpoint uno stato rappresentativo della risorsa. L'informazione viene consegnata in HTTP in un formato JSON, HTML, Python o txt.
+\subsubsection{State} Interfaccia che definisce il contratto di tutti i vari stati e come dato privato si salva l'attuale stato corrente e pubblicamente dispone anche di un metodo per aggiungere informazioni necessarie per completare la richiesta in corso.
+\paragraph*{State\_Null} Sottoclasse concreta di \textit{Stato} che simula uno stato nullo, utilizzato quando l'utente non ha effettuato nessuna richiesta.
+\subsubsection{Statement\_State} Sottoclasse di Statement, cioè adatta l'adapter alla libreria chatterbot, in più ha lo stato attuale dell'utente, e l'api-key che dimostra l'autenticazione dell'utente che funge come input di ogni adapter.
+\subsubsection{Request} Interfaccia che riceve i dati pronti verificandone la completezza e in base all'\textit{adapter} invia la richiesta \glossario{HTTP} alle \glossario{API Rest} di Imola per interagire con i loro servizi e soddisfare la richiesta dell'utente e infine ritorna ad adapter una risposta.
+\subsubsection{Login} Classi \textit{Adapter\_Login}, \textit{State\_Login} permettono di effettuare il login
+\subsubsection{Logout} Classe \textit{Adapter\_Logout} permette di effettuare il logout.
+\subsubsection{Activity} Classi \textit{Adapter\_Activity}, \textit{State\_Activity} e \textit{Request\_Activity} per la funzionalità di consuntivare le ore dedicate ad un progetto compreso le eventuali ore di viaggio.
+\subsubsection{Gate} Classi \textit{Adapter\_Gate}, \textit{State\_Gate} e \textit{Request\_Gate} per la funzionalità di apertura cancello
+\subsubsection{Project\_Creation} Classi \textit{Adapter\_Project\_Creation}, \textit{State\_Project\_Creation} e \textit{Request\_Project\_Creation}
+\subsubsection{Presence} Classi \textit{Adapter\_Presence}, \textit{State\_Presence} e \textit{Request\_Presence} per la funzionalità di registrazione della presenza
+\subsubsection{Undo} Classe \textit{Adapter\_Undo} permette di annullare l'operazione in corso e di ricominciare la stessa o un'altra operazione dall'inizio.
+\subsection{API Rest Imola Informatica} L'azienda ha fornito delle \glossario{API Rest} che permettono al \glossario{chatbot} di interagire con i loro sistemi aziendali. Sono facilmente consultabili a questo \href{https://apibot4me.imolinfo.it/}{\color{blue} link}.
+%\newpage
+%\begin{landscape}
+	%\begin{figure}[H]
+	%\centering\includegraphics[width=\linewidth]{images/diagramma_sequenza.jpg}
+    %\caption{Diagramma di sequenza}
+	%\end{figure}
+%\end{landscape}
 \newpage
