@@ -5,9 +5,9 @@ per la stesura di tutti i documenti del gruppo SWEven. \newline
 Tutti i documenti verranno scritti in \LaTeX.
 
 \subsubsection{Ciclo di Vita dei Documenti}
-Il documento viene innanzitutto pianificato, cioè ci si chiede perchè è necessario e si pensa al suo contento. 
-Gli amministratori, nel ruolo di redattori, creano e scrivono il documento, poi i verificatori lo controllano 
-e infine il responsabile lo approva. A quel punto il documento è finito e pronto ad essere ufficialmente 
+Il documento viene innanzitutto pianificato; ci si chiede cioè perché sia necessario e si pensa al suo contenuto. 
+Gli amministratori, nel ruolo di redattori, creano e scrivono il documento; poi i verificatori lo controllano 
+e, infine, il responsabile lo approva. A quel punto il documento è finito e pronto ad essere ufficialmente 
 pubblicato. \newline
 Se i verificatori trovano errori superficiali e/o di ortografia correggono immediatamente;
 se invece l'errore è più profondo o è necessario riscrivere delle parti allora si
@@ -71,30 +71,29 @@ asincrona allo stesso file (è sufficiente lavorare in sezioni diverse).
     \item \textbf{frontespizio}:
             il file rappresenta la prima pagina del documento, e quindi in alto si
             è lasciato un notevole spazio bianco; il contenuto è tutto centrato e 
-            inizia con il nome del documento, poi l'immagine del logo con sotto 
-            nome ed email del gruppo Sweven Team. C'è infine una tabella centrata 
+            inizia con il nome del documento, seguito prima dall'immagine del logo e dopo da nome ed email del gruppo Sweven Team. C'è infine una tabella centrata 
             con due colonne (visibile solo riga superiore e bordo centrale delle colonne), 
             in cui vengono riporte le varie informazioni, le quali sono state settate all'inizio 
             del file configuration:
             \begin{itemize}
-                \item Versione
-                \item Uso
-                \item Destinatari
-                \item Stato
-                \item Redattori
-                \item Verificatori
-                \item Approvatori
+                \item Versione;
+                \item Uso;
+                \item Destinatari;
+                \item Stato;
+                \item Redattori;
+                \item Verificatori;
+                \item Approvatori.
             \end{itemize}
             L'elenco dei destinatari, redattori, verificatori e approvatori 
-            può essere più di una persona e affinchè i nomi siano scritti uno sotto 
+            può essere più di una persona e, affinchè i nomi siano scritti uno sotto 
             l'altro, nel comando si può scrivere: 
             \begin{center}
             	Nome\textbackslash\textbackslash 
             	\& Nome\textbackslash\textbackslash \& Nome\textbackslash\textbackslash
             \end{center}
-            Dopo altro spazio si trova la sintesi del documento: questa frase
+            Dopo ulteriore spazio si trova la sintesi del documento: questa frase
             ha lo scopo di rappresentare molto sinteticamente il contenuto del documento, 
-            così da permettere al lettore di capire se esso è di suo interesse o meno già dal frontespizio.
+            così da permettere al lettore di capire se esso sia di suo interesse o meno già dal frontespizio.
     
     \item \textbf{diario delle modifiche}:
             il diario delle modifiche è costituito da una tabella con 5 colonne e tutti i 
@@ -114,7 +113,7 @@ asincrona allo stesso file (è sufficiente lavorare in sezioni diverse).
     \item \textbf{contenuto}: 
             le pagine successive presentano il contenuto vero e proprio del documento, seguendo l'ordine
             dell'indice (possono esserci anche più file). In tutte le pagine diverse dal frontespizio è 
-            prevista un'intestazione in grigio, che mostra il nome del gruppo a sinistrae il nome del 
+            prevista un'intestazione in grigio, che mostra il nome del gruppo a sinistra e il nome del 
             documento a destra.
             Nel piè di pagina viene riportato il numero della pagina attuale rispetto alle pagine totali.
 \end{enumerate}
@@ -139,8 +138,7 @@ L'ordine delle varie parti sarà il seguente:
                 riunione; \newline
                 la tabella del tracciamento delle decisioni, costituita da due colonne, serve per 
                 riportare in maniera schematica le decisioni prese e assegnare loro un codice 
-                VI\_aaaa-mm-gg oppure VE\_aaaa-mm-gg in base a verbale interno o esterno, così 
-                questo codice può essere usato, se necessario, per riferirsi alla decisione presa.
+                VI\_aaaa-mm-gg oppure VE\_aaaa-mm-gg in base a verbale interno o esterno; in questo modo, tale codice può essere usato, se necessario, per riferirsi alla decisione presa.
 \end{enumerate}
 Il verbale è un documento che viene scritto, verificato e approvato una sola volta, 
 in quanto nel tempo non necessita di aggiornamenti.
@@ -155,8 +153,7 @@ Il glossario non prevede la sezione di introduzione: si è deciso di usare l'ord
 così da facilitare la ricerca; nell'indice compariranno tutte le parole presenti nel documento. 
 Ogni lettera dell'alfabeto costituirà una nuova sezione e ogni parola avrà la sua sottosezione 
 con scritto il relativo significato. \newline
-Quando nei documenti si usa una parola e si vuole rimandare al glossario per la spiegazione 
-avrà la G al pedice; ciò si inserisce usando il comando \textbackslash glossario. 
+Quando nei documenti si usa una parola e si vuole rimandare al glossario per la spiegazione si apporrà una G al pedice di essa; ciò si inserisce usando il comando \textbackslash glossario. 
 Per praticità e per avere lo stile già impostato, questo comando è stato definito nel file 
 configuration con la scrittura in corsivo del termine e l'aggiunta del pedice.
 
@@ -167,7 +164,7 @@ processi primari, processi di supporto e processi organizzativi.
 
 \paragraph{Studio di Fattibilità} \hfill \break
 Lo studio di fattibilità è un documento scritto durante la scelta del capitolato per l'appalto con 
-lo scopo di analizzare ogni capitolato rimasto scrivendo pregi, difetti e criticità rilevati dai 
+lo scopo di analizzare ogni capitolato rimasto, descrivendone pregi, difetti e criticità rilevati dai 
 membri del gruppo.
 
 \paragraph{Candidatura} \hfill \break
@@ -210,8 +207,8 @@ dell'underscore (trattino basso) o delle maiuscole per separare diverse parole.
         \item \textbf{Normale 12 pt}: in generale tutto il testo dei documenti;
         \item \textbf{Grassetto}: tutti i titoli che si differenziano per la grandezza automatica di \LaTeX ;
         \item \textbf{Corsivo}: i riferimenti ad altri documenti, alle parole del glossario;
-        \item \textbf{Elenchi}: gli elementi dell'elenco vanno in grassetto solo se è prevista una descrizione. 
-                                Si usa un ; al termine di ogni voce dell'elenco, tranne all'ultimo; \\
+        \item \textbf{Elenchi}: gli elementi dell'elenco vanno in grassetto solo se è prevista una descrizione;
+                                si usa un ; al termine di ogni voce dell'elenco, tranne all'ultimo; \\
                                 nel caso di elenchi annidati, il grassetto si usa solo nell'elenco principale.
 \end{itemize}
 
