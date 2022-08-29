@@ -10,17 +10,22 @@ Linguaggio di programmazione ad alto livello, adatto alla programmazione orienta
 \paragraph{Chatterbot}
 Libreria esterna in \glossario{Python} che utilizza algoritmi di intelligenza artificiale per trovare la migliore risposta per emulare il comportamento di un \glossario{chatbot} nel server. \newline
 Grazie alla sua flessibilità si sono implementati degli adapter che modellano e gestiscono le varie richieste dell'utente. \newline
-Durante l'esecuzione Chatterbot crea in automatico dei file dall'estensione \glossario{SQL} 
-
+Durante l'esecuzione Chatterbot crea un adapter che gli consente di connettersi ad un database \glossario{SQLite}.
+\subsubsection{Flask}
+Framework Python per lo sviluppo di applicazioni web. Flask contiene tutte le classi e le funzioni necessarie per la costruzione di una web app, e ha agevolato l'organizzazione e la gestione del \glossario{chatbot}.
+\subsubsection{Cors}
+Cross-Origin Resource Sharing regola la cooperazione tra sito web e il caricamento dati da un server esterno garantendone la sicurezza attraverso un'intestazione \glossario{HTTP}.
+\subsubsection{UUID}
+Universally Unique IDentifier, cioè identificativo univoco universale, è usato nelle infrastrutture software per avere l'unicità pratica senza garanzia in un sistema distribuito semplificando il mantenimento dell'identità degli oggetti in ambienti disconnessi.
 \subsection{Client}
 \subsubsection{React}
 React è una libreria JavaScript per costruire l'interfaccia utente caratterizzata dal fatto che è dichiarativa, efficiente e flessibile. E' stato utilizzato per creare l'applicazione lato client.
 \subsubsection{HTML}
-Linguaggio di markup, in standard W3C, per documenti visualizzabili attraverso un web browser
+Linguaggio di markup, in standard W3C, per documenti visualizzabili attraverso un web browser.
 \subsubsection{CSS}
 Linguaggio di formattazione per i documenti HTML.
-\subsubsection{Flask}
-Framework Python per lo sviluppo di applicazioni web. Flask contiene tutte le classi e le funzioni necessarie per la costruzione di una web app, e ha agevolato l'organizzazione e la gestione del \glossario{chatbot}
+\subsubsection{Regex}
+Libreria esterna che controlla le espressioni regolari per la validazione dell'\glossario{api-key}.
 \subsubsection{API AssemblyAI}
-L'API deve essere integrata con React e permette di tradurre automaticamente l'audio in testo.
+Servizio che permette di tradurre automaticamente l'audio in testo richiamando l'api Speech-to-text. \href{https://www.assemblyai.com/blog/the-top-free-speech-to-text-apis-and-open-source-engines/}{\color{blue} Link}
 \newpage
