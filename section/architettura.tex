@@ -32,6 +32,263 @@ Anche solo l'aggiornamento della pagina nel browser comporta l'assegnazione di u
 \subsubsection{Presence} Classi \textit{Adapter\_Presence}, \textit{State\_Presence} e \textit{Request\_Presence} per la funzionalità di registrazione della presenza
 \subsubsection{Undo} Classe \textit{Adapter\_Undo} permette di annullare l'operazione in corso e di ricominciare la stessa o un'altra operazione dall'inizio.
 \subsection{API Rest Imola Informatica} L'azienda ha fornito delle \glossario{API Rest} che permettono al \glossario{chatbot} di interagire con i loro sistemi aziendali. Sono facilmente consultabili a questo \href{https://apibot4me.imolinfo.it/}{\color{blue} link}.
+\subsubsection{Consuntivazione di un attività}
+\paragraph{API Url} \hfill \break
+/projects/\{code\}/activities/me
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+POST
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+    \item \textbf{Content-Type}: application/json.
+\end{itemize}
+\paragraph{Parametri URL} \hfill \break
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        code & string & rappresenta il codice del progetto di cui fa parte l’attività da rendicontare.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Parametri Body} \hfill \break
+Nel body della richiesta viene passato un array contenente un json con questi parametri
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        date & string & data in cui si è svolta l'attività.\\
+        \hline
+        billableHours & int & ore fatturabili dell'attività.\\
+        \hline
+        travelHours & int & ore di viaggio spese per l'attività.\\
+        \hline
+        billableTravelHours & int & ore di viaggio fatturabili per l'attività.\\
+        \hline
+        location & string & nome della sede in cui si è svolta l'attività.\\
+        \hline
+        billable & bool & indica se l'attività è fatturabile.\\
+        \hline
+        note & string & descrizione dell'attività.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        204 & indica che la richiesta di consuntivazione è andata a buon fine\\
+        \hline
+        404 & indica che il codice specificato del progetto non è corretto\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
+\subsubsection{Apertura del cancello}
+\paragraph{API Url} \hfill \break
+/locations/\{location\_name\}/devices/\{device\}/status
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+PUT
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+    \item \textbf{Content-Type}: application/json.
+\end{itemize}
+\paragraph{Parametri URL} \hfill \break
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        location\_name & string & sede di cui aprire il cancello.\\
+        \hline
+        device & string & nome del dispositivo da utilizzare, in questo caso il cancello.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Parametri Body} \hfill \break
+Nel body della richiesta viene passato un json contenente questi parametri
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        status & string & rappresenta il nuovo stato del dispositivo.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        204 & indica che la richiesta di apertura del cancello è andata a buon fine.\\
+        \hline
+        404 & indica che la sede di cui aprire il cancello non è valida.\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
+\subsubsection{Registrazione della presenza}
+\paragraph{API Url} \hfill \break
+/locations/\{location\_name\}/presence
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+POST
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+    \item \textbf{Content-Type}: application/json.
+\end{itemize}
+\paragraph{Parametri URL} \hfill \break
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        location\_name & string & sede in cui registrare la presenza.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        200 & indica che la registrazione della presenza è stata effettuata con successo.\\
+        \hline
+        404 & indica che la sede specificata non è valida.\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
+\subsubsection{Creazione di un nuovo progetto}
+\paragraph{API Url} \hfill \break
+/projects
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+POST
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+\end{itemize}
+\paragraph{Parametri Body} \hfill \break
+Nel body della richiesta viene passato un json contenente questi parametri
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        code & string & codice del progetto da creare.\\
+        \hline
+        detail & string & descrizione del progetto da creare.\\
+        \hline
+        customer & string & cliente per cui viene creato il progetto.\\
+        \hline
+        manager & string & manager del progetto da creare.\\
+        \hline
+        status & string & stato del progetto.\\
+        \hline
+        area & string & sede in cui svolgere il progetto.\\
+        \hline
+        startDate & string & data di inizio del progetto.\\
+        \hline
+        endDate & string & data di fine del progetto.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        204 & indica che è l'operazione di creazione del progetto è andata a buon fine.\\
+        \hline
+        400 & indica che almeno uno dei parametri non è stato specificato.\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
+\subsubsection{Recupero delle sedi}
+\paragraph{API Url} \hfill \break
+/locations
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+GET
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+\end{itemize}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        200 & ritorna una lista contenente le informazioni delle sedi.\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
+\subsubsection{Recupero della rendicontazione per il progetto corrente}
+\paragraph{API Url} \hfill \break
+/projects/\{code\}
+\paragraph{Metodo di richiesta \glossario{HTTP}} \hfill \break
+GET
+\paragraph{Headers \glossario{HTTP}}
+\begin{itemize}
+    \item \textbf{accept}: application/json;
+    \item \textbf{api\_key}: api\_key, per autorizzare le richieste;
+\end{itemize}
+\paragraph{Parametri URL} \hfill \break
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{10em}|m{4em}|m{20em}| }
+        \hline
+        \textbf{Nome} & \textbf{Tipo} & \textbf{Descrizione} \\
+        \hline
+        code & string & codice del progetto corrente.\\
+        \hline
+    \end{tabular}
+\end{center}
+\paragraph{Risposte}
+\begin{center}
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{9em}|m{24em}| }
+        \hline
+        \textbf{Status code \glossario{HTTP}} & \textbf{Descrizione} \\
+        \hline
+        200 & ritorna un json contenente le informazioni per il progetto corrente.\\
+        \hline
+        401 & indica che l'api key non è stata specificata o quella utilizzata non è valida.\\
+        \hline
+    \end{tabular}
+\end{center}
 \newpage
 \begin{landscape}
 	\begin{figure}[H]
