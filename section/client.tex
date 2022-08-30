@@ -1,0 +1,26 @@
+\subsection{Client}
+\subsubsection{Introduzione}
+Il \glossario{Client} è rappresentato dall'interfaccia web, con la quale l'utente usufruisce dei servizi offerti dall'applicativo. Esso è \glossario{Stateless} cioè non contiene lo stato attuale della conversione, questa informazione viene gestita e salvata solamente lato \glossario{Server}. \newline
+Il \glossario{Client} ad ogni avvio manda una richiesta \glossario{POST} all'indirizzo del server \textit{/getID} richiendo di ricevere un identificativo univoco. Una volta ricevuta la risposta dal server contentente l'ID, esso viene salvato all'interno del \glossario{LocalStorage} del browser, in questo modo ogni messaggio che viene mandato dal \glossario{Client} al \glossario{Server} avrà all'interno dei parametri della \glossario{POST} il \glossario{clientID} che permetterà al chatbot di ricollegare la conversazione a quel specifico client. \newline
+L'aggiornamento della pagina del browser comporta l'assegnazione di un nuovo \glossario{clientID} il che implica lo sviluppo di uno dei seguenti scenari:
+\begin{itemize}
+    \item Se l'utente era precedentemente loggato: la sua \glossario{API-KEY} era stata salvata all'interno del \glossario{LocalStorage} del browser, verrà quindi letta da tale spazio di memoria e verrà richiesto all'utente se rieffetturae il login con tale \glossario{API-KEY} o eventualmente inserirne una diversa. 
+    \item Se l'utente era precedentemente sloggato: l'applicazione ripartirà dallo stato iniziale chiedendo all'utente di inserire un \glossario{API-KEY} per poter utilizzare i servizi offerti. 
+\end{itemize}
+
+\subsubsection{Componenti}
+Esso è stato sviluppando utilizzando \glossario{React} e risulta essere suddiviso nei seguenti componenti. 
+\begin{itemize}
+    \item \textbf{AudioRecorder}: componente dedicato alla registrazione e conseguente invio del file audio, al servizio esterno di traduzione del messaggio per ottenere come risultato finale una stringa da inviare al server. 
+    \item \textbf{CustomButton}: per questioni di manutenibilità e futura espansione si è deciso di realizzare un componente dedicato ai bottoni presenti all'interno dell'applicativo. 
+    \item \textbf{CustomIcon}:  per questioni di manutenibilità e futura espansione si è deciso di realizzare un componente dedicato alle icone presenti all'interno dell'applicativo. 
+    \item \textbf{Home}: componente principale dell'applicativo lato \glossario{Client}, racchiude al suo interno gli altri componenti e rappresenta l'UI con la quale l'utente si interfaccia per utilizzare i servizi. 
+    \item \textbf{LoadingSpinner}: componente dedicato che avvisa l'utente dell'avanzamento del processo di traduzione del file audio. 
+\end{itemize}
+\subsubsection{Dipendenze esterne}
+Lato client possiamo trovare le seguenti dipendenze esterne:
+\begin{itemize}
+    \item \textbf{AssemblyAI}: servizio esterno che si occupa della conversione dei file audio registrati dall'utente, ritornando una stringa. 
+\end{itemize}
+\newpage
+

@@ -1,0 +1,14 @@
+
+*.aux
+
+*.fdb_latexmk
+
+*.fls
+
+configuration.log
+
+configuration.out
+
+configuration.toc
+
+configuration.synctex.gz
