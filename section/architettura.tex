@@ -7,55 +7,7 @@ L'architettura del prodotto si basa su un modello di comunicazione tra Client e 
 \end{itemize}
 
 \input{section/client.tex}
-
-\subsection{Diagramma delle classi lato Server}
-	\begin{figure}[H]
-	\centering\includegraphics[scale=0.70]{images/diagramma_classi.jpg}
-    \caption{Diagramma UML delle classi lato Server}
-	\end{figure}
-
-\newpage
-
-\subsection{Server}
-\subsubsection{App} Classe in cui vengono gestiti gli utenti e si interfaccia direttamente con l'utente, inoltre assegna il nuovo client id ai nuovi utenti.
-\subsubsection{Client} Classe che rappresenta la minisessione di ogni utente nel server e ha tutti i dati salvati.
-\subsubsection{Server} Classe che contiene la logica utilizzata dal chatbot per poter rispondere correttamente all'input del client tramite l'utilizzo di \textit{Statement\_State}.
-\subsubsection{Chatterbot} Classe della libreria esterna scritta in \glossario{Python}. La classe \textit{Chatterbot} e le seguenti \textit{Statement}, \textit{Adapter} fanno parte della libreria.
-\subsubsection{Statement} Classe fornita dalla libreria \glossario{Chatterbot} che rappresenta una singola entità, parola o frase che qualcuno può dire.
-\subsubsection{LogicAdapter} Classe astratta fornita dalla libreria \glossario{Chatterbot} che permette al programmatore esterno di scrivere nuovi adapter. Dispone dei due metodi base di cui verrà fatto l'\glossario{overriding}:
-    \begin{itemize}
-        \item can\_process: metodo booleano che controlla tutte le varie condizioni e se tutto okay fa procedere il metodo \textit{process}.
-        \item process: controlla ed elabora tutti i dati forniti così da produrre una risposta.
-    \end{itemize}
-\subsubsection{State} Interfaccia che definisce il contratto di tutti i vari stati e come dato privato si salva l'attuale stato corrente e pubblicamente dispone anche di un metodo per aggiungere informazioni necessarie per completare la richiesta in corso.
-\paragraph*{State\_Null} Sottoclasse concreta di \textit{Stato} che simula uno stato nullo, utilizzato quando l'utente non ha effettuato nessuna richiesta.
-\subsubsection{Statement\_State} Sottoclasse di Statement, cioè adatta l'adapter alla libreria chatterbot, in più ha lo stato attuale dell'utente, e l'api-key che dimostra l'autenticazione dell'utente che funge come input di ogni adapter.
-\subsubsection{Request} Interfaccia che riceve i dati pronti verificandone la completezza e in base all'\textit{adapter} invia la richiesta \glossario{HTTP} alle \glossario{API Rest} di Imola per interagire con i loro servizi e soddisfare la richiesta dell'utente e infine ritorna ad adapter una risposta.
-\subsubsection{Login} Classi \textit{Adapter\_Login}, \textit{State\_Login} permettono di effettuare il login
-\subsubsection{Logout} Classe \textit{Adapter\_Logout} permette di effettuare il logout.
-\subsubsection{Activity} Classi \textit{Adapter\_Activity}, \textit{State\_Activity} e \textit{Request\_Activity} per la funzionalità di consuntivare le ore dedicate ad un progetto compreso le eventuali ore di viaggio.
-\subsubsection{Gate} Classi \textit{Adapter\_Gate}, \textit{State\_Gate} e \textit{Request\_Gate} per la funzionalità di apertura cancello
-\subsubsection{Project\_Creation} Classi \textit{Adapter\_Project\_Creation}, \textit{State\_Project\_Creation} e \textit{Request\_Project\_Creation}
-\subsubsection{Presence} Classi \textit{Adapter\_Presence}, \textit{State\_Presence} e \textit{Request\_Presence} per la funzionalità di registrazione della presenza
-\subsubsection{Undo} Classe \textit{Adapter\_Undo} permette di annullare l'operazione in corso e di ricominciare la stessa o un'altra operazione dall'inizio.
-\subsection{Diagramma sequenza Esecuzione Richiesta}
-\newpage
-
-\begin{landscape}
-	\begin{figure}[H]
-	\centering\includegraphics[width=\linewidth]{images/diagramma_sequenza_server.jpg}
-    \caption{Diagramma di sequenza Esecuzione Richiesta }
-	\end{figure}
-\end{landscape}
-
-\subsection{Diagramma sequenza Richiesta Identificativo}
-\begin{figure}[H]
-    \centering\includegraphics[width=\linewidth]{images/diagramma_sequenza_client.jpg}
-    \caption{Diagramma di sequenza Client}
-\end{figure}
-All'avvio dell'applicazione, il \glossario{Client} ovvero l'interfaccia realizzata tramite \glossario{React}, invia una richiesta di ottenimento dell'identificativo. App, ovvero la classe in cui è instaziato Flask e che si occupa della gestione delle comunicazioni, riceve la richiesta, istanzia una classe Client, lato server, che manterrà in memoria. Questa classe Client, lato server, viene associata ad un \glossario{UUID} in questo modo ogni messaggio successivo mandato dall'utente sarà associato alla sua istanza di classe Client, fino a quando non deciderà di effettuare il logout o gli verrà assegnato un identificativo differente. 
-
-\newpage
+\input{section/server.tex}
 
 \subsection{Design Pattern}
 Front Controller pattern è un pattern architetturale per la progettazione di applicazioni web che forniscono un punto di ingresso centralizzato per la gestione delle richieste. Nel caso del nostro applicativo infatti la classe \textit{App}, in cui è presente \glossario{Flask} si occupa di ricevere tutte le richieste ricevute dai vari \glossario{Client}, le quali verranno poi gestite da un'istanza della classe \textit{Client} lato \glossario{Server} che andrà a contattare l'adapter corretto in base all'interpretazione del messaggio, effettuando in seguito una chiamata all'API-REST consona al servizio richiesto.
