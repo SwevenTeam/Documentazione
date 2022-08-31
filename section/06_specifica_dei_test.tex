@@ -23,7 +23,7 @@ Nelle tabelle vengono utilizzate ulteriori sigle, di seguito viene descritto il 
 \end{itemize}
 
 \subsection{Test di Unità}
-Questi test servono per verificare che il funzionamento di singoli elementi dell'applicazione.  \\
+Questi test servono per verificare il funzionamento di singoli elementi dell'applicazione.  \\
 Vengono suddivisi in cartelle \textit{Test} e contengono dei file \textit{test\_NomeElementoTestato}. \\
 Ogni modulo utilizzato ha il suo corrispettivo file \textit{test\_}, ad eccezione del file app.py.
 \begin{center}
@@ -293,6 +293,7 @@ Ogni modulo utilizzato ha il suo corrispettivo file \textit{test\_}, ad eccezion
     \begin{tabular}{|m{6em}|m{33em}|}
       \hline
       \textbf{Codice} & \textbf{Modulo Testato} \\
+      \hline
       T\_U42 &\textbackslash server\textbackslash Adapter\textbackslash Test\textbackslash test\_Adapter\_Project\_Creation \textbackslash test\_Adapter\_Creation\_Activate \\
       \hline
       T\_U43 &\textbackslash server\textbackslash Adapter\textbackslash Test\textbackslash test\_Adapter\_Project\_Creation \textbackslash test\_Adapter\_Creation\_Incorrect \\
@@ -391,11 +392,6 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         \hline
         T\_S6 & Controllare che se l'utente fornisce un \glossario{token} non valido venga visualizzato un messaggio di errore. & I & S \\
         \hline
-    \end{tabular}
-    \newpage
-    \renewcommand{\arraystretch}{1.8}
-    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
-        \hline
         T\_S7 & Controllare che l'utente possa fornire \glossario{token} diversi per l'autenticazione. & NI & - \\
         \hline
         T\_S8 & Controllare che l'utente possa registrare la propria presenza in sede. & I & S \\
@@ -414,6 +410,11 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         \hline
         T\_S15 & Controllare che venga inviato un messaggio di errore se il numero di ore non è valido. & I & S \\
         \hline
+    \end{tabular}
+    \newpage
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
+        \hline
         T\_S16 & Controllare che l'utente possa specificare il progetto correlato all'\glossario{attività}. & I & S \\
         \hline
         T\_S17 & Controllare che venga inviato un messaggio di errore se il progetto non è valido.  & I & S \\
@@ -427,11 +428,6 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         T\_S21 & Controllare che la sede inserita dall'utente per aprire il cancello sia valida. & I & S \\
         \hline    
         T\_S22 & Controllare che venga inviato un messaggio di errore se la sede, per l'apertura del cancello, non è valida. & I & S \\
-        \hline
-    \end{tabular}
-    \newpage
-    \renewcommand{\arraystretch}{1.8}
-    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
         \hline
         T\_S23 & Controllare che l'utente possa creare una riunione su una piattaforma per videoconferenze. & NI & - \\
         \hline
@@ -451,6 +447,11 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         \hline
         T\_S31 & Controllare che venga inviato un messaggio di errore se l'ora non è valida o è indisponibile. & NI & - \\
         \hline
+    \end{tabular}
+    \newpage
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
+        \hline
         T\_S32 & Controllare che l'utente possa specificare i partecipanti della riunione. & NI & - \\
         \hline
         T\_S33 & Controllare che venga inviato un messaggio di errore se i partecipanti non sono stati inseriti in modo corretto. & NI & - \\
@@ -462,11 +463,6 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         T\_S36 & Controllare che venga inviato un messaggio di errore se il progetto non è valido. & NI & - \\
         \hline
         T\_S37 & Controllare che l'utente possa inserire il nome del documento da ricercare. & NI & - \\
-        \hline
-    \end{tabular}
-    \newpage
-    \renewcommand{\arraystretch}{1.8}
-    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
         \hline
         T\_S38 & Controllare che venga inviato un messaggio di errore se il nome del documento non è valido. & NI & - \\
         \hline
@@ -488,6 +484,11 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         \hline
         T\_S47 & Controllare che venga inviato dal \glossario{chatbot} un messaggio che conferma l'annullamento dell'operazione. & I & S \\
         \hline
+    \end{tabular}
+    \newpage
+    \renewcommand{\arraystretch}{1.8}
+    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
+        \hline
         T\_S48 & Controllare che l'utente possa verificare lo stato di \glossario{check-in}/\glossario{check-out}. & NI & - \\
         \hline
         T\_S49 & Controllare che venga inviato un messaggio di errore se è impossibile vedere lo stato di \glossario{check-in}/\glossario{check-out}. & NI & - \\
@@ -499,11 +500,6 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         T\_S52 & Controllare che l'utente possa visualizzare le ore rimanenti da consuntivare. & NI & - \\
         \hline
         T\_S53 & Controllare che venga inviato un messaggio di errore se è impossibile vedere le ore rimanenti da consuntivare. & NI & - \\
-        \hline
-    \end{tabular}
-    \newpage
-    \renewcommand{\arraystretch}{1.8}
-    \begin{tabular}{ |m{3em}|m{23em}|m{3em}|m{3em}| }
         \hline
         T\_S54 & Controllare che l'utente possa visualizzare le riunioni della giornata. & NI & - \\
         \hline
@@ -610,7 +606,6 @@ Questi test servono per verificare che il funzionamento complessivo dell'applica
         \hline
         T\_S38 & RD-F-36\\
         \hline
-
         T\_S39 & RD-F-37\\
         \hline
         T\_S40 & RD-F-38\\
