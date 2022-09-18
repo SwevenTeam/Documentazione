@@ -4,7 +4,8 @@ Lo scopo di questa sezione è di riportare tutte le regole, template e decisioni
 per la stesura di tutti i documenti del gruppo SWEven. \newline
 Tutti i documenti verranno scritti in \LaTeX.
 
-\subsubsection{Ciclo di Vita dei Documenti}
+\subsubsection{Attività}
+\paragraph{Ciclo di Vita dei Documenti}
 Il documento viene innanzitutto pianificato; ci si chiede cioè perché sia necessario e si pensa al suo contenuto. 
 Gli amministratori, nel ruolo di redattori, creano e scrivono il documento; poi i verificatori lo controllano 
 e, infine, il responsabile lo approva. A quel punto il documento è finito e pronto ad essere ufficialmente 
@@ -13,7 +14,7 @@ Se i verificatori trovano errori superficiali e/o di ortografia correggono immed
 se invece l'errore è più profondo o è necessario riscrivere delle parti allora si
 incarica nuovamente il redattore di sistemare, e poi il verificatore controllerà nuovamente.
 
-\subsubsection{Versionamento dei Documenti}
+\paragraph{Versionamento dei Documenti}
 I documenti sono redatti in maniera incrementale e in più momenti, quindi per una migliore 
 gestione si tengono versionati.
 \newline Versione: x.y.z
@@ -21,14 +22,13 @@ gestione si tengono versionati.
     \item \textbf{x} è il valore più grande e indica quale versione è stata ufficialmente pubblicata.
             Viene aggiornato solo dal responsabile quando l'approvazione del documento ha esito positivo,
             e si riportano a zero sia y che z;
-    \item \textbf{y} è il valore che indica lo stato di verifica globale del documento. Viene aggiornato dal verificatore 
-            quando la verifica globale del documento ha esito positivo, e si riporta a zero z;
+    \item \textbf{y} è il valore che indica lo stato di verifica globale del documento. Risulta essere un valore inutile in quanto l'incremento della z avviene già a seguito di una verifica.
     \item \textbf{z} è il valore che indica lo stato di stesura e relativa verifica di singole parti del documento. 
             Viene aggiornato dal verificatore quando verifica positivamente quella sezione scritta dal redattore.
 \end{description}
 A fine progetto è necessario che tutti i documenti siano alla versione x.0.0.
 
-\subsubsection{Suddivisione Documenti Interni ed Esterni}
+\paragraph{Suddivisione Documenti Interni ed Esterni}
 I documenti si suddividono in interni ed esterni in base allo scopo del documento e ai destinatari.
 Nei documenti interni i destinatari sono i membri del gruppo Sweven e i committenti; nei documenti 
 esterni figura anche l'azienda proponente. \newline
@@ -50,16 +50,11 @@ esterni figura anche l'azienda proponente. \newline
     \item \textbf{Manuale Utente}.
 \end{itemize}
 
-\subsubsection{Documenti e Template}
-La prima sottosezione illustra il template comune a tutti i documenti.\\
-Nelle sottosezioni successive, una per ogni documento, è scritto lo scopo 
-del documento ed eventuali particolarità di template.
-\paragraph{Template Comune a tutti i Documenti} \hfill \break
+\paragraph{Template Documenti}
 Tutti i documenti vengono suddivisi in varie sezioni e ad ognuna corrisponde 
 un file, in modo tale da rendere più agevole l'aggiornamento e la revisione dei file, 
 oltre a garantire la possibilità di lavorare in contemporanea in maniera 
 asincrona allo stesso file (è sufficiente lavorare in sezioni diverse).
-
 \begin{enumerate}
     \item \textbf{configuration}:
             rappresenta il file principale del documento; contiene tutti i comandi, 
@@ -118,7 +113,7 @@ asincrona allo stesso file (è sufficiente lavorare in sezioni diverse).
             Nel piè di pagina viene riportato il numero della pagina attuale rispetto alle pagine totali.
 \end{enumerate}
 
-\paragraph{Verbali} \hfill \linebreak
+\subparagraph{Verbali} \hfill \linebreak
 Per la stesura dei verbali sono inoltre presenti altri due file template, rispetto a quanto scritto nella 
 sezione 3.1.5: "informazioni" e "conclusioni-decisioni". \\
 L'ordine delle varie parti sarà il seguente:
@@ -146,7 +141,8 @@ Inoltre il redattore non verrà affiancato dal verificatore durante la scrittura
 al termine della redazione. Quindi all'esito positivo della verifica si userà direttamente il codice 0.1.0, 
 e poi 1.0.0 con l'approvazione.
 
-\paragraph{Glossario}  \hfill \linebreak
+\subparagraph{Altri Documenti} \hfill \linebreak
+\subparagraph*{Glossario}  \hfill \linebreak
 Il glossario è un documento che ha lo scopo di spiegare il significato di alcuni termini usati 
 all'interno degli altri documenti, così da facilitarne la comprensione. \newline
 Il glossario non prevede la sezione di introduzione: si è deciso di usare l'ordine alfabetico, 
@@ -157,43 +153,43 @@ Quando nei documenti si usa una parola e si vuole rimandare al glossario per la 
 Per praticità e per avere lo stile già impostato, questo comando è stato definito nel file 
 configuration con la scrittura in corsivo del termine e l'aggiunta del pedice.
 
-\paragraph{Norme di Progetto}  \hfill \break
+\subparagraph*{Norme di Progetto}  \hfill \break
 Le norme di progetto, cioè questo documento, hanno lo scopo di redigere e riportare tutte le norme 
 e le decisioni del gruppo Sweven. Il documento sarà composto da tre grandi sezioni: \\
 processi primari, processi di supporto e processi organizzativi.
 
-\paragraph{Studio di Fattibilità} \hfill \break
+\subparagraph*{Studio di Fattibilità} \hfill \break
 Lo studio di fattibilità è un documento scritto durante la scelta del capitolato per l'appalto con 
 lo scopo di analizzare ogni capitolato rimasto, descrivendone pregi, difetti e criticità rilevati dai 
 membri del gruppo.
 
-\paragraph{Candidatura} \hfill \break
+\subparagraph*{Candidatura} \hfill \break
 La candidatura è il documento ufficiale mediante il quale il gruppo si candida alla gara d'appalto 
 per l'assegnazione del capitolato, dichiarando anche il preventivo dei costi e della data di consegna.
 
-\paragraph{Analisi dei Requisiti}  \hfill \break
+\subparagraph*{Analisi dei Requisiti}  \hfill \break
 L'analisi dei requisiti è un documento scritto durante la fase di analisi del progetto, che elenca in 
 dettaglio i casi d'uso e mappa poi i requisiti del prodotto.
 
-\paragraph{Piano di Progetto}  \hfill \break
+\subparagraph*{Piano di Progetto}  \hfill \break
 Il piano di progetto è un documento in cui il gruppo dichiara come verrà gestito lo sviluppo del progetto,
 scrivendo in dettaglio la pianificazione con relativo preventivo, e riporta infine l'effettivo consuntivo.
 
-\paragraph{Piano di Qualifica} \hfill \break
+\subparagraph*{Piano di Qualifica} \hfill \break
 Il piano di qualifica è un documento in cui il gruppo dichiara come analizza e verifica che i documenti e 
 il prodotto siano di qualità, ponendosi soglie, sia minime che desiderabili, da soddisfare nelle metriche.
 
-\paragraph{Specifica Architetturale} \hfill \break
+\subparagraph*{Specifica Architetturale} \hfill \break
 La specifica architetturale è un documento scritto durante le fasi di progettazione per illustrare 
 l'architettura del prodotto \emph{Bot4Me}.
 
-\paragraph{Manuale Utente} \hfill \break
+\subparagraph*{Manuale Utente} \hfill \break
 Il manuale utente è un documento redatto per agevolare e fornire tutte le informazioni utili all'utente che 
 utilizzerà \emph{Bot4Me}.
 
-\subsubsection{Convenzioni Tipografiche} 
+\paragraph{Convenzioni Tipografiche} 
 In questa parte si riportano le varie convenzioni per i documenti decise all'interno del gruppo.
-\paragraph{Nome del File}  \hfill \break
+\subparagraph*{Nome del File}  \hfill \break
 I documenti pdf vanno nominati con il nome del documento iniziando con la lettera maiuscola 
 e ogni nuova parola inizia con la lettera maiuscola (comprese le proposizioni). Per i verbali, in 
 aggiunta, va scritta anche la data in formato americano usando i trattini, e un altro trattino separa la data 
@@ -202,7 +198,7 @@ Il gruppo dà importanza ai nomi dei file che vengono ufficialmente pubblicati, 
 altri documenti viene data più libertà al creatore del file, invitando comunque all'utilizzo 
 dell'underscore (trattino basso) o delle maiuscole per separare diverse parole.
 
-\paragraph{Stile del Testo}
+\subparagraph*{Stile del Testo}
 \begin{itemize}
         \item \textbf{Normale 12 pt}: in generale tutto il testo dei documenti;
         \item \textbf{Grassetto}: tutti i titoli che si differenziano per la grandezza automatica di \LaTeX ;
@@ -212,11 +208,11 @@ dell'underscore (trattino basso) o delle maiuscole per separare diverse parole.
                                 nel caso di elenchi annidati, il grassetto si usa solo nell'elenco principale.
 \end{itemize}
 
-\paragraph{Scrittura della Data e dell'Ora} \hfill \break
+\subparagraph*{Scrittura della Data e dell'Ora} \hfill \break
 La data va sempre scritta nel formato americano aaaa-mm-gg. \\
 Per l'ora si usa il formato a 24 ore hh:mm.
 
-\paragraph{Sigle}
+\subparagraph*{Sigle}
 \begin{itemize}
         \item \textbf{Nomi dei documenti}
                 \begin{itemize}
@@ -247,7 +243,7 @@ Per l'ora si usa il formato a 24 ore hh:mm.
                 \end{itemize}
 \end{itemize}
 
-\subsubsection{Metriche}
+\paragraph{Metriche}
 \textbf{M14IG}:
     \begin{itemize}
       \item Nome: Indice di Gulpease;
