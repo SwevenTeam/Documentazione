@@ -4,7 +4,7 @@ Il gruppo aggiorna i membri dell'azienda Imola Informatica in merito alle valuta
 Il discorso è stato incentrato principalmente sulle criticità riscontrate e di come il gruppo le abbia affrontate. In particolare, sono stati evidenziati i seguenti errori: 
 \begin{itemize}
     \item \textbf{Doppio messaggio durante la procedura di Login}: durante il colloquio avuto con il docente \textit{Riccardo Cardin}, era stato fatto presente al gruppo la presenza della richiesta di inserimento di una \glossario{API-KEY} da parte del chatbot e conseguente messaggio di avvenuta autenticazione, entrambi mostrati in sequenza dopo che l'utente aveva salvato la propria \glossario{API-KEY}. Si tratta dunque di un errore logico da attribuirsi al cambiamento della gestione della procedura di login, in quanto non viene più avviata la richiesta di autenticazione da parte dell'utente ma il chatbot al suo avvio esegue autonomamente tale processo. Il team ha risolto questa problematica mostrando solamente il successo o insuccesso della richiesta di autenticazione.
-    \item \textbf{Ritorno delle consultivazioni ambiguo}: sempre durante il colloquio avuto con il docente Riccardo Cardin, durante l'esposizione della funzionalità di ottenimento delle consultivazioni registate, era stato fatto presente come il messaggio di risposta, generato dal chatbot, fosse ambiguo e di difficile interpretazione non avendo un ordinamento temporale preciso. La soluzione adottata dal team è stata quella di ordinare per data la generazione delle consultivazioni fornendo inoltre la possibilità all'utente di inserire in input una data dalla quale mostrare tutte le consultivazioni ad essa successive. 
+    \item \textbf{Ritorno delle consuntivazioni ambiguo}: sempre durante il colloquio avuto con il docente Riccardo Cardin, durante l'esposizione della funzionalità di ottenimento delle consuntivazioni registrate, era stato fatto presente come il messaggio di risposta, generato dal chatbot, fosse ambiguo e di difficile interpretazione non avendo un ordinamento temporale preciso. La soluzione adottata dal team è stata quella di ordinare per data la generazione delle consuntivazioni fornendo inoltre la possibilità all'utente di inserire in input una data dalla quale mostrare tutte le consuntivazioni ad essa successive. 
     \item \textbf{Errori documentali}: il gruppo per completezza comunica all'azienda Imola Informatica gli errori commessi durante la stesura dei documenti, impegnandosi a risolverli in vista della revisione \glossario{Customer Acceptance}.
 \end{itemize}
 
@@ -12,7 +12,7 @@ Il discorso è stato incentrato principalmente sulle criticità riscontrate e di
 \subsection{Presentazione dello stato complessivo     dell'applicativo a Imola Informatica}
 In seguito alla discussione in merito ai miglioramenti effettuati per risolvere i problemi riscontrati durante la \glossario{Product Baseline},
 il gruppo mostra il funzionamento effettivo del chatbot all'azienda Imola Informatica. \\
-Vengono mostrate sia le funzionalità obbligatorie che e funzionalità aggiuntive sviluppate dal team nel corso degli incrementi precedenti, 
+Vengono mostrate sia le funzionalità obbligatorie che le funzionalità aggiuntive sviluppate dal team nel corso degli incrementi precedenti, 
 in particolare vengono mostrate: 
 \begin{itemize}
     \item \textbf{Funzionalità Login}: aggiornata rispetto a quelle mostrate nel corso dei colloqui precedenti, in quanto tiene conto della gestione della concorrenza tra utenti. All'avvio il chatbot comunica con il Server per l'ottenimento di un \glossario{UUID} il quale verrà salvato all'interno del \glossario{Local Storage} del Browser assieme all'\glossario{API-KEY} fornita dall'utente. 
@@ -22,10 +22,10 @@ in particolare vengono mostrate:
     \item \textbf{Funzionalità Apertura Cancello}.
     \item \textbf{Funzionalità Creazione Progetto}.
     \item \textbf{Funzionalità Check-In}: durante la prova di tale funzione, \textit{Tommaso} chiede informazioni ai proponenti dell'azienda riguardo la necessità 
-    di sviluppo della funzionalità oppposta di Check-Out, confermata ed accolta da Imola Informatica in quanto ritenuta una funzione molto importante soprattutto in contesti di sicurezza per avere un elenco completo e aggiornato del personale presente in sede in ogni instante. 
-    \item \textbf{Funzionalità Consultivazione}: sempre \textit{Tommaso}, mostrando il funzionamento della consultivazione, si interroga in merito alla possibilità di avere una lista di attività predefinite. 
+    di sviluppo della funzionalità opposta di Check-Out, confermata ed accolta da Imola Informatica in quanto ritenuta una funzione molto importante soprattutto in contesti di sicurezza per avere un elenco completo e aggiornato del personale presente in sede in ogni instante. 
+    \item \textbf{Funzionalità Consuntivazione}: sempre \textit{Tommaso}, mostrando il funzionamento della consuntivazione, si interroga in merito alla possibilità di avere una lista di attività predefinite. 
 \end{itemize}
-\textit{Tommaso} dopo aver esposto i suoi dubbi all'azienda decide di prendersi caricato della realizzazione della funzionalità di Check-Out e dell'aggiunta di una lista di attività predefinite per la consultivazione dell'attività svolta.
+\textit{Tommaso} dopo aver esposto i suoi dubbi all'azienda decide di prendersi caricato della realizzazione della funzionalità di Check-Out e dell'aggiunta di una lista di attività predefinite per la consuntivazione dell'attività svolta.
 
 \subsection{Rendiconto stato avanzamento test}
 Il team mostra all'azienda i test effettuati fino ad ora, accompagnati dalla visione del pannello di controllo di CodeCov il quale mostra un andamento dei test 
@@ -36,7 +36,7 @@ superiore rispetto alla soglia minima imposta dal capitolato che risulta essere 
 \textit{Pietro} e \textit{Matteo} si dedicano dunque a trovare il modo di realizzare quest'ultima parte di test riguardanti il lato Client dell'applicativo.  
 
 \subsection{Chiarimento e confronto in vista della revisione \glossario{Customer Acceptance}}
-Il team chiede alcuni chiarimenti sulle modalità con cui verrà svolta la revisione \glossario{Customer Acceptance}, anticipando ai proponenti dell'azienda Imola Informatica la volontà di richierla per la settimana dal 2022-09-26 al 2022-09-30. 
+Il team chiede alcuni chiarimenti sulle modalità con cui verrà svolta la revisione \glossario{Customer Acceptance}, anticipando ai proponenti dell'azienda Imola Informatica la volontà di richiederla per la settimana dal 2022-09-26 al 2022-09-30. 
 \newline 
 In particolare il gruppo richiede il parere dell'azienda in merito alla portabilità del progetto su un servizio esterno, l'azienda propone due soluzioni:
 \begin{enumerate}
