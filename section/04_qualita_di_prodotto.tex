@@ -37,17 +37,20 @@ Il software costituisce una parte fondamentale del progetto è, quindi, importan
 \subsubsection{Obiettivi}
 \begin{center}
 	\renewcommand{\arraystretch}{1.8}
-	\begin{tabular}{ |c|m{18em}|m{8em}|}
+	\begin{tabular}{ |c|m{20em}|m{8em}|}
 		\hline
 		\textbf{Obiettivo} & \textbf{Descrizione} & \textbf{Metrica} \\
 		\hline
-		Funzionalità & Soddisfare i requisiti individuati perseguendo accuratezza. & M1PRR, M2PDR, M3POR \\
+		Funzionalità & Soddisfare i requisiti individuati \newline perseguendo accuratezza. & M1PRR, M2PDR, M3POR \\
 		\hline
 		Usabilità & Facilitare l'uso del prodotto sviluppato affinché gli utenti possano usarlo per i propri scopi. & M7FDU, M16FA \\
     \hline
 		Affidabillità & Fare in modo che il software risulti essere solido e gestisca in modo corretto eventuali errori. & M17EG, M18PM \\
 		\hline
-		Manutenibilità & Facilitare le modifiche e aggiornamenti apportati al software. & M5ATC, M6PDG, M9NAC, M10PF, M11LCF, M12PI, M13CPC \\
+		Manutenibilità & Facilitare le modifiche e aggiornamenti \newline apportati al \newline software. & M5ATC, M6PDG, M9NAC, M10PF, M11LCF, M12PI, M13CPC \\
+		\hline
+    Copertura Testing & Il codice prodotto dovrà essere corretto \newline e verificato. Per questo motivo sarà \newline necessario assicurarsi che il testing 
+    \newline effettuato sia corretto e valido e riesca a \newline verificare il codice completamente. & M19FLC, M20FBC, M21BLC, M22BBC \\
 		\hline
 	\end{tabular}
 \end{center}
@@ -84,8 +87,21 @@ Il software costituisce una parte fondamentale del progetto è, quindi, importan
 		M16FA & Facilità di Apprendimento & $ \leq 15 $ minuti & $ \leq 10 $ minuti\\
 		\hline
 		M17EG & Errori Gestiti & $ \geq 95\% $ & $  100\% $\\
+    \hline
+    M18PM & Percentuale Malfunzionamenti & $ \geq 100\% $ & $  100\% $\\
 		\hline
-		M18PM & Percentuale Malfunzionamenti & $  100\% $ & $ 100\% $\\
+		M19FLC & Frontend Line Coverage & $  85\% $ & $ 100\% $\\
 		\hline
+		M20FBC & Frontend Branch Coverage & $  85\% $ & $ 100\% $\\
+		\hline
+		M21BLC & Backend Line Coverage & $  85\% $ & $ 100\% $\\
+		\hline
+		M22BBC & Backend Branch Coverage & $  85\% $ & $ 100\% $\\
+		\hline
+    M23TPF & Test Passati Frontend & $  85\% $ & $ 100\% $\\
+		\hline
+    M24TPB & Test Passati Backend  & $  85\% $ & $ 100\% $\\
+		\hline
+    
 	\end{tabular}
 \end{center}
